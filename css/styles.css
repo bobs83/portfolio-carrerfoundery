@@ -1,0 +1,111 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  background-image: url("/scr/pics/Logo-transparent.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 48px;
+  height: 48px;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(180, 190, 203, 0.816);
+}
+
+.home-section {
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 10em;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  border-radius: 50%;
+  width: 90%;
+  height: 00%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: autox;
+}
+
+.divider {
+  border: none;
+  height: 2px; /* Slightly thicker for a subtle presence */
+  width: 80%; /* Adjust the width as needed */
+  background: linear-gradient(
+    to right,
+    #f0f0f0,
+    #d3d3d3,
+    #f0f0f0
+  ); /* Soft gradient */
+  margin: 2em auto; /* Centers the divider and provides more vertical space */
+  border-radius: 10px; /* Adds a slight curve to the ends */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.about-section {
+  margin: auto;
+  margin-top: 5em;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  border: pink 1px solid;
+  position: static;
+  display: grid;
+  height: auto;
+  width: 100%;
+  min-height: auto;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 100%;
+}
+
+.footer-title {
+  position: relative;
+  margin: 34px 0px 18px calc((100% - 980px) * 0);
+  left: 77px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+.footer-links {
+  position: relative;
+  margin: 0px 0px 34px calc((100% - 980px) * 0);
+  left: 90px;
+  color: black;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 40px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: none;
+  transition: color blue; /* Use your CSS variable */
+}
+
+.footer-links a:hover {
+  color: pink;
+}
