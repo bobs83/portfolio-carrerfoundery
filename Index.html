@@ -26,8 +26,8 @@
     />
     <!-- My CSS -->
     <link rel="stylesheet" href="/css/styles.css" />
-		<!-- My JS -->
-		<script defer src="./js/app.js"></script>
+    <!-- My JS -->
+    <script defer src="./js/app.js"></script>
 
     <title>Bobby in Berlin Showcasing his Work</title>
   </head>
@@ -113,14 +113,14 @@
       <section class="home-section">
         <div class="hero-right">
           <img
-            src="./scr/pics/hero-image-profile.JPG"
+            src="./src/pics/hero-image-profile.JPG"
             alt="Bobby Singh"
             class="hero-image"
           />
         </div>
         <div class="hero-left">
           <video class="hero-video" autoplay muted>
-            <source src="./scr/videos/Hero-video.mp4" type="video/mp4" />
+            <source src="./src/videos/Hero-video.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
@@ -128,41 +128,43 @@
       <hr class="divider" />
 
       <!-- About Section -->
-      <section class="about-section">
-        <div class="about-left">
-          <video class="about-video" autoplay muted loop>
-            <source src="./scr/videos/About-video.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="col-sm-12">
-          <h2 class="about-title">About Me</h2>
-
-          <p class="about-text">
-            I am a web developer who builds digital experiences for the web. I
-            have a passion for creating and designing websites that are
-            user-friendly and accessible. I am skilled in HTML, CSS, JavaScript,
-            and XML. I am also familiar with web development frameworks such as
-            Bootstrap and React. I am currently based in Berlin, Germany. I am a
-            web developer who builds digital experiences for the web. I have a
-            passion for creating and designing websites that are user-friendly
-            and accessible. I am skilled in HTML, CSS, JavaScript, and XML. I am
-            also familiar with web development frameworks such as Bootstrap and
-            React. I am currently based in Berlin, Germany.
-          </p>
+      <section class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <video class="about-video" autoplay muted loop>
+              <source src="./src/videos/About-video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <h2 class="about-title">About Me</h2>
+            <p class="about-text">
+              I am a web developer who builds digital experiences for the web. I
+              have a passion for creating and designing websites that are
+              user-friendly and accessible. I am skilled in HTML, CSS,
+              JavaScript, and XML. I am also familiar with web development
+              frameworks such as Bootstrap and React. I am currently based in
+              Berlin, Germany. I am a web developer who builds digital
+              experiences for the web. I have a passion for creating and
+              designing websites that are user-friendly and accessible. I am
+              skilled in HTML, CSS, JavaScript, and XML. I am also familiar with
+              web development frameworks such as Bootstrap and React. I am
+              currently based in Berlin, Germany.
+            </p>
+          </div>
         </div>
       </section>
 
       <hr class="divider" />
 
-      <section class="gallery">
+      <section class="container">
+        <h2 class="footer-title">Projects</h2>
+        <img
+          class="scroll-image"
+          src="./src/pics/moving-hand.png"
+          alt="scroll to left to left"
+        />
 
-				<h2 class="footer-title">Projects</h2><img class="scroll-image" src="./scr/pics/noun-hand-6282449.png" alt="scroll to left to left">
-				
-				<div class="container scrollx">
-				
-
-        <div class="card-container">
-					
+        <div class="container">
           <div
             class="row flex-row flex-nowrap"
             style="overflow-x: auto; overflow-y: hidden"
@@ -171,7 +173,7 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <video class="card-video-top" autoplay loop muted>
-                  <source src="/scr/videos/Hero-video.mp4" type="video/mp4" />
+                  <source src="/src/videos/Hero-video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div class="card-body">
@@ -207,27 +209,28 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <img
-                  src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                  src="./src/pics/project-pics/JS-app.png"
                   alt=""
                   class="card-img-top"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Sunset</h5>
+                  <h5 class="card-title">Pokemon JS App</h5>
                   <p class="card-text mb-3">
-                    Created a serverless React PWA applying TDD practices,
-                    integrated with Google Calendar API for event retrieval.
+                    A JavaScript-based web app focused on Pokémon, utilizing
+                    HTML, CSS, and JavaScript to fetch and present detailed data
+                    from an external API.
                   </p>
                   <div class="mb-3">
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/live2.png"
+                        src="./src/pics/live2.png"
                         alt="live-image"
                     /></a>
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/github-icon.png"
+                        src="./src/pics/github-icon.png"
                         alt="live-image"
                     /></a>
                   </div>
@@ -249,7 +252,6 @@
                         <li class="list-group-item">HTML</li>
                         <li class="list-group-item">SCSS</li>
                         <li class="list-group-item">JavaScript</li>
-                        <li class="list-group-item">VueJS</li>
                         <li class="list-group-item">Bootstrap</li>
                         <li class="list-group-item">Axios</li>
                       </ul>
@@ -263,27 +265,29 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <img
-                  src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                  src="src/pics/project-pics/react.png"
                   alt=""
                   class="card-img-top"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Sunset</h5>
+                  <h5 class="card-title">Myflix- Client (React)</h5>
                   <p class="card-text mb-3">
-                    Created a serverless React PWA applying TDD practices,
-                    integrated with Google Calendar API for event retrieval.
+                    A myFlix React App is a client-side, React-built platform
+                    offering detailed movie information. Users can create
+                    profiles, save favorites, and explore movies, part of a
+                    full-stack MERN application
                   </p>
                   <div class="mb-3">
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/live2.png"
+                        src="./src/pics/live2.png"
                         alt="live-image"
                     /></a>
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/github-icon.png"
+                        src="./src/pics/github-icon.png"
                         alt="live-image"
                     /></a>
                   </div>
@@ -319,27 +323,28 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <img
-                  src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                  src="./src/pics/project-pics/react-native.png"
                   alt=""
                   class="card-img-top"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Sunset</h5>
+                  <h5 class="card-title">Chat App (React-native)</h5>
                   <p class="card-text mb-3">
-                    Created a serverless React PWA applying TDD practices,
-                    integrated with Google Calendar API for event retrieval.
+                    React Native App - A real-time chat app allowing users to
+                    exchange messages, share photos, videos, and their location
+                    instantly.
                   </p>
                   <div class="mb-3">
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/live2.png"
+                        src="./src/pics/live2.png"
                         alt="live-image"
                     /></a>
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/github-icon.png"
+                        src="./src/pics/github-icon.png"
                         alt="live-image"
                     /></a>
                   </div>
@@ -375,12 +380,12 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <img
-                  src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                  src="./src/pics/project-pics/meet.png"
                   alt=""
                   class="card-img-top"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Sunset</h5>
+                  <h5 class="card-title">Meet N Code (PWA and TDD testing)</h5>
                   <p class="card-text mb-3">
                     Created a serverless React PWA applying TDD practices,
                     integrated with Google Calendar API for event retrieval.
@@ -389,13 +394,13 @@
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/live2.png"
+                        src="./src/pics/live2.png"
                         alt="live-image"
                     /></a>
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/github-icon.png"
+                        src="./src/pics/github-icon.png"
                         alt="live-image"
                     /></a>
                   </div>
@@ -412,7 +417,6 @@
                       <h6 class="card-subtitle mb-2 text-muted">
                         Technologies
                       </h6>
-
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">HTML</li>
                         <li class="list-group-item">SCSS</li>
@@ -431,27 +435,27 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <img
-                  src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                  src="./src/pics/project-pics/angular.png"
                   alt=""
                   class="card-img-top"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Sunset</h5>
+                  <h5 class="card-title">Myflix-client (Angular)</h5>
                   <p class="card-text mb-3">
-                    Created a serverless React PWA applying TDD practices,
-                    integrated with Google Calendar API for event retrieval.
+                    This Angular app connects to a custom server-side REST API
+                    and database, offering access to a movie details.
                   </p>
                   <div class="mb-3">
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/live2.png"
+                        src="./src/pics/live2.png"
                         alt="live-image"
                     /></a>
                     <a href=""
                       ><img
                         class="card-icon"
-                        src="./scr/pics/github-icon.png"
+                        src="./src/pics/github-icon.png"
                         alt="live-image"
                     /></a>
                   </div>
@@ -488,7 +492,7 @@
 
       <hr class="divider" />
 
-      <footer>
+      <footer class="container">
         <div>
           <h2 class="footer-title">Contact</h2>
         </div>

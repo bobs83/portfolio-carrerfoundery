@@ -15,7 +15,7 @@ html {
 }
 
 .navbar-brand {
-  background-image: url("/scr/pics/Logo-transparent.png");
+  background-image: url("/src/pics/Logo-transparent.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -81,23 +81,25 @@ html {
 }
 
 .about-text {
-	margin: auto;
-	padding: 2em;
-	text-align: justify;
+  margin: auto;
+  padding: 2em;
+  text-align: justify;
 }
 
 .card {
   height: 100%;
 }
 
-.card-container {
+/* .card-container {
 	overflow-x: auto; 
 	overflow-y: hidden
-}
+} */
 
 .card-img-top {
   width: auto;
   height: 40vh;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .card-video-top {
@@ -113,24 +115,26 @@ html {
   margin: auto;
 }
 
-
+.card-icongif {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
 
 .card-title {
-	font-size: 1.5em;
-
+  font-size: 1.5em;
 }
 
 .card-text {
-	font-size: 0.9em;
+  font-size: 0.9em;
 }
 .card-subtitle {
-	font-size: 1em;
-
+  font-size: 1em;
 }
 .list-group {
   line-height: 1em;
   font-size: smaller;
-	line-height: 0.8em;
+  line-height: 0.8em;
 }
 
 footer {
@@ -142,12 +146,13 @@ footer {
   grid-template-columns: 100%;
 }
 
-
+.footer-title {
+  display: inline-block;
+  margin-bottom: 0.8em;
+}
 
 .footer-links {
   position: relative;
-  margin: 0px 0px 34px calc((100% - 980px) * 0);
-  left: 77px;
   color: black;
   display: grid;
   grid-auto-flow: column;
@@ -173,15 +178,6 @@ footer {
   animation: fadeInMoveRightFadeOut 10s ease-in-out infinite;
 }
 
-
-
-.scroll-image {
-  position: relative;
-  height: 40px;
-  width: 40px;
-  animation: fadeInMoveRightFadeOut 10s ease-in-out infinite;
-}
-
 @keyframes fadeInMoveRightFadeOut {
   0% {
     left: 0;
@@ -190,7 +186,8 @@ footer {
   20% {
     opacity: 1;
   }
-  40%, 60% {
+  40%,
+  60% {
     left: 50%; /* Adjust to control the distance */
     opacity: 1;
   }
@@ -202,5 +199,4 @@ footer {
     left: 100%;
     opacity: 0;
   }
-}
 }
