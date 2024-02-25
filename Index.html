@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <!-- My JS -->
     <script defer src="./js/app.js"></script>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
 
     <title>Bobby in Berlin Showcasing his Work</title>
   </head>
@@ -48,12 +50,35 @@
     crossorigin="anonymous"
   ></script>
 
-  <body>
+  <>
     <div class="page-wrapper">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
+
+					<ul class="list-inline mt-1 mb-0">
+						<li class="list-inline-item mr-4">
+							<a class="link-social" href="https://twitter.com/davidmillerhere">
+								<span class="icon-social-twitter"></span>
+							</a>
+						</li>
+						<li class="list-inline-item mr-4">
+							<a class="link-social" href="https://github.com/davidtmiller">
+								<span class="icon-social-github"></span>
+							</a>
+						</li>
+						<li class="list-inline-item mr-4">
+							<a class="link-social" href="https://www.instagram.com/davidmillerhere">
+								<span class="icon-social-instagram"></span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="link-social" href="mailto:hello@davidmiller.io">
+								<span class="icon-envelope"></span>
+							</a>
+						</li>
+					</ul>
           <button
             class="navbar-toggler"
             type="button"
@@ -129,7 +154,7 @@
 
       <!-- About Section -->
       <section class="container bg-light py-5">
-        <div class="row">
+        <div class="row rounded-5">
           <div class="col-lg-4 col-md-4 col-sm-12">
             <video class="about-video" autoplay muted loop>
               <source src="./src/videos/About-video.mp4" type="video/mp4" />
@@ -512,24 +537,52 @@
 
       <hr class="divider" />
 
-      <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-          <div
-            class="row align-items-center justify-content-between flex-column flex-sm-row"
-          >
-            <div class="col-auto">
-              <div class="small m-0">Copyright © Bobby Singh 2024</div>
-            </div>
-            <div class="col-auto">
-              <a class="small" href="#!">Privacy</a>
-              <span class="mx-1">·</span>
-              <a class="small" href="#!">Terms</a>
-              <span class="mx-1">·</span>
-              <a class="small" href="#!">Contact</a>
-            </div>
-          </div>
+      <!-- Social Links -->
+
+      <section class="container">
+        <div >
+          <p>Find me on:</p>
         </div>
-      </footer>
+        <div>
+          <a href="https://www.linkedin.com/"
+            ><img
+              class="socialmedia"
+              src="./src/pics/social-pics/inkedin.svg"
+              alt="link to Bobbys linkedin"
+          /></a>
+          <a href="https://github.com/"
+            ><img
+              class="socialmedia"
+              src="./src/pics/social-pics/github.svg"
+              alt="link to Bobbys github"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img
+              class="socialmedia"
+              src="./src/pics/social-pics/twitter.svg"
+              alt="link to Bobbys twitter account"
+          /></a>
+        </div>
+      </section>
+      <hr class="divider" />
+
+		
+				<footer class=" container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+					<p class="col-md-4 mb-0 text-body-secondary">© 2024 Bobby in Berlin, Production</p>
+			
+					<a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+						<img src="/src/pics/Logo-transparent.png" width="48" height="48" alt="Bobby in Berlin's Logo"/>
+				</a>
+			
+					<ul class="nav col-md-4 justify-content-end">
+						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+					</ul>
+				</footer>
+			</div>
 
       <!-- <footer class="container">
         <div>
@@ -554,6 +607,7 @@
         crossorigin="anonymous"
         async
       ></script>
+		
     </div>
   </body>
 </html>
