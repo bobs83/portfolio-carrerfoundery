@@ -50,35 +50,36 @@
     crossorigin="anonymous"
   ></script>
 
-  <>
+
+	<body>
+		
+
+
     <div class="page-wrapper">
+			<header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="page-header navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
 
-					<ul class="list-inline mt-1 mb-0">
+					<ul class="list-inline  mt-1 mb-0">		
 						<li class="list-inline-item mr-4">
-							<a class="link-social" href="https://twitter.com/davidmillerhere">
-								<span class="icon-social-twitter"></span>
-							</a>
-						</li>
-						<li class="list-inline-item mr-4">
-							<a class="link-social" href="https://github.com/davidtmiller">
+							<a class="link-social" href="https://github.com/">
 								<span class="icon-social-github"></span>
 							</a>
 						</li>
 						<li class="list-inline-item mr-4">
-							<a class="link-social" href="https://www.instagram.com/davidmillerhere">
+							<a class="link-social" href="https://www.instagram.com/">
 								<span class="icon-social-instagram"></span>
 							</a>
 						</li>
 						<li class="list-inline-item">
-							<a class="link-social" href="mailto:hello@davidmiller.io">
-								<span class="icon-envelope"></span>
+							<a class="link-social" href="https://www.linkedin.com/">
+								<span class="icon-social-linkedin"></span>
 							</a>
 						</li>
 					</ul>
+					<div class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <button
             class="navbar-toggler"
             type="button"
@@ -102,37 +103,23 @@
                   ><i class="bi bi-people-fill me-2"></i>About</a
                 >
               </li>
+							<li class="nav-item rounded">
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-telephone-fill me-2"></i>Projects</a
+                >
+              </li>
               <li class="nav-item rounded">
                 <a class="nav-link" href="#"
                   ><i class="bi bi-telephone-fill me-2"></i>Contact</a
                 >
               </li>
-              <li class="nav-item dropdown rounded">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  ><i class="bi bi-person-fill me-2"></i>Profile</a
-                >
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li><a class="dropdown-item" href="#">Account</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </li>
+             
+             
             </ul>
           </div>
         </div>
       </nav>
+		</header>
 
       <!-- Hero Section -->
       <section class="home-section">
@@ -539,7 +526,7 @@
 
       <!-- Social Links -->
 
-      <section class="container">
+      <!-- <section class="container">
         <div >
           <p>Find me on:</p>
         </div>
@@ -564,40 +551,40 @@
           /></a>
         </div>
       </section>
-      <hr class="divider" />
+      <hr class="divider" /> -->
 
 		
 				<footer class=" container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 					<p class="col-md-4 mb-0 text-body-secondary">© 2024 Bobby in Berlin, Production</p>
-			
-					<a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-						<img src="/src/pics/Logo-transparent.png" width="48" height="48" alt="Bobby in Berlin's Logo"/>
+		
+			<div class="col-md-4 d-flex align-items-center justify-content-center mb-md-5 me-md-auto link-body-emphasis text-decoration-none">
+				<a href="https://github.com/"
+				><img
+					class="socialmedia"
+					src="./src/pics/social-pics/github.svg"
+					alt="link to Bobbys github"
+			/></a>
+				<a href="/">
+						<img src="/src/pics/Logo-transparent.png" width="48" height="48" alt="Bobby in Berlin's Logo"/>	
 				</a>
-			
+				<a href="https://www.linkedin.com/"
+            ><img
+              class="socialmedia"
+              src="./src/pics/social-pics/inkedin.svg"
+              alt="link to Bobbys linkedin"
+          /></a>
+
+			</div>
 					<ul class="nav col-md-4 justify-content-end">
 						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
 						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Projects</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
 					</ul>
 				</footer>
 			</div>
 
-      <!-- <footer class="container">
-        <div>
-          <h2 class="footer-title">Contact</h2>
-        </div>
-
-        <div>
-          <div class="footer-links">
-            <a href="link_to_instagram">Instagram</a>
-            <a href="link_to_linkedin">LinkedIn</a>
-            <a href="mailto:your_email@example.com">Email</a>
-            <a href="path_to_resume">Resume</a>
-          </div>
-        </div>
-      </footer> -->
+      
 
       <!-- Optional JavaScript -->
 
