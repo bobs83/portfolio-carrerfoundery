@@ -43,7 +43,7 @@ h1,
 }
 
 .link-social {
-  font-size: 1.2em;
+  font-size: 1em;
   color: black;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -57,6 +57,7 @@ h1,
 .icon-social-instagram,
 .icon-social-linkedin {
   font-size: 1.2em;
+  padding: 0.2em;
 }
 
 .navbar-brand {
@@ -137,9 +138,9 @@ h1,
   height: 100%;
 }
 
-/* .card-container {
-	overflow-x: auto; 
-	overflow-y: hidden
+/* .cardholder {
+  overflow-x: auto;
+  overflow-y: hidden;
 } */
 
 .card-img-top {
