@@ -4,6 +4,7 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: #b817dc;
 }
 
 html {
@@ -61,7 +62,7 @@ h1,
 }
 
 .navbar-brand {
-  background-image: url("../src/pics/Logo-transparent.png");
+  background-image: url("/src/pics/Logo-transparent.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -69,12 +70,13 @@ h1,
   height: 48px;
 }
 
-.navbar-nav .nav-item:hover {
+.navbar-nav .nav-item .nav-link:hover {
   color: #b817dc;
-  border-radius: 10px;
-  transition: ease-in-out 0.3s;
+  transition: color 0.3s ease-in-out;
 }
-
+.nav-item a.nav-link:hover {
+  color: #b817dc !important;
+}
 .home-section {
   display: flex;
   margin: auto;
@@ -112,15 +114,6 @@ h1,
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.about-section {
-  margin: auto;
-  max-width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-}
-
 .about-video {
   width: 100%;
   height: 100%;
@@ -128,20 +121,9 @@ h1,
   margin: auto;
 }
 
-.about-text {
-  margin: auto;
-  padding: 2em;
-  text-align: justify;
-}
-
 .card {
   height: 100%;
 }
-
-/* .cardholder {
-  overflow-x: auto;
-  overflow-y: hidden;
-} */
 
 .card-img-top {
   width: auto;
@@ -172,7 +154,6 @@ h1,
 .card-title {
   font-size: 1.5em;
 }
-
 .card-text {
   font-size: 0.9em;
 }
@@ -183,39 +164,6 @@ h1,
   line-height: 1em;
   font-size: smaller;
   line-height: 0.8em;
-}
-
-footer {
-  position: static;
-  display: grid;
-  height: auto;
-  width: 100%;
-  min-height: auto;
-  grid-template-columns: 100%;
-}
-
-.footer-title {
-  display: inline-block;
-  margin-bottom: 0.8em;
-}
-
-.footer-links {
-  position: relative;
-  color: black;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: start;
-  gap: 40px;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: none;
-  transition: color blue; /* Use your CSS variable */
-}
-
-.footer-links a:hover {
-  color: pink;
 }
 
 .scroll-image {
