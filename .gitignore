@@ -3,46 +3,74 @@
 *.a
 *.so
 
-# Folders
+# Go-specific files
 _obj
 _test
-
-# Architecture specific extensions/prefixes
-*.[568vq]
-[568vq].out
-
 *.cgo1.go
 *.cgo2.c
 _cgo_defun.c
 _cgo_gotypes.go
 _cgo_export.*
-
 _testmain.go
 
+# Executables and Profiling files
 *.exe
 *.test
 *.prof
 
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
 # WebStorm
 *.iml
 
-# Directory-based project format:
+# IntelliJ IDEA / WebStorm project files
 .idea/
 .idea/workspace.xml
 **/.idea/workspace.xml
 
-# mac hidden files
+# macOS hidden files
 .DS_Store
 
-##other
-#node_modules/
-#bower_components/
+# Other common directories and files to ignore
+node_modules/
+bower_components/
 .tmp
-#.sass-cache
-#builds/**/images/*
-#*.ogg
-#*.mp3
-#*.mp4
-#*.png
-#*.jpeg
+.sass-cache
+builds/**/images/*
+*.ogg
+*.mp3
+*.mp4
+*.png
+*.jpeg
 *.psd
+
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+
+# Build outputs
+/dist
+/build
+/.cache
+
+# IDE and editor directories
+/.idea
+*.sublime-project
+*.sublime-workspace
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
