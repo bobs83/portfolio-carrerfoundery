@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-	
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -31,6 +31,13 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <!-- My JS -->
     <script defer src="./js/app.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Scroll Timeline -->
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -57,7 +64,7 @@
   ></script>
 
   <body>
-		<div class="scroll-watcher"></div>
+    <div class="scroll-watcher"></div>
     <div class="page-wrapper">
       <header>
         <!-- Navbar -->
@@ -67,20 +74,35 @@
 
             <ul class="list-inline mt-1 mb-0">
               <li class="list-inline-item mr-4">
-<a class="link-social" href="https://github.com/bobs83" title="GitHub Profile" target="_blank"
-rel="noopener">
+                <a
+                  class="link-social"
+                  href="https://github.com/bobs83"
+                  title="GitHub Profile"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <span class="icon-social-github"></span>
                 </a>
               </li>
               <li class="list-inline-item mr-4">
-                <a class="link-social" href="https://www.instagram.com/b00.berlin/" title="Instagram Profile" target="_blank"
-								rel="noopener">
+                <a
+                  class="link-social"
+                  href="https://www.instagram.com/b00.berlin/"
+                  title="Instagram Profile"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <span class="icon-social-instagram"></span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a class="link-social" href="https://www.linkedin.com/" title="LinkedIn Profile" target="_blank"
-								rel="noopener">
+                <a
+                  class="link-social"
+                  href="https://www.linkedin.com/"
+                  title="LinkedIn Profile"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <span class="icon-social-linkedin"></span>
                 </a>
               </li>
@@ -147,25 +169,40 @@ rel="noopener">
 
       <!-- About Section -->
       <section class="container py-5" id="about-section">
-        <div class="row rounded-5 justify-content-center">
+        <div
+          class="row rounded-5 justify-content-center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div class="col-lg-4 col-md-4 col-sm-12 d-none d-lg-block">
-            <video class="about-video" autoplay muted loop>
+            <img
+              class="about-image"
+              src="/src/pics/b-logo.png"
+              alt="Bobby logo	hero-image"
+            />
+            <!-- <video class="about-video" autoplay muted loop>
               <source src="./src/videos/About-video.mp4" type="video/mp4" />
-            </video>
+            </video> -->
           </div>
-          <div class="col-lg-8 col-md-8 col-sm-12">
+          <div class="about-left col-lg-8 col-md-8 col-sm-12">
             <div class="h-100 p-5 bg-body-tertiary border rounded-5">
               <h2 class="display-5 mb-3 text-right">
                 Pushing updates to my skillset
               </h2>
               <p class="lead fw-light mb-4">
-                Allow me to present my kaleidoscope 🔭 
+                Allow me to present my kaleidoscope 🔭
               </p>
               <p class="lead text-muted">
-                I am a freshly certified full-stack developer in the vibrant heart 🖤 of Berlin. My journey in coding is fueled by a fascination with crafting user-centric 🎯 experiences and mastering all its aspects, from front to back.
+                I am a freshly certified full-stack developer in the vibrant
+                heart 🖤 of Berlin. My journey in coding is fueled by a
+                fascination with crafting user-centric 🎯 experiences and
+                mastering all its aspects, from front to back.
                 <br />
                 <br />
-                Throughout my life, I have proudly worn numerous hats 🎩, each adding distinct colors to my palette 🎨 of abilities and perspectives. This background has driven me to quickly acquire and apply new skills, setting me apart.
+                Throughout my life, I have proudly worn numerous hats 🎩, each
+                adding distinct colors to my palette 🎨 of abilities and
+                perspectives. This background has driven me to quickly acquire
+                and apply new skills, setting me apart.
                 <br />
                 <br />
                 When not coding, I enjoy curating playlists 🎶 on
@@ -206,27 +243,28 @@ rel="noopener">
       <hr class="divider" />
 
       <!-- Project Section -->
-      <section class="container" id="Projects-section">
-        <h2 class="display-5 mb-2 mb-md-2 text-center">Projects</h2>
-        <p class="lead text-center text-muted mb-5">
-          The
-          <a href="https://careerfoundry.com/" target="_blank" rel="noopener"
-            >CareerFoundry</a
-          >
-          Full Stack Program catapulted me into the API realm, developing a
-          backend API with Node.js as a base for clients in React and Angular.
-          My journey expanded into mobile app development with React Native and
-          crafting a Serverless App (PWA) using Test-Driven Development.
-        </p>
-        <hr class="w-50 mx-auto mb-3 border-dark-subtle" />
-        <img
-          class="scroll-image"
-          src="./src/pics/moving-hand.png"
-          alt="scroll to left to left"
-        />
+      <section class="Projects-section container" id="Projects-section">
+        <div class="project-start" data-aos="fade-up" data-aos-duration="3000">
+          <h2 class="display-5 mb-2 mb-md-2 text-center">Projects</h2>
+          <p class="lead text-center text-muted mb-5">
+            The
+            <a href="https://careerfoundry.com/" target="_blank" rel="noopener"
+              >CareerFoundry</a
+            >
+            Full Stack Program catapulted me into the API realm, developing a
+            backend API with Node.js as a base for clients in React and Angular.
+            My journey expanded into mobile app development with React Native
+            and crafting a Serverless App (PWA) using Test-Driven Development.
+          </p>
 
-        <div class="container">
-					
+          <hr class="w-50 mx-auto mb-3 border-dark-subtle" />
+          <img
+            class="scroll-image"
+            src="./src/pics/moving-hand.png"
+            alt="scroll to left to left"
+          />
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
           <div
             class="row flex-row flex-nowrap"
             style="overflow-x: auto; overflow-y: hidden"
@@ -247,12 +285,20 @@ rel="noopener">
                     from an external API.
                   </p>
                   <div class="mb-3">
-										<a href="https://bobs83.github.io/simple-js-app/Index.html" title="Live link to Pokemon JS App" target="_blank">                      <img
+                    <a
+                      href="https://bobs83.github.io/simple-js-app/Index.html"
+                      title="Live link to Pokemon JS App"
+                      target="_blank"
+                    >
+                      <img
                         class="card-icon"
                         src="./src/pics/live2.png"
                         alt="live-icon"
                     /></a>
-                    <a href="https://github.com/bobs83/simple-js-app?tab=readme-ov-file" title="GitHub link to Pokemon JS App" target="_blank"
+                    <a
+                      href="https://github.com/bobs83/simple-js-app?tab=readme-ov-file"
+                      title="GitHub link to Pokemon JS App"
+                      target="_blank"
                       ><img
                         class="card-icon"
                         src="./src/pics/github-icon.png"
@@ -265,9 +311,9 @@ rel="noopener">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">Responsive Design</li>
                         <li class="list-group-item">Fetch from API</li>
-												<li class="list-group-item">Browse Pokemons</li>
+                        <li class="list-group-item">Browse Pokemons</li>
                       </ul>
-											<br />
+                      <br />
                     </div>
 
                     <div class="col-sm-6">
@@ -277,10 +323,10 @@ rel="noopener">
 
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">HTML</li>
-												<li class="list-group-item">CSS</li>
+                        <li class="list-group-item">CSS</li>
                         <li class="list-group-item">JavaScript</li>
                         <li class="list-group-item">jQuery</li>
-												<li class="list-group-item">Bootstrap</li>
+                        <li class="list-group-item">Bootstrap</li>
                       </ul>
                     </div>
                   </div>
@@ -305,13 +351,19 @@ rel="noopener">
                     full-stack MERN application
                   </p>
                   <div class="mb-3">
-                    <a href="https://spiffy-starship-cff8a2.netlify.app/login" title="Live link to Myflix-Client" target="_blank"
+                    <a
+                      href="https://spiffy-starship-cff8a2.netlify.app/login"
+                      title="Live link to Myflix-Client"
+                      target="_blank"
                       ><img
                         class="card-icon"
                         src="./src/pics/live2.png"
                         alt="live-icon"
                     /></a>
-                    <a href="https://github.com/bobs83/myflix-client" title="GitHub link to Myflix-Client" target="_blank"
+                    <a
+                      href="https://github.com/bobs83/myflix-client"
+                      title="GitHub link to Myflix-Client"
+                      target="_blank"
                       ><img
                         class="card-icon"
                         src="./src/pics/github-icon.png"
@@ -322,12 +374,14 @@ rel="noopener">
                     <div class="col-sm-6">
                       <h6 class="card-subtitle mb-2 text-muted">Features</h6>
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Access Movie Information</li>
-												<li class="list-group-item">User Authentication</li>
+                        <li class="list-group-item">
+                          Access Movie Information
+                        </li>
+                        <li class="list-group-item">User Authentication</li>
                         <li class="list-group-item">Manage Favorites</li>
-												<li class="list-group-item">Manage Profile Data</li>
+                        <li class="list-group-item">Manage Profile Data</li>
                       </ul>
-											<br />
+                      <br />
                     </div>
 
                     <div class="col-sm-6">
@@ -364,13 +418,23 @@ rel="noopener">
                     instantly.
                   </p>
                   <div class="mb-3">
-										<a href="https://github.com/bobs83/chat-app" placeholder="Live link to Chat App" target="_blank" rel="noopener" title="Live link to Chat App">
+                    <a
+                      href="https://github.com/bobs83/chat-app"
+                      placeholder="Live link to Chat App"
+                      target="_blank"
+                      rel="noopener"
+                      title="Live link to Chat App"
+                    >
                       <img
                         class="card-icon"
                         src="./src/pics/live2.png"
                         alt="live-icon"
                     /></a>
-										<a href="https://github.com/bobs83/chat-app?tab=readme-ov-file#running-the-project" title="GitHub link to running the Chat App" target="_blank" rel="noopener"
+                    <a
+                      href="https://github.com/bobs83/chat-app?tab=readme-ov-file#running-the-project"
+                      title="GitHub link to running the Chat App"
+                      target="_blank"
+                      rel="noopener"
                       ><img
                         class="card-icon"
                         src="./src/pics/github-icon.png"
@@ -382,13 +446,14 @@ rel="noopener">
                       <h6 class="card-subtitle mb-2 text-muted">Features</h6>
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">Share Pics and Videos</li>
-												<li class="list-group-item">Photo Libary Integration</li>
-												<li class="list-group-item">Share location</li>
-												<li class="list-group-item">Real-time Chat</li>
-												<li class="list-group-item">Offline Message Access</li>
-												
-											</ul>
-											<br />
+                        <li class="list-group-item">
+                          Photo Libary Integration
+                        </li>
+                        <li class="list-group-item">Share location</li>
+                        <li class="list-group-item">Real-time Chat</li>
+                        <li class="list-group-item">Offline Message Access</li>
+                      </ul>
+                      <br />
                     </div>
 
                     <div class="col-sm-6">
@@ -401,8 +466,7 @@ rel="noopener">
                         <li class="list-group-item">Google Firestore</li>
                         <li class="list-group-item">Expo Cli</li>
                         <li class="list-group-item">Node.js</li>
-												<li class="list-group-item">Gifted Chat</li>
-											  
+                        <li class="list-group-item">Gifted Chat</li>
                       </ul>
                     </div>
                   </div>
@@ -425,13 +489,21 @@ rel="noopener">
                     and database, offering access to a movie details.
                   </p>
                   <div class="mb-3">
-                    <a href="https://bobs83.github.io/myFlix-Angular-client/welcome"	title="Live link to Myflix-Client" target="_blank" rel="noopener"
+                    <a
+                      href="https://bobs83.github.io/myFlix-Angular-client/welcome"
+                      title="Live link to Myflix-Client"
+                      target="_blank"
+                      rel="noopener"
                       ><img
                         class="card-icon"
                         src="./src/pics/live2.png"
                         alt="live-icon"
                     /></a>
-                    <a href="https://github.com/bobs83/myFlix-Angular-client"	title="GitHub link to Myflix-Client" target="_blank" rel="noopener"
+                    <a
+                      href="https://github.com/bobs83/myFlix-Angular-client"
+                      title="GitHub link to Myflix-Client"
+                      target="_blank"
+                      rel="noopener"
                       ><img
                         class="card-icon"
                         src="./src/pics/github-icon.png"
@@ -442,12 +514,12 @@ rel="noopener">
                     <div class="col-sm-6">
                       <h6 class="card-subtitle mb-2 text-muted">Features</h6>
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item">User Registration </li>
-												<li class="list-group-item">View Movie Details</li>
+                        <li class="list-group-item">User Registration</li>
+                        <li class="list-group-item">View Movie Details</li>
                         <li class="list-group-item">Save Movie Favorites</li>
-												<li class="list-group-item">Edit User Profile</li>
+                        <li class="list-group-item">Edit User Profile</li>
                       </ul>
-											<br />
+                      <br />
                     </div>
 
                     <div class="col-sm-6">
@@ -459,9 +531,9 @@ rel="noopener">
                         <li class="list-group-item">Angular</li>
                         <li class="list-group-item">Node.js</li>
                         <li class="list-group-item">Angular Material</li>
+                        <li class="list-group-item">Typescript</li>
                         <li class="list-group-item">Typedoc</li>
                       </ul>
-											
                     </div>
                   </div>
                 </div>
@@ -477,19 +549,29 @@ rel="noopener">
                   class="card-img-top"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Meet N Code (Serveless PWA and TDD testing)</h5>
+                  <h5 class="card-title">
+                    Meet N Code (Serveless PWA and TDD testing)
+                  </h5>
                   <p class="card-text mb-3">
                     Created a serverless React PWA applying TDD practices,
                     integrated with Google Calendar API for event retrieval.
                   </p>
                   <div class="mb-3">
-                    <a href="https://bobs83.github.io/meetberlin_app/"	title="Live link to Meet N Code" target="_blank" rel="noopener"
+                    <a
+                      href="https://bobs83.github.io/meetberlin_app/"
+                      title="Live link to Meet N Code"
+                      target="_blank"
+                      rel="noopener"
                       ><img
                         class="card-icon"
                         src="./src/pics/live2.png"
                         alt="live-icon"
                     /></a>
-                    <a href="https://github.com/bobs83/meetberlin_app?tab=readme-ov-file" title="GitHub link to Meet N Code" target="_blank" rel="noopener"
+                    <a
+                      href="https://github.com/bobs83/meetberlin_app?tab=readme-ov-file"
+                      title="GitHub link to Meet N Code"
+                      target="_blank"
+                      rel="noopener"
                       ><img
                         class="card-icon"
                         src="./src/pics/github-icon.png"
@@ -500,13 +582,11 @@ rel="noopener">
                     <div class="col-sm-6">
                       <h6 class="card-subtitle mb-2 text-muted">Features</h6>
                       <ul class="list-group list-group-flush">
-
                         <li class="list-group-item">Event Filtering</li>
-												<li class="list-group-item">Detailed Event Views</li>
+                        <li class="list-group-item">Detailed Event Views</li>
                         <li class="list-group-item">Offline Functionality</li>
-												<li class="list-group-item">Home Screen Shortcut</li>
+                        <li class="list-group-item">Home Screen Shortcut</li>
                         <li class="list-group-item">Data Visualization</li>
-
                       </ul>
                       <br />
                     </div>
@@ -534,16 +614,26 @@ rel="noopener">
                 <div class="card-body">
                   <h5 class="card-title">MyFlix Server (API)</h5>
                   <p class="card-text mb-3">
-                    A server-side component for myFlix, built with Node.js, Express, and MongoDB, offering a robust RESTful API for efficient movie data management.
+                    A server-side component for myFlix, built with Node.js,
+                    Express, and MongoDB, offering a robust RESTful API for
+                    efficient movie data management.
                   </p>
                   <div class="mb-3">
-                    <a href="https://bobs83.github.io/movie_api/public/documentation.html"	title="Live link to MyFlix Api documentation" target="_blank" rel="noopener"
+                    <a
+                      href="https://bobs83.github.io/movie_api/public/documentation.html"
+                      title="Live link to MyFlix Api documentation"
+                      target="_blank"
+                      rel="noopener"
                       ><img
                         class="card-icon"
                         src="./src/pics/live2.png"
                         alt="live-image"
                     /></a>
-                    <a href="https://github.com/bobs83/movie_api" title="GitHub link to MyFlix Server" target="_blank" rel="noopener"
+                    <a
+                      href="https://github.com/bobs83/movie_api"
+                      title="GitHub link to MyFlix Server"
+                      target="_blank"
+                      rel="noopener"
                       ><img
                         class="card-icon"
                         src="./src/pics/github-icon.png"
@@ -556,10 +646,10 @@ rel="noopener">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">Fetch All Movies</li>
                         <li class="list-group-item">Detailed Movie Info</li>
-												<li class="list-group-item">User Profile Management</li>
-												<li class="list-group-item">Account Deletion</li>
+                        <li class="list-group-item">User Profile Management</li>
+                        <li class="list-group-item">Account Deletion</li>
                       </ul>
-											<br />
+                      <br />
                     </div>
 
                     <div class="col-sm-6">
@@ -572,7 +662,7 @@ rel="noopener">
                         <li class="list-group-item">Passport-JWT, Bcrypt</li>
                         <li class="list-group-item">JSON Web Token (JWT)</li>
                         <li class="list-group-item">JSDoc</li>
-												<li class="list-group-item">Postman</li>
+                        <li class="list-group-item">Postman</li>
                       </ul>
                     </div>
                   </div>
@@ -586,20 +676,24 @@ rel="noopener">
       <hr class="divider" />
 
       <!-- Contact 4 - Bootstrap Brain Component -->
-      <section id="contact-form" class="container bg-light rounded-5 border py-3 py-md-5">
-        <div class="container">
+      <section
+        id="contact-form"
+        class="container bg-light rounded-5 border py-3 py-md-5"
+      >
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-md-center">
             <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
               <h2 class="display-5 mb-4 mb-md-2 text-center">Contact Me</h2>
               <p class="lead text-center text-muted mb-5">
-                Open to joining creative ventures and projects. If you're in need of a committed collaborator, let's get in touch.
+                Open to joining creative ventures and projects. If you're in
+                need of a committed collaborator, let's get in touch.
               </p>
               <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
             </div>
           </div>
         </div>
 
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
           <div class="row gy-3 gy-md-3 gy-lg-3 align-items-xl-center">
             <div class="col-12 col-lg-6 d-none d-lg-block">
               <img
@@ -627,7 +721,7 @@ rel="noopener">
                             class="form-control"
                             id="name"
                             name="fullname"
-														placeholder="Name"
+                            placeholder="Name"
                             value=""
                             required
                           />
@@ -656,7 +750,7 @@ rel="noopener">
                               class="form-control"
                               id="email"
                               name="email"
-															placeholder="Enter your email"
+                              placeholder="Enter your email"
                               value=""
                               required
                             />
@@ -710,44 +804,75 @@ rel="noopener">
         </div>
       </section>
 
-			<footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-				<!-- Logo and copyright notice section -->
-				<div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
-					<p class="mb-0 text-body-secondary">© 2024 Bobby in Berlin Production</p>
-				</div>
-			
-				<!-- Social media links section -->
-				<div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
-					<a href="https://github.com/bobs83">
-						<img class="socialmedia" src="./src/pics/social-pics/github.svg" alt="link to Bobby's GitHub"/>
-					</a>
-					<a href="#navbarNav">
-						<img src="./src/pics/Logo-transparent.png" width="75" height="" alt="Bobby in Berlin's Logo"/>
-					</a>
-					<a href="https://www.linkedin.com/">
-						<img class="socialmedia" src="./src/pics/social-pics/inkedin.svg" alt="link to Bobby's LinkedIn"/>
-					</a>
-				</div>
-			
-				<!-- Navigation links section -->
-				<div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end">
-					<ul class="nav flex-column flex-md-row">
-						<li class="nav-item">
-							<a href="#navbarNav" class="nav-link px-2 text-body-secondary">Home</a>
-						</li>
-						<li class="nav-item">
-							<a href="#about-section" class="nav-link px-2 text-body-secondary">Resume</a>
-						</li>
-						<li class="nav-item">
-							<a href="#Projects-section" class="nav-link px-2 text-body-secondary">Credits</a>
-						</li>
-						<li class="nav-item">
-							<a href="#contact-form" class="nav-link px-2 text-body-secondary">Impressum</a>
-						</li>
-					</ul>
-				</div>
-			</footer>
+      <footer
+        class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <!-- Logo and copyright notice section -->
+        <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0 text-body-secondary">
+            © 2024 Bobby in Berlin Production
+          </p>
+        </div>
 
+        <!-- Social media links section -->
+        <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
+          <a href="https://github.com/bobs83">
+            <img
+              class="socialmedia"
+              src="./src/pics/social-pics/github.svg"
+              alt="link to Bobby's GitHub"
+            />
+          </a>
+          <a href="#navbarNav">
+            <img
+              class="Logo-bottom"
+              src="./src/pics/Logo-transparent.png"
+              alt="Bobby in Berlin's Logo"
+            />
+          </a>
+          <a href="https://www.linkedin.com/">
+            <img
+              class="socialmedia"
+              src="./src/pics/social-pics/inkedin.svg"
+              alt="link to Bobby's LinkedIn"
+            />
+          </a>
+        </div>
+
+        <!-- Navigation links section -->
+        <div
+          class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end"
+        >
+          <ul class="nav flex-column flex-md-row">
+            <li class="nav-item">
+              <a href="#navbarNav" class="nav-link px-2 text-body-secondary"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link px-2 text-body-secondary"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#Projects-section"
+                class="nav-link px-2 text-body-secondary"
+                >Credits</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact-form" class="nav-link px-2 text-body-secondary"
+                >Impressum</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
     <!-- Optional JavaScript -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

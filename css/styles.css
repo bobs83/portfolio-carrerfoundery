@@ -1,15 +1,38 @@
-body {
+/* Base styles for the entire document */
+body,
+html {
+  scroll-behavior: smooth;
 }
 
+/* Link styles */
 a {
   cursor: pointer;
   text-decoration: none;
   color: #b817dc;
 }
 
-html {
-  scroll-behavior: smooth;
+
+
+
+.scroll-watcher {
+  height: 2px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #b817dc;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
 }
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
 
 img.socialmedia {
   width: 35px;
@@ -25,41 +48,27 @@ list-inline {
   list-style: none;
 }
 
-h6,
-.h6,
-h5,
-.h5,
-h4,
-.h4,
-h3,
-.h3,
-h2,
-.h2,
-h1,
-.h1 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.link-social {
-  font-size: 1em;
-  color: black;
-  text-decoration: none;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #b817dc;
-  }
-}
-
 .icon-social-github,
 .icon-social-instagram,
 .icon-social-linkedin {
   font-size: 1.2em;
   padding: 0.2em;
+  color: black;
+
+	&:hover {
+    color: #b817dc;
+  }
 }
+
+.nav-item a.nav-link:hover {
+  color: #b817dc !important;
+}
+
+.navbar-nav .nav-item a.nav-link:hover {
+  color: #b817dc;
+  transition: color 0.3s ease-in-out;
+}
+
 
 .navbar-brand {
   background-image: url("/src/pics/Logo-transparent.png");
@@ -70,13 +79,6 @@ h1,
   height: 48px;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-  color: #b817dc;
-  transition: color 0.3s ease-in-out;
-}
-.nav-item a.nav-link:hover {
-  color: #b817dc !important;
-}
 .home-section {
   display: flex;
   margin: auto;
@@ -87,6 +89,14 @@ h1,
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+
+  animation: fade-out linear;
+  animation-timeline: view();
+	animation-range: exit; -200px;
+}
+
+@keyframes fade-out {
+	to {opacity: 0;}
 }
 
 .hero-image {
@@ -114,11 +124,29 @@ h1,
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.about-video {
+.about-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
   margin: auto;
+	animation: fade-out linear;
+  animation-timeline: view();
+	animation-range: exit; -200px;
+	animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
+
+}
+
+.about-left {
+	animation: fade-out linear;
+  animation-timeline: view();
+	animation-range: exit; -200px;
+}
+
+
+.Projects-section{
+animation: fade-out linear;
+animation-timeline: view();
+animation-range: exit; -200px;
 }
 
 .card {
@@ -143,6 +171,10 @@ h1,
   width: 50px;
   height: 50px;
   margin: auto;
+}
+
+.card-icon:hover {
+  transform: scale(1.1);
 }
 
 .card-icongif {
@@ -174,6 +206,22 @@ h1,
   animation: fadeInMoveRightFadeOut 10s ease-in-out infinite;
 }
 
+.Logo-bottom {
+	position: relative; 
+	width: 75px;
+	animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes bouncebounce {
+	0% {
+			bottom: -5px;
+	}
+
+	100% {
+			bottom: 5px;
+	}
+}
+
 @keyframes fadeInMoveRightFadeOut {
   0% {
     left: 0;
@@ -184,11 +232,11 @@ h1,
   }
   40%,
   60% {
-    left: 50%; /* Adjust to control the distance */
+    left: 50%;
     opacity: 1;
   }
   80% {
-    left: 80%; /* Moves to the right */
+    left: 80%;
     opacity: 0;
   }
   100% {
@@ -196,3 +244,4 @@ h1,
     opacity: 0;
   }
 }
+
