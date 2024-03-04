@@ -12,8 +12,6 @@ a {
 }
 
 
-
-
 .scroll-watcher {
   height: 2px;
   position: fixed;
@@ -71,7 +69,7 @@ list-inline {
 
 
 .navbar-brand {
-  background-image: url("/src/pics/Logo-transparent.png");
+  background-image: url("/src/pics/transparent-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -211,6 +209,49 @@ animation-range: exit; -200px;
 	width: 75px;
 	animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
 }
+
+/* Mail animation  */
+
+.mail-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	
+}
+
+.circle {
+	border-radius: 50%;
+	background-color: rgb(105, 24, 148);
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	opacity: 0;
+	animation: scaleIn 10s infinite cubic-bezier(.36, .11, .89, .32);
+
+}
+
+.mailitem {
+	z-index: 100;
+	padding: 5px;
+}
+
+.mailitem img {
+	width: 200px;
+}
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
+
 
 @keyframes bouncebounce {
 	0% {
