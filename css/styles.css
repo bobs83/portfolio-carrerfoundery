@@ -46,16 +46,13 @@ list-inline {
   list-style: none;
 }
 
-.icon-social-github,
-.icon-social-instagram,
-.icon-social-linkedin {
+.icon-social-github, .icon-social-instagram, .icon-social-linkedin {
   font-size: 1.2em;
   padding: 0.2em;
   color: black;
-
-	&:hover {
-    color: #b817dc;
-  }
+}
+.icon-social-github:hover, .icon-social-instagram:hover, .icon-social-linkedin:hover {
+  color: #b817dc;
 }
 
 .nav-item a.nav-link:hover {
@@ -69,7 +66,7 @@ list-inline {
 
 
 .navbar-brand {
-  background-image: url("/src/pics/transparent-logo.png");
+  background-image: url("https://github.com/bobs83/portfolio-carrerfoundery/blob/gh-pages/src/pics/transparent-logo.png?raw=true");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -78,7 +75,6 @@ list-inline {
 }
 
 .home-section {
-  display: flex;
   margin: auto;
   margin-top: 5em;
   margin-bottom: 10em;
