@@ -50,6 +50,7 @@ list-inline {
   font-size: 1.2em;
   padding: 0.2em;
   color: black;
+	transition: color 0.3s ease-in-out;
 }
 .icon-social-github:hover, .icon-social-instagram:hover, .icon-social-linkedin:hover {
   color: #b817dc;
@@ -207,7 +208,8 @@ animation-range: exit; -200px;
   position: relative;
   height: 40px;
   width: 40px;
-  animation: fadeInMoveRightFadeOut 10s ease-in-out infinite;
+	margin-bottom: 1em;
+  animation: fadeInMoveLeftFadeOut 10s ease-in-out infinite;
 }
 
 .Logo-bottom {
@@ -309,3 +311,25 @@ animation-range: exit; -200px;
   }
 }
 
+@keyframes fadeInMoveLeftFadeOut {
+  0% {
+    left: 100%;
+    opacity: 0;
+  }
+  20% {
+    left: 80%;
+    opacity: 0;
+  }
+  40%,
+  60% {
+    left: 50%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+}
