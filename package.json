@@ -2,10 +2,10 @@
   "name": "portfolio-carrerfoundery",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "mailserver.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js"
+    "dev": "nodemon mailserver.js",
+    "start": "node mailserver.js"
   },
   "keywords": [],
   "author": "",
