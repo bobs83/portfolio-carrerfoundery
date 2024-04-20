@@ -11,6 +11,17 @@ a {
   color: #b817dc;
 }
 
+section {
+	animation: fade-out linear;
+  animation-timeline: view();
+	animation-range: exit; -200px;
+}
+
+@keyframes fade-out {
+	to {opacity: 0;}
+}
+
+
 
 .scroll-watcher {
   height: 2px;
@@ -127,11 +138,7 @@ list-inline {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.about-section {
-	animation: fade-out linear;
-	animation-timeline: view();
-	animation-range: exit; -200px;
-}
+/* About section */
 
 .about-image {
   width: 100%;
@@ -148,11 +155,7 @@ list-inline {
 }
 
 
-.Projects-section{
-animation: fade-out linear;
-animation-timeline: view();
-animation-range: exit; -200px;
-}
+/* Projects section */
 
 .card {
   height: 100%;
