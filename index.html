@@ -1064,12 +1064,16 @@
                 >Resume</a
               >
             </li>
+            <!-- Button trigger modal -->
             <li class="nav-item">
               <a
-                href="#Projects-section"
+                href="#"
                 class="nav-link px-2 text-body-secondary"
-                >Credits</a
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
               >
+                Credits
+              </a>
             </li>
             <li class="nav-item">
               <a
@@ -1082,6 +1086,132 @@
         </div>
       </footer>
     </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">
+              Credits &amp; Sources
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h3>Page Foundation</h3>
+            <p>
+              Page is based on
+              <a href="https://getbootstrap.com/" title="Bootstrap">Bootstrap</a
+              >.
+            </p>
+
+            <h3>Animations</h3>
+            <ul>
+              <li>
+                Scroll-watcher:
+                <a
+                  href="https://www.youtube.com/watch?v=UmzFk68Bwdk"
+                  title="YouTube Video"
+                  >YouTube</a
+                >
+              </li>
+              <li>
+                Scroll-out based animation:
+                <a
+                  href="https://www.youtube.com/watch?v=UmzFk68Bwdk"
+                  title="YouTube Video"
+                  >YouTube</a
+                >
+              </li>
+              <li>
+                Scroll-in animation:
+                <a
+                  href="https://michalsnik.github.io/aos/"
+                  title="Animate on Scroll"
+                  >Animate on Scroll</a
+                >
+              </li>
+              <li>
+                Pulsing circle:
+                <a
+                  href="https://www.kirupa.com/animations/creating_pulsing_circle_animation.htm"
+                  title="Kirupa"
+                  >Kirupa</a
+                >
+              </li>
+							<li>
+                Rotating mail-circle
+                <a
+                  href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_anim_transform"
+                  title="w3schools"
+                  >w3schools</a
+                >
+              </li>
+              <li>Moving hand: Chat GPT</li>
+              <li>
+                Bouncing 'B':
+                <a href="https://jordannelson.dev/" title="Jordan Nelson"
+                  >Jordan Nelson</a
+                >
+              </li>
+            </ul>
+
+						<h3>Images</h3>
+						<ul id="image-credits">
+								<li>
+										Live icon: <a href="https://thenounproject.com/icon/live-3400442/" title="The Noun Project">The Noun Project</a>
+								</li>
+								<li>
+										GitHub Icon: <a href="https://www.iconfinder.com/icons/1608908/github_icon" title="Icon Finder">Icon Finder</a>
+								</li>
+								<li>
+										LinkedIn Icon: <a href="https://www.iconfinder.com/icons/104493/linkedin_icon" title="Icon Finder">Icon Finder</a>
+								</li>
+								<li>
+										Moving hand left: <a href="https://thenounproject.com/icon/swipe-left-hand-1025774/" title="The Noun Project">The Noun Project</a>
+								</li>
+								<li>
+										The Menu bar icons (GitHub, Instagram, LinkedIn) are all from <a href="https://simplelineicons.github.io/" title="Simple Line Icons">Simple Line Icons</a>.
+								</li>
+								<li>
+										The {B} Icon made with <a href="https://www.canva.com/" title="Canva">Canva</a> by myself.
+								</li>
+								<li>
+										Profile Image is AI-generated based on a real image of myself using <a href="https://www.fotor.com/" title="Fotor">Fotor</a>.
+								</li>
+								<li>
+										Hero rolling text made with <a href="https://jitter.video/" title="Jitter Video">Jitter Video</a>.
+								</li>
+								<li>
+										Project image API: Unknown source (Free SVG)
+								</li>
+								<li>
+									Mail-image: Unknown source (Free SVG)
+							</li>
+						</ul>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <script>
       AOS.init();
