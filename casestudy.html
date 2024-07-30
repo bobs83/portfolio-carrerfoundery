@@ -154,8 +154,7 @@
         </nav>
       </header>
 
-			<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-				<div class="col-md-5 p-lg-5 mx-auto my-5">
+			<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">				<div class="col-md-5 p-lg-5 mx-auto my-5">
 					<h1 class="display-4 font-weight-normal">A FULL STACK CASE STUDY</h1>
 					<p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
 					<a class="btn btn-outline-secondary" href="#">Coming soon</a>
@@ -171,7 +170,7 @@
         >
           <div class="col-lg-4 col-md-4 col-sm-12 ">
             <img
-              class="about-image"
+              class="case-image"
               src="./src/Case/search_1665703.png"
               alt="Bobby logo	hero-image"
             />
@@ -230,7 +229,7 @@
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-12 d-none d-lg-block">
 								<img
-									class="about-image"
+									class="case-image"
 									src="./src/Case/briefcase_14255519.png"
 									alt="Bobby logo hero-image"
 								/>
@@ -255,23 +254,23 @@
 							<div class="pb-2 border-bottom">
 								<img src="./src/case/hourglass_6927209.png" alt="Icon" class="feature-icon-img">
 							</div>
-							<h2>Duration</h2>
-							<p>Creating the client-side took about twice as long as creating the server-side. I wanted to make sure I had a good grasp on how React and Redux work and achieve the desired result.</p>
+							<h2 class="display-6 mb-3 text-right">Duration</h2>
+							<p class="fw-light">Creating the client-side took about twice as long as creating the server-side. I wanted to make sure I had a good grasp on how React and Redux work and achieve the desired result.</p>
 						
 						</div>
 						<div class="feature col ">
 							<div class="pb-2 border-bottom">
 								<img src="./src/case/lightbulb_25547973.png" alt="Icon" class="feature-icon-img">
 							</div>
-							<h2>Methodoligies</h2>
+							<h2 class="display-6 mb-3 text-right">Methodoligies</h2>
 							<ul class="two-column-list">
-								<li>MERN stack</li>
-								<li>Postman</li>
-								<li>Heroku</li>
-								<li>React</li>
-								<li>Bootstrap</li>
-								<li>Axios</li>
-								<li>Redux</li>
+								<li class="fw-light">MERN stack</li>
+								<li class="fw-light">Postman</li>
+								<li class="fw-light">Heroku</li>
+								<li class="fw-light">React</li>
+								<li class="fw-light">Bootstrap</li>
+								<li class="fw-light">Axios</li>
+								<li class="fw-light">Redux</li>
 							</ul>
 					</div>
 
@@ -279,111 +278,101 @@
 							<div class="pb-2 border-bottom">
 								<img src="./src/case/users5527962.png" alt="Icon" class="feature-icon-img">
 							</div>
-							<h2>Credits</h2>
-							<p>
+							<h2 class="display-6 mb-3 text-right">Credits</h2>
+							<p class="fw-light">
 								<strong>Tutor:</strong> Timothy Nyabongo <br>
 								<strong>Mentor:</strong> Stephen Barungi<br>
 								<strong>Coach:</strong> Annie
 								</p>
-							
 						</div>
 
 				</div>
      </div>
+		</div>
       </section>
 
+			<hr class="divider" />
 
+			<section class="container">
+				<div class="row">
+					<!-- Left side  -->
+					<div class="col-md-4">
+						<div class="h-100 p-5 border rounded-4" data-aos="fade-up" data-aos-duration="3000">
+							<h2 class="display-6 mb-4 mb-md-2 text-center">
+								Creating a<br>
+								RESTful API
+							</h2>
+							<p class="lead text-start text-md-start text-muted mb-3 py-5">
+								I set out to create a RESTful API using Node.js and Express, aiming to build an application that would interact smoothly with a non-relational database, MongoDB. This API would handle basic CRUD operations, letting users retrieve and store data, with movie information provided in JSON format. You can see the detailed information about the endpoints here.
+							</p>
+						</div>
+					</div>
+					<!-- Right side (3/4) -->
+					<div class="col-md-8">
+						<div class="h-100 p-5" data-aos="fade-up" data-aos-duration="3000">
+							<div class="row">
+								<!-- Nested Grid Column 1 -->
+								<div class="col-md-6">
+									<div class="feature col">
+										<div class="pb-2 border-bottom">
+											<img src="./src/case/hourglass_6927209.png" alt="Icon" class="feature-icon-img">
+										</div>
+										<h2 class="display-6 mb-3 text-right">1. Choosing the Database </h2>
+										<p class="fw-light">
+											My first task was to decide whether to use a relational or non-relational database. After testing both PostgreSQL and MongoDB, I chose non-relational database in MongoDB because its flexibility suited my needs better.
+										</p>
+									
+									</div>
+								</div>
+								<!-- Nested Grid Column 2 -->
+								<div class="col-md-6">
+									
+										<div class="feature col">
+											<div class="pb-2 border-bottom">
+												<img src="./src/case/hourglass_6927209.png" alt="Icon" class="feature-icon-img">
+											</div>
+											<h2 class="display-6 mb-3 text-right">2. Developing Business Logic</h2>
+											<p class="fw-light">
+												Next, I focused on the core functionality. I created models to keep my data consistently formatted and used Mongoose to interact with the database, which made managing and manipulating data much easier.
+												Creating the client-side took about twice as long as creating the server-side. I wanted to make sure I had a good grasp on how React and Redux work and achieve the desired result.
+											</p>
+										
+										</div>
+							</div>
+							<div class="row">
+								<!-- Nested Grid Column 3 -->
+								<div class="col-md-6">
+									
+									<div class="feature col">
+										<div class="pb-2 border-bottom">
+											<img src="./src/case/hourglass_6927209.png" alt="Icon" class="feature-icon-img">
+										</div>
+										<h2 class="display-6 mb-3 text-right">Duration</h2>
+										<p class="fw-light">Creating the client-side took about twice as long as creating the server-side. I wanted to make sure I had a good grasp on how React and Redux work and achieve the desired result.</p>
+									
+									</div>
+						</div>
+								
+								<!-- Nested Grid Column 4 -->
+								
+									<div class="col-md-6">
+									
+										<div class="feature col">
+											<div class="pb-2 border-bottom">
+												<img src="./src/case/hourglass_6927209.png" alt="Icon" class="feature-icon-img">
+											</div>
+											<h2 class="display-6 mb-3 text-right">Duration</h2>
+											<p class="fw-light">Creating the client-side took about twice as long as creating the server-side. I wanted to make sure I had a good grasp on how React and Redux work and achieve the desired result.</p>
+										
+										</div>
+									</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
 
-      <section class="container">
-        <div
-          class="h-100 p-5 bg-body-tertiary border rounded-4"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
-          <h2 class="display-5 mb-4 text-center">Skills 🛠️</h2>
-          <p class="lead text-md-start text-muted mb-3">
-            I specialize in both frontend and backend development, creating
-            responsive, user-friendly web applications.
-          </p>
-          <p class="lead text-md-start text-muted mb-3">
-            Frontend expertise includes HTML, CSS, JavaScript, Typescript,
-            React, Angular, and React Native. Backend capabilities cover
-            Node.js, Express, and MongoDB, focusing on API development and
-            integration.
-          </p>
-          <p class="lead text-md-start text-muted mb-3">
-            Experienced in test-driven development (TDD), unit-testing,
-            integration-testing, end-to-end testing, with tools like Gherkin and
-            Cucumber for behavior-driven development (BDD).
-          </p>
-          <p class="lead text-md-start text-muted mb-5">
-            Additional skills include cloud storage solutions (AWS and
-            Firebase), local data storage, and JWT for authentication and
-            authorization.
-          </p>
-          <div class="</div>row">
-            <div class="col-md-6" style="padding: 0 30px">
-							<h3>Core Languages</h3>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Typescript</li>
-                <li>Python</li>
-              </ul>
-              <h3>Frontend</h3>
-              <ul>
-                <li>Developing websites using HTML5, CSS3, and JavaScript</li>
-                <li>
-                  Ensuring code quality with linting, cross-browser
-                  compatibility, and accessibility testing
-                </li>
-                <li>Frameworks: React, Angular, jQuery, Bootstrap</li>
-                <li>TDD with Jest, Cucumber, Puppeteer, and Gherkin for BDD</li>
-                <li>Building mobile apps with React Native and Expo</li>
-                <li>Dynamic content handling with AJAX</li>
-              </ul>
-              <h3>Frontend Libraries & Frameworks</h3>
-              <ul>
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-                <li>React</li>
-                <li>Angular</li>
-                <li>Angular Material</li>
-                <li>Recharts</li>
-              </ul>
-            </div>
-            <div class="col-md-6" style="padding: 0 30px">
-              <h3>Backend</h3>
-              <ul>
-                <li>Node.js, Express for server-side development</li>
-                <li>
-                  Building APIs with RESTful practices and JSON data interchange
-                </li>
-                <li>Database management with MongoDB, PostgreSQL</li>
-                <li>
-                  Implementing JWT for secure authentication and authorization
-                </li>
-                <li>Data storage solutions with AWS, Google Firestore</li>
-              </ul>
-              <h3>Backend Libraries & Frameworks</h3>
-              <ul>
-                <li>NodeJS</li>
-                <li>Express</li>
-                <li>Morgan</li>
-                <li>Axios</li>
-                <li>Parcel</li>
-                <li>PropTypes</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr class="divider" />
-
-
-
+			<hr class="divider" />
 
       <!-- Journey into webdevelopment section -->
       <section class="container">

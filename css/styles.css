@@ -274,6 +274,20 @@ list-inline {
 }
 
 
+/* style section */
+
+.case-image {
+  width: 85%;
+  height: 80%;
+  object-fit: scale-down;
+	position: relative; 
+	animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
+	transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+  z-index: 1;
+}
+
+
+
 .two-column-list {
   columns: 2; /* Number of columns */
   -webkit-columns: 2;
