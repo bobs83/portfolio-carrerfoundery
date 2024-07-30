@@ -274,6 +274,19 @@ list-inline {
 }
 
 
+.two-column-list {
+  columns: 2; /* Number of columns */
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: disc; /* Optional: to ensure dots are used */
+  padding-left: 20px; /* Optional: adjust padding as needed */
+}
+
+.two-column-list li {
+  break-inside: avoid; /* Prevents items from breaking between columns */
+}
+
+
 
 
 @keyframes scaleIn {
