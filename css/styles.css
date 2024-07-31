@@ -277,7 +277,7 @@ list-inline {
 /* style section */
 
 .case-image {
-  width: 85%;
+  width: 80%;
   height: 80%;
   object-fit: scale-down;
 	position: relative; 
@@ -369,4 +369,37 @@ list-inline {
     left: 0;
     opacity: 0;
   }
+}
+
+@keyframes rotate {
+	0% {
+			transform: rotate(0deg);
+	}
+	50% {
+			transform: rotate(180deg);
+	}
+	60% {
+			transform: rotate(180deg);
+	}
+	100% {
+			transform: rotate(360deg);
+	}
+}
+
+.rotate-animation {
+	animation: rotate 10s ease-in-out infinite;
+}
+
+@keyframes rotate {
+	0% {
+			transform: rotate(0deg);
+	}
+	100% {
+			transform: rotate(360deg);
+	}
+}
+
+.rotate-gear {
+	animation: rotate 9s linear infinite;
+	max-width: 80px;
 }
