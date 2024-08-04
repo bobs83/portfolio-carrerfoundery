@@ -433,3 +433,7 @@ list-inline {
 .bounce {
     animation: bounce 3s infinite;
 }
+
+.small-pic {
+	max-width: 100px;
+}
