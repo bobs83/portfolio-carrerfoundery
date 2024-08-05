@@ -462,15 +462,16 @@ list-inline {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000; /* Change to desired color */
+    background-color: #000000; 
     border-radius: 50%;
     padding: 10px;
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+    background-color: rgba(0, 0, 0, 0.8); 
     padding: 10px;
     border-radius: 5px;
+		color: rgb(255, 255, 255);
 }
 
 .carousel-item img {
@@ -482,7 +483,7 @@ list-inline {
 .ratio {
 	position: relative;
 	width: 100%;
-	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	padding-bottom: 56.25%; 
 }
 
 .video {
@@ -509,5 +510,32 @@ list-inline {
 
 .clapperboard-animation {
 	animation: clapperboard-shake 4s infinite;
-	transform-origin: top center; /* Set the origin to the top center for shaking effect */
+	transform-origin: top center; 
+}
+
+.hero-section {
+	position: relative;
+	overflow: hidden;
+	padding: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin: 3rem;
+	text-align: center;
+	background: linear-gradient(rgba(100, 99, 99, 0.7), rgba(255, 255, 255, 0.9)), url('https://github.com/bobs83/portfolio-carrerfoundery/blob/main/src/case/backround_main.png?raw=true');
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-content {
+	position: relative;
+	overflow: hidden;
+	padding: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin: 3rem;
+	text-align: center;
+	background-color: rgba(72, 70, 70, 0.8);
+	color: white;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
