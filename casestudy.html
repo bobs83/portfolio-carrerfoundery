@@ -414,7 +414,7 @@
 
 
 <!-- Server-Side-Carousel Section -->
-<section class="container py-5 col-lg-8">
+	<section class="container py-5 col-lg-8">
 	<div data-aos="fade-up" data-aos-duration="3000">
 			<div id="server-side-carousel" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
@@ -457,7 +457,7 @@
 					</button>
 			</div>
 	</div>
-</section>
+	</section>
 
 		<hr class="divider" />
 
@@ -510,8 +510,7 @@
 									</div>
 									<h3 class="h5 mb-3 text-right">3. Design</h3>
 									<p class="fw-light">
-											I used React Bootstrap to design the layout of the pages and cards and to ensure consistent styling. I also used client-side app-routing to add authentication to access views.
-									</p>
+										I used React Bootstrap to design the pages and cards, ensuring consistent, responsive styling across all devices. Its pre-built components streamlined the development process, making the design both efficient and cohesive.									</p>
 							</div>
 					</div>
 					<div class="col-md-6 mb-4 d-flex align-items-stretch">
@@ -521,9 +520,7 @@
 									</div>
 									<h3 class="h5 mb-3 text-right">4. Final Product</h3>
 									<p class="fw-light">
-											Finally, I added Redux to better manage the application's state and ensure that my app would be scalable. Once integrated, I hosted my completed project on Netlify.
-									</p>
-							</div>
+										In the end, I added a search function to simplify navigation among the movie titles. After integration, I deployed and hosted the app on Netlify.							</div>
 					</div>
 			</div>
 			<div class="row justify-content-md-end">
@@ -537,7 +534,6 @@
 		</section>
 
 		
-
 <!-- Views Carousel Section -->
 		<section class="container py-5 col-lg-8">
 	<div data-aos="fade-up" data-aos-duration="3000">
@@ -557,6 +553,14 @@
 									<p>I was inspired by other movie-viewing platforms to add a carousel at the top of the page. My goal was to create an impressive landing page with a clear and attractive display of the movies.</p>
 									</div>
 							</div>
+							<div class="carousel-item">
+								<img src="/src/case/movie-card.jpg" class="d-block w-100" alt="Movie View">
+								<div class="carousel-caption d-md-block">
+										<h5 class="carousel-title">Movie Card</h5>
+										<p>The movie card is simple and informative, showing the title, genre, year, and rating for quick scanning. Hovering over the card reveals a synopsis for more detailed information.
+										</p>
+								</div>
+						</div>
 							<div class="carousel-item">
 									<img src="/src/case/movie-view.jpg" class="d-block w-100" alt="Movie View">
 									<div class="carousel-caption d-md-block">
@@ -605,8 +609,8 @@
                 <h2 class="display-5 m-4 text-center text-primary">Project Feedback</h2>
             </div>
 						<p class="lead text-muted mb-5">
-							After completing the API, I built the user interface for MyFlix, a single-page, responsive application using React. Using Bootstrap, I designed a responsive interface that allows users to navigate movie selections, access detailed movie views, manage their profiles, and set their favorite movies.
-					</p>
+							Reflecting on the project, I identified what went well and what didn't go well. I also considered future steps and shared my final thoughts on the project.
+						</p>
             <div class="row mt-4">
                 <!-- What Went Well -->
                 <div class="col-12 col-md-6 mb-4">
@@ -616,8 +620,7 @@
                         </div>
                         <h3 class="h5 mb-3">What went well?</h3>
                         <p class="fw-light">
-                            I very much enjoyed building the database and setting up the backend. My analytical mind liked to see the order and structure of it, and I was able to fly through that build.
-                        </p>
+													I found creating the database and interacting with it through Mongoose relatively easy. Working with the terminal and SSH was also straightforward for me, thanks to my experience with DOS from my childhood. On the front end, I truly enjoyed working with and mastering Bootstrap, designing a responsive website that was both functional and visually appealing. In the end also come on good terms with React, witch had a steep learning curve                        </p>
                     </div>
                 </div>
                 <!-- What Didn't Go Well -->
@@ -628,8 +631,11 @@
                         </div>
                         <h3 class="h5 mb-3">What didn't go well?</h3>
                         <p class="fw-light">
-                            The biggest challenge was time. I was juggling teaching full time while learning how to build this and struggled. Once school got out and I could devote myself to study, the pieces all fell into place and things went much smoother. Plus, by taking my time I was able to get a fuller understanding of React.
-                        </p>
+													In the backend, I encountered significant challenges with authentication. Due to an unconventional setup, I couldn’t directly access the user token to retrieve user information. To work around this, I had to send the information via parameters. My mentor assisted me with this workaround and emphasized the importance of correctly setting up the models and backend architecture to avoid such issues in the future.
+													<br>
+													<br>
+													On the frontend, I struggled with state management, particularly in passing functions through different levels of components. Additionally, implementing the search function from the top navigation presented difficulties. I realized that a more comprehensive understanding of state management and component interaction is crucial for smoother development.
+																									 </p>
                     </div>
                 </div>
             </div>
@@ -662,8 +668,8 @@
 		</section>
 
 		<hr class="divider" />
-      
-<!-- Case Study Video Section -->
+
+		<!-- Case Study Video Section -->
 		<section class="container py-5 col-lg-8 mb-4">
 	<div data-aos="fade-up" data-aos-duration="3000">
 			<div class="col-md-12">
@@ -672,12 +678,11 @@
 					</div>
 					<h2 class="display-5 mb-4 text-center text-primary">Video Demo</h2>
 					<p class="lead text-muted mb-5">
-							After completing the API, I built the user interface for MyFlix, a single-page, responsive application using React. Using Bootstrap, I designed a responsive interface that allows users to navigate movie selections, access detailed movie views, manage their profiles, and set their favorite movies.
-					</p>
+						Below is a video demonstration of the project, showcasing the complete experience. You can watch the entire process, from creating a user and login page to navigating through the movie view, favorite movie view, and editing profile information.				</p>
 			</div>
 			<div>
 					<video controls autoplay muted loop class="d-block w-100">
-							<source src="/src/case/casestudy-video.mp4" type="video/mp4">
+							<source src="/src/case/casestudy-video1.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 					</video>
 			</div>
@@ -686,9 +691,11 @@
 
 	<!-- Back to Main Page Section -->
 		<section class="container py-5 col-lg-8 text-center">
-	<div class="py-5">
+		<div class="py-5">
 			<h2 class="display-5 mb-4 text-primary">Thank You for Viewing</h2>
-			<p class="lead text-muted mb-4">We hope you enjoyed the case study. Use the button below to return to the main page.</p>
+			<p class="lead text-muted mb-4">We hope you enjoyed the case study. <br>
+				Click the button below to view the live page or return to the main page</p>
+			<a href="https://spiffy-starship-cff8a2.netlify.app/" class="btn btn-primary btn-md me-4">View Live Page</a>
 			<a href="index.html" class="btn btn-primary btn-md">Back to Main Page</a>
 	</div>
 		</section>
