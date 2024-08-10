@@ -513,7 +513,7 @@ list-inline {
 	transform-origin: top center; 
 }
 
-.hero-section {
+.hero-section-case-study {
 	position: relative;
 	overflow: hidden;
 	padding: 3rem;
@@ -521,12 +521,12 @@ list-inline {
 	padding-bottom: 3rem;
 	margin: 3rem;
 	text-align: center;
-	background: linear-gradient(rgba(100, 99, 99, 0.7), rgba(255, 255, 255, 0.9)), url('https://github.com/bobs83/portfolio-carrerfoundery/blob/main/src/case/backround_main.png?raw=true');
+	background: linear-gradient(rgba(100, 99, 99, 0.7), rgba(255, 255, 255, 0.9)), url('https://github.com/bobs83/portfolio-carrerfoundery/blob/main/src/case/backround_main.jpg?raw=true');
 	background-size: cover;
 	background-position: center;
 }
 
-.hero-content {
+.hero-content-case-study {
 	position: relative;
 	overflow: hidden;
 	padding: 3rem;
@@ -539,3 +539,4 @@ list-inline {
 	border-radius: 0.5rem;
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
+
