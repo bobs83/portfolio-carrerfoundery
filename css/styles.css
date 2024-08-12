@@ -540,3 +540,12 @@ list-inline {
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+.feature-icon {
+  font-size: 5rem;
+  color: transparent; /* Make the text color transparent */
+  background: linear-gradient(45deg, #1487eb, #00ff00); /* Define the gradient */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text; /* Clip the background to the text */
+}
+
+
