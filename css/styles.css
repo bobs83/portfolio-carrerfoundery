@@ -23,6 +23,7 @@ section {
 
 
 
+
 .scroll-watcher {
   height: 2px;
   position: fixed;
@@ -67,6 +68,7 @@ list-inline {
   color: #b817dc;
 }
 
+
 .nav-item a.nav-link:hover {
   color: #b817dc !important;
 }
@@ -76,6 +78,11 @@ list-inline {
   transition: color 0.3s ease-in-out;
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem; /* Ensure consistent padding */
+  text-align: center;
+}
 
 .navbar-brand {
   background-image: url("https://github.com/bobs83/portfolio-carrerfoundery/blob/gh-pages/src/pics/transparent-logo.png?raw=true");
@@ -548,4 +555,26 @@ list-inline {
   background-clip: text; /* Clip the background to the text */
 }
 
+.feature-icon2 {
+  font-size: 10rem;
+  color: transparent; /* Make the text color transparent */
+  background: linear-gradient(45deg, #1487eb, #da54ef); /* Define the gradient */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text; /* Clip the background to the text */
+}
+
+.profile-section {
+	background: linear-gradient(300deg, #ffffff, #ffffff, #f2faf8, #a7d7c5);
+	padding: 40px;
+	border-radius: 10px;
+	
+}
+.profile-img {
+	width:80%;
+	border-radius: 10px;
+}
+.social-icons a {
+	color: #000;
+	margin-right: 10px;
+}
 
