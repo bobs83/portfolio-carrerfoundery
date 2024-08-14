@@ -76,101 +76,7 @@
   <body>
     <div class="scroll-watcher"></div>
     <div class="page-wrapper">
-      <header>
-        <!-- Navbar -->
-        <nav class="page-header navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href=""></a>
-
-            <ul class="list-inline mt-1 mb-0">
-              <li class="list-inline-item mr-4">
-                <a
-                  class="link-social"
-                  href="https://github.com/bobs83"
-                  title="GitHub Profile"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <span class="icon-social-github"></span>
-                </a>
-              </li>
-              <li class="list-inline-item mr-4">
-                <a
-                  class="link-social"
-                  href="https://www.instagram.com/bobby.inberlin/"
-                  title="Instagram Profile"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <span class="icon-social-instagram"></span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a
-                  class="link-social"
-                  href="https://www.linkedin.com/in/bobbyinberlin/"
-                  title="LinkedIn Profile"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <span class="icon-social-linkedin"></span>
-                </a>
-              </li>
-            </ul>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-md-auto gap-2">
-                <li class="nav-item rounded">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#home-section"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about-section">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Projects-section">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="./casestudy.html"
-                    target="_blank"
-                    rel="noopener"
-                    >Case</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact-section">Contact</a>
-                </li>
-
-                <li class="nav-item">
-                  <a
-                    class="btn btn-dark btn-sm"
-                    href="src/downloads/bobby_singh_resume.pdf"
-                    target="_blank"
-                    rel="noopener"
-                    >Download Resume</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <header></header>
 
       <!-- OLD Hero Section -->
       <!-- <section class="home-section" id="home-section2">
@@ -191,10 +97,11 @@
       </section> -->
 
       <!-- Landing Section -->
-      <section class="py-5 custom-home-section" id="home-section">
-        <div
-          class="container h-100 d-flex align-items-center justify-content-center"
-        >
+      <section
+        class="vh-100 d-flex align-items-center justify-content-center custom-home-section"
+        id="home-section"
+      >
+        <div class="container d-flex align-items-center justify-content-center">
           <div class="row justify-content-center">
             <div class="col-md-12 d-flex justify-content-center">
               <video class="hero-video" autoplay muted playsinline>
@@ -205,7 +112,102 @@
         </div>
       </section>
 
-      <hr class="divider" />
+      <!-- <hr class="divider" /> -->
+      <!-- Navbar -->
+      <nav
+        class="page-header navbar navbar-expand-lg navbar-light bg-light sticky-top custom-navbar"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""></a>
+
+          <ul class="list-inline mt-1 mb-0">
+            <li class="list-inline-item mr-4">
+              <a
+                class="link-social"
+                href="https://github.com/bobs83"
+                title="GitHub Profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="icon-social-github"></span>
+              </a>
+            </li>
+            <li class="list-inline-item mr-4">
+              <a
+                class="link-social"
+                href="https://www.instagram.com/bobby.inberlin/"
+                title="Instagram Profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="icon-social-instagram"></span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="link-social"
+                href="https://www.linkedin.com/in/bobbyinberlin/"
+                title="LinkedIn Profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="icon-social-linkedin"></span>
+              </a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#home-section"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Projects-section">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./casestudy.html"
+                  target="_blank"
+                  rel="noopener"
+                  >Case</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="btn btn-dark btn-sm"
+                  href="src/downloads/bobby_singh_resume.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Download Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       <!-- Hero Section  -->
       <div class="container">
@@ -919,8 +921,7 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <img
-                  src="src/case/Myflix-app-full-view.jpg"
-                  alt=""
+                  src="./src/pics/project-pics/react.jpg"
                   class="card-img-top"
                 />
                 <div class="card-body">
@@ -1072,7 +1073,7 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <img
-                  src="./src/case/login-view.jpg"
+                  src="./src/pics/project-pics/angular.jpg"
                   alt=""
                   class="card-img-top"
                 />
@@ -1508,17 +1509,22 @@
         </div>
 
         <!-- Social media links section -->
-        <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
-          <a href="https://github.com/bobs83">
+        <div
+          class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0"
+        >
+          <a
+            href="https://github.com/bobs83"
+            target="_blank"
+            rel="noopener"
+            class="mx-2"
+          >
             <img
               class="socialmedia"
               src="./src/pics/social-pics/github.svg"
               alt="link to Bobby's GitHub"
-              target="_blank"
-              rel="noopener"
             />
           </a>
-          <a href="#navbarNav">
+          <a href="#navbarNav" class="mx-2">
             <img
               class="Logo-bottom"
               src="./src/pics/transparent-logo.png"
@@ -1530,14 +1536,12 @@
             title="LinkedIn Profile"
             target="_blank"
             rel="noopener"
-            alt="Link to Bobby's LinkedIn"
+            class="mx-2"
           >
             <img
               class="socialmedia"
               src="./src/pics/social-pics/inkedin.svg"
               alt="link to Bobby's LinkedIn"
-              target="_blank"
-              rel="noopener"
             />
           </a>
         </div>
@@ -1549,37 +1553,23 @@
           <ul class="nav flex-column flex-md-row">
             <li class="nav-item">
               <a href="#navbarNav" class="nav-link px-2 text-body-secondary"
-                >Home</a
+                >About</a
               >
             </li>
-
-            <!-- Button trigger modal -->
             <li class="nav-item">
               <a
                 href="#"
                 class="nav-link px-2 text-body-secondary"
                 data-bs-toggle="modal"
                 data-bs-target="#myModal"
+                >Credits</a
               >
-                Credits
-              </a>
             </li>
             <li class="nav-item">
               <a
                 href="/src/files/impressum.pdf"
                 class="nav-link px-2 text-body-secondary"
                 >Impressum</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="src/downloads/bobby_singh_resume.pdf"
-                class="btn btn-dark btn-sm"
-                title="Link to Bobby's Resume"
-                alt="Link to Bobby's Resume"
-                target="_blank"
-                rel="noopener"
-                >Download Resume</a
               >
             </li>
           </ul>

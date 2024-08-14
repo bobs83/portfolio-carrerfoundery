@@ -68,6 +68,9 @@ list-inline {
   color: #b817dc;
 }
 
+.custom-navbar {
+  opacity: 0.8; /* Adjust the opacity value as needed */
+}
 
 .nav-item a.nav-link:hover {
   color: #b817dc !important;
@@ -233,7 +236,6 @@ list-inline {
 
 .scroll-image {
 	height: 40px;
-
   position: relative;
 	margin-bottom: 3em;
   animation: fadeInMoveLeftFadeOut 10s ease-in-out infinite;
@@ -241,7 +243,7 @@ list-inline {
 
 .Logo-bottom {
 	position: relative; 
-	width: 75px;
+	width: 40px;
 	animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
 }
 
@@ -746,5 +748,5 @@ list-inline {
 }
 
 .shake-on-hover:hover {
-  animation: shake 0.5s; /* Adjust the duration as needed */
+  animation: shake 0.5s 1; /* Adjust the duration as needed */
 }
