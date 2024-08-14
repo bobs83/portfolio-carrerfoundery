@@ -41,6 +41,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
     <!-- Scroll Timeline -->
     <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
 
@@ -141,17 +145,18 @@
                   <a class="nav-link" href="#Projects-section">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact-section">Contact</a>
-                </li>
-                <li class="nav-item">
                   <a
                     class="nav-link"
                     href="./casestudy.html"
                     target="_blank"
                     rel="noopener"
-                    >Case Study</a
+                    >Case</a
                   >
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-section">Contact</a>
+                </li>
+
                 <li class="nav-item">
                   <a
                     class="btn btn-dark btn-sm"
@@ -185,7 +190,7 @@
         </div>
       </section> -->
 
-      <!-- Hero Section -->
+      <!-- Landing Section -->
       <section class="py-5 custom-home-section" id="home-section">
         <div
           class="container h-100 d-flex align-items-center justify-content-center"
@@ -202,7 +207,7 @@
 
       <hr class="divider" />
 
-      <!-- Hero Section 2  -->
+      <!-- Hero Section  -->
       <div class="container">
         <div class="about-section" data-aos="fade-up" data-aos-duration="3000">
           <div class="row align-items-center profile-section">
@@ -628,6 +633,8 @@
         </div>
       </section>
 
+      <!-- horizontal scroll -->
+
       <!-- Skills Section -->
       <section class="container col-lg-10 py-5">
         <div class="skills-section" data-aos="fade-up" data-aos-duration="3000">
@@ -646,7 +653,7 @@
               class="col-md-4 d-flex justify-content-center align-items-center"
             >
               <!-- <h1 class="display-1 mb-4">🧰</h1> -->
-              <i class="feature-icon2 bi bi-backpack4"></i>
+              <i class="feature-icon2 bi bi-palette2"></i>
             </div>
           </div>
           <div class="row">
@@ -798,10 +805,14 @@
 
       <!-- Project Section -->
       <section class="container" id="Projects-section">
-        <div class="project-start" data-aos="fade-up" data-aos-duration="3000">
-          <h2 class="display-5 mb-2 mb-md-2 text-center">Projects 💼</h2>
-          <div class="row justify-content-center">
-            <div class="col-10">
+        <div
+          class="projects-section"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <div class="row">
+            <div class="col-md-8 order-md-2">
+              <h2 class="display-5 mb-4">Projects</h2>
               <p class="lead text text-muted mb-5">
                 The
                 <a
@@ -817,19 +828,24 @@
                 Test-Driven Development.
               </p>
             </div>
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center order-md-1"
+            >
+              <i class="feature-icon2 bi bi-suitcase-lg"></i>
+            </div>
           </div>
-          <hr class="w-50 mx-auto mb-3 border-dark-subtle" />
           <img
             class="scroll-image"
-            src="./src/pics/moving-hand-left2.png"
+            alt="scroll to left to left"
+            data-bs-toggle="popover"
+            title="Scroll to the left to see more projects"
+            src="./src/pics/scrolling_hand.svg"
             alt="scroll to left to left"
           />
         </div>
+
         <div class="container" data-aos="fade-up" data-aos-duration="3000">
-          <div
-            class="row flex-row flex-nowrap"
-            style="overflow-x: auto; overflow-y: hidden"
-          >
+          <div class="row flex-row flex-nowrap scrollable-row">
             <!-- Card 1 Js app-->
             <div class="col-lg-6 mb-4">
               <div class="card">
@@ -837,6 +853,8 @@
                   src="./src/pics/project-pics/JS-app.png"
                   alt=""
                   class="card-img-top"
+                  data-bs-toggle="popover"
+                  title="Scroll to the left to see more projects"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Pokemon Js App</h5>
@@ -850,19 +868,21 @@
                       href="https://bobs83.github.io/simple-js-app/Index.html"
                       title="Live link to Pokemon JS App"
                       target="_blank"
+                      rel="noopener"
                     >
                       <img
                         class="card-icon pulse"
-                        src="./src/pics/live-icon.png"
+                        src="./src/pics/live-card-icon.svg"
                         alt="live-icon"
                     /></a>
                     <a
                       href="https://github.com/bobs83/simple-js-app?tab=readme-ov-file"
                       title="GitHub link to Pokemon JS App"
                       target="_blank"
+                      rel="noopener"
                       ><img
                         class="card-icon flap-animation"
-                        src="./src/pics/github-icon.png"
+                        src="./src/pics/github-card-icon.svg"
                         alt="github-icon"
                     /></a>
                   </div>
@@ -899,7 +919,7 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <img
-                  src="src/pics/project-pics/react.png"
+                  src="src/case/Myflix-app-full-view.jpg"
                   alt=""
                   class="card-img-top"
                 />
@@ -916,26 +936,33 @@
                       href="https://spiffy-starship-cff8a2.netlify.app"
                       title="Live link to Myflix-Client"
                       target="_blank"
+                      rel="noopener"
                       ><img
                         class="card-icon pulse"
-                        src="./src/pics/live-icon.png"
+                        src="./src/pics/live-card-icon.svg"
                         alt="live-icon"
                     /></a>
                     <a
                       href="https://github.com/bobs83/myflix-client"
                       title="GitHub link to Myflix-Client"
                       target="_blank"
+                      rel="noopener"
                       ><img
-                        class="card-icon clapperboard-animation"
-                        src="./src/pics/github-icon.png"
+                        class="card-icon"
+                        src="./src/pics/github-card-icon.svg"
                         alt="github-icon"
                     /></a>
                     <a
                       href="./casestudy.html"
-                      class="btn btn-outline-secondary btn-sm"
-                      title="See Case Study"
-                      >See Case Study</a
-                    >
+                      title="Click to see the case study"
+                      target="_blank"
+                      data-bs-toggle="popover"
+                      title="Case Study of Myflix-Client"
+                      ><img
+                        class="card-icon-case-study clapperboard-animation"
+                        src="./src/pics/icon-card-case_study.svg"
+                        alt="github-icon"
+                    /></a>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
@@ -994,7 +1021,7 @@
                     >
                       <img
                         class="card-icon pulse"
-                        src="./src/pics/live-icon.png"
+                        src="./src/pics/live-card-icon.svg"
                         alt="live-icon"
                     /></a>
                     <a
@@ -1004,7 +1031,7 @@
                       rel="noopener"
                       ><img
                         class="card-icon flap-animation"
-                        src="./src/pics/github-icon.png"
+                        src="./src/pics/github-card-icon.svg"
                         alt="github-icon"
                     /></a>
                   </div>
@@ -1045,7 +1072,7 @@
             <div class="col-lg-6 mb-4">
               <div class="card">
                 <img
-                  src="./src/pics/project-pics/angular.png"
+                  src="./src/case/login-view.jpg"
                   alt=""
                   class="card-img-top"
                 />
@@ -1063,7 +1090,7 @@
                       rel="noopener"
                       ><img
                         class="card-icon pulse"
-                        src="./src/pics/live-icon.png"
+                        src="./src/pics/live-card-icon.svg"
                         alt="live-icon"
                     /></a>
                     <a
@@ -1073,7 +1100,7 @@
                       rel="noopener"
                       ><img
                         class="card-icon flap-animation"
-                        src="./src/pics/github-icon.png"
+                        src="./src/pics/github-card-icon.svg"
                         alt="github-icon"
                     /></a>
                   </div>
@@ -1131,7 +1158,7 @@
                       rel="noopener"
                       ><img
                         class="card-icon pulse"
-                        src="./src/pics/live-icon.png"
+                        src="./src/pics/live-card-icon.svg"
                         alt="live-icon pulse"
                     /></a>
                     <a
@@ -1141,7 +1168,7 @@
                       rel="noopener"
                       ><img
                         class="card-icon flap-animation"
-                        src="./src/pics/github-icon.png"
+                        src="./src/pics/github-card-icon.svg"
                         alt="github-icon"
                     /></a>
                   </div>
@@ -1194,7 +1221,7 @@
                       rel="noopener"
                       ><img
                         class="card-icon pulse"
-                        src="./src/pics/live-icon.png"
+                        src="./src/pics/live-card-icon.svg"
                         alt="live-image"
                     /></a>
                     <a
@@ -1204,7 +1231,7 @@
                       rel="noopener"
                       ><img
                         class="card-icon flap-animation"
-                        src="./src/pics/github-icon.png"
+                        src="./src/pics/github-card-icon.svg"
                         alt="live-image"
                     /></a>
                   </div>
@@ -1666,6 +1693,31 @@
                 >
               </li>
               <li>
+                Icon for Card Antenna:
+                <a
+                  href="https://thenounproject.com/icon/live-3400442/"
+                  title="Icon Finder"
+                  >The Noun Project</a
+                >
+              </li>
+              <li>
+                Icon for Card Github
+                <a
+                  href="https://thenounproject.com/icon/github-4289652/"
+                  title="Icon Finder"
+                  >The Noun Project</a
+                >
+              </li>
+              <li>
+                Icon for Case Study:
+                <a
+                  href="https://thenounproject.com/icon/case-study-6948033/"
+                  title="Icon Finder"
+                  >The Noun Project</a
+                >
+              </li>
+
+              <li>
                 Moving hand left:
                 <a
                   href="https://thenounproject.com/icon/swipe-left-hand-1025774/"
@@ -1713,9 +1765,13 @@
       </div>
     </div>
     <!-- Optional JavaScript -->
+
+    <!-- AOS animation -->
     <script>
       AOS.init();
     </script>
+
+    <!-- boostrap popover -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var popoverTriggerList = [].slice.call(
@@ -1727,6 +1783,28 @@
             html: true,
           });
         });
+      });
+    </script>
+
+    <!-- scroll trigger  -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      let horizontalSection = document.querySelector(".horizontal");
+
+      console.log(horizontalSection.scrollWidth);
+
+      gsap.to(".horizontal", {
+        x: () => horizontalSection.scrollWidth * -1,
+        xPercent: 100,
+        scrollTrigger: {
+          trigger: ".horizontal",
+          start: "center center",
+          end: "+=2000px",
+          pin: "#horizontal-scoll",
+          scrub: true,
+          invalidateOnRefresh: true,
+        },
       });
     </script>
   </body>

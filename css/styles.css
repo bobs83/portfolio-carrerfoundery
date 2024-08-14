@@ -173,9 +173,15 @@ list-inline {
 	margin-top: 4em;
 } */
 
+.scrollable-row {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 
 .card {
   height: 100%;
+	
 }
 
 .card-img-top {
@@ -193,13 +199,15 @@ list-inline {
 }
 
 .card-icon {
-  width: 50px;
-  height: 50px;
-  margin: auto;
+  width: 20px;
+  height: 20px;
+	margin: 20px;
 }
 
-.card-icon:hover {
-  transform: scale(1.1);
+.card-icon-case-study {
+  width: 24px;
+  height: 24px;
+	margin: 20px;
 }
 
 .card-icongif {
@@ -224,11 +232,10 @@ list-inline {
 }
 
 .scroll-image {
-  left: 100px;
+	height: 40px;
+
   position: relative;
-  height: 40px;
-  width: 40px;
-	margin-bottom: 1em;
+	margin-bottom: 3em;
   animation: fadeInMoveLeftFadeOut 10s ease-in-out infinite;
 }
 
@@ -662,7 +669,7 @@ list-inline {
  /* Special button code black  */
  .butn2:link,
  .butn2:visited {
-		display: inline-flex;
+	display: inline-flex;
 	 align-items: center;
 	 justify-content: center;
 	 font-size: 1rem; /* Adjusted font size */
@@ -732,9 +739,9 @@ list-inline {
 
  @keyframes shake {
   0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
   100% { transform: translateX(0); }
 }
 
