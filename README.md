@@ -21,6 +21,5 @@ Feel free to reach out to me on any of the following platforms:
 - [LinkedIn](https://www.linkedin.com/in/bobbyinberlin/)
 - [Website](https://workwithbobby.today)
 - [Instagram](https://www.instagram.com/bobby.inberlin/)
-- 
 
 Thank you for visiting my portfolio! I look forward to connecting with you.
