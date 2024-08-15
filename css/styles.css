@@ -698,7 +698,7 @@ list-inline {
 	 position: relative;
 	 overflow: hidden;
 	 transition: all 0.3s ease-in-out;
-	 margin: 12px;
+	 margin-top: 12px;
  }
  .butn2::before {
 	 background: #fff;
