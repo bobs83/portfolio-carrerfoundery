@@ -33,6 +33,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
+
+    <!-- Devicon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- My JS -->
@@ -76,8 +84,6 @@
   <body>
     <div class="scroll-watcher"></div>
     <div class="page-wrapper">
-      <header></header>
-
       <!-- OLD Hero Section -->
       <!-- <section class="home-section" id="home-section2">
         <div class="hero-right">
@@ -112,7 +118,6 @@
         </div>
       </section>
 
-      <!-- <hr class="divider" /> -->
       <!-- Navbar -->
       <nav
         class="page-header navbar navbar-expand-lg navbar-light bg-light sticky-top custom-navbar"
@@ -210,16 +215,29 @@
       </nav>
 
       <!-- Hero Section  -->
-      <div class="container">
+      <section class="mb-5">
         <div class="about-section" data-aos="fade-up" data-aos-duration="3000">
           <div class="row align-items-center profile-section">
             <div class="col-md-6">
+              <div>
+                <div
+                  class="col-md-6 d-flex d-md-none justify-content-center align-items-center"
+                >
+                  <img
+                    src="./src/pics/hero-image-profile_30.jpg"
+                    alt="Bobby Singh"
+                    class="hero-image"
+                    title="Picture of Webdeveloper Bobby in Berlin"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
               <h1>
                 I am Bobby,
                 <br />
                 Your Fullstack Webdeveloper
               </h1>
-              <p>
+              <p class="py-3">
                 I am a freshly certified full-stack developer in the vibrant
                 heart 🖤 of Berlin. My journey in coding is fueled by a
                 fascination with crafting solutions that are both technically
@@ -234,7 +252,22 @@
               >
               <a href="#contact-form" class="butn2 butn2__new">Contact Me</a>
               <div class="mt-3 social-icons">
-                <a href="https://github.com/bobs83" target="_blank"
+                <ul class="my-tech-stack">
+                  <li><i class="devicon-javascript-plain"></i></li>
+                  <li><i class="devicon-typescript-plain"></i></li>
+                  <li><i class="devicon-react-original-wordmark"></i></li>
+                  <li><i class="devicon-angularjs-plain"></i></li>
+                  <li><i class="devicon-bootstrap-plain-wordmark"></i></li>
+                  <li><i class="devicon-nodejs-plain-wordmark"></i></li>
+                  <li><i class="devicon-express-original-wordmark"></i></li>
+                  <li><i class="devicon-mongodb-plain-wordmark"></i></li>
+                  <li>
+                    <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                  </li>
+                  <li><i class="devicon-googlecloud-plain-wordmark"></i></li>
+                  <li><i class="devicon-rest-plain-wordmark"></i></li>
+                </ul>
+                <!-- <a href="https://github.com/bobs83" target="_blank"
                   ><i class="bi bi-github"></i
                 ></a>
                 <a href="https://linkedin.com/in/bobbyinberlin" target="_blank"
@@ -244,7 +277,7 @@
                   href="https://www.instagram.com/bobby.inberlin/"
                   target="_blank"
                   ><i class="bi bi-instagram"></i
-                ></a>
+                ></a> -->
               </div>
             </div>
             <div
@@ -260,9 +293,7 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <hr class="divider" />
+      </section>
 
       <!-- About Section -->
       <!-- <section class="about-section container py-5" id="about-section">
@@ -334,61 +365,83 @@
       <!-- New about me Section -->
       <section class="container col-lg-10 py-5">
         <div class="about-section" data-aos="fade-up" data-aos-duration="3000">
-          <div class="row">
-            <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
-              <i class="feature-icon bi bi-person-arms-up"></i>
-              <h5 class="fw-bold mt-2 mb-2">Backround</h5>
-              <p class="fw-light">
-                I’ve worn many hats, bridging technical expertise with B2B and
-                B2C roles. My background in tech support and software quality,
-                along with a lifelong interest in technology, enables me to
-                quickly acquire and implement new skills 🎯.
+          <div class="row mb-4">
+            <div class="col-md-8">
+              <h2 class="display-5 mb-4">About</h2>
+              <p class="lead text-muted mb-5">
+                I am a versatile web developer specializing in both frontend and
+                backend development, with a focus on creating responsive,
+                user-friendly web applications. My skill set spans across
+                various technologies and frameworks, ensuring high-quality,
+                secure, and efficient solutions.
               </p>
             </div>
-            <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
-              <i class="feature-icon bi bi-person-walking"></i>
-              <h5 class="fw-bold mt-2 mb-2">Transition</h5>
-              <p class="fw-light">
-                Working with a SaaS solution sparked⚡️ my transition into web
-                development. This role, combined with my customer-focused
-                background, highlighted the opportunity to merge my technical
-                skills with a user-centric approach.
-              </p>
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <i class="feature-icon2 bi bi-info-circle display-3"></i>
             </div>
-            <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
-              <i class="feature-icon bi bi-chat-heart"></i>
-              <h5 class="fw-bold mt-2 mb-2">Downtime</h5>
-              <p class="fw-light">
-                When not coding, I enjoy curating playlists 🎶 on
-                <a
-                  href="https://open.spotify.com/user/bobs83?si=4sCSnnxLTOiAlcchM4UwYg"
-                  target="_blank"
-                  rel="noopener"
-                  title="Bobbys Spotify Profile"
-                  >Spotify</a
-                >, moving my body to rythmic
-                <a
-                  href="https://www.ride-berlin.com/"
-                  target="_blank"
-                  rel="noopener"
-                  title="Party on bike check it out"
-                  >Cycling</a
-                >
-                and
-                <a
-                  href="https://www.lesmills.com/workouts/fitness-classes/bodypump/"
-                  target="_blank"
-                  title="Find out what bodypump is"
-                  >Body-Pump 🏋️‍♀️ </a
-                >, and engaging in the art of public speaking with
-                <a
-                  href="https://www.toastmasters.org"
-                  target="_blank"
-                  rel="noopener"
-                  title="Toastmasters Official Website"
-                  >Toastmasters 🥂</a
-                >.
-              </p>
+          </div>
+          <div
+            class="skills-section"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div class="row">
+              <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
+                <i class="feature-icon bi bi-person-arms-up display-4"></i>
+                <h5 class="fw-bold mt-2 mb-2">Background</h5>
+                <p class="fw-light">
+                  I’ve worn many hats, bridging technical expertise with B2B and
+                  B2C roles. My background in tech support and software quality,
+                  along with a lifelong interest in technology, enables me to
+                  quickly acquire and implement new skills 🎯.
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
+                <i class="feature-icon bi bi-person-walking display-4"></i>
+                <h5 class="fw-bold mt-2 mb-2">Transition</h5>
+                <p class="fw-light">
+                  Working with a SaaS solution sparked⚡️ my transition into web
+                  development. This role, combined with my customer-focused
+                  background, highlighted the opportunity to merge my technical
+                  skills with a user-centric approach.
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
+                <i class="feature-icon bi bi-chat-heart display-4"></i>
+                <h5 class="fw-bold mt-2 mb-2">Downtime</h5>
+                <p class="fw-light">
+                  When not coding, I enjoy curating playlists 🎶 on
+                  <a
+                    href="https://open.spotify.com/user/bobs83?si=4sCSnnxLTOiAlcchM4UwYg"
+                    target="_blank"
+                    rel="noopener"
+                    title="Bobby's Spotify Profile"
+                    >Spotify</a
+                  >, moving my body to rhythmic
+                  <a
+                    href="https://www.ride-berlin.com/"
+                    target="_blank"
+                    rel="noopener"
+                    title="Party on a bike, check it out"
+                    >Cycling</a
+                  >, and
+                  <a
+                    href="https://www.lesmills.com/workouts/fitness-classes/bodypump/"
+                    target="_blank"
+                    title="Find out what Bodypump is"
+                    >Body-Pump 🏋️‍♀️ </a
+                  >. I also engage in the art of public speaking with
+                  <a
+                    href="https://www.toastmasters.org"
+                    target="_blank"
+                    rel="noopener"
+                    title="Toastmasters Official Website"
+                    >Toastmasters 🥂</a
+                  >.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -638,7 +691,7 @@
       <!-- horizontal scroll -->
 
       <!-- Skills Section -->
-      <section class="container col-lg-10 py-5">
+      <section class="container col-md-10 py-5">
         <div class="skills-section" data-aos="fade-up" data-aos-duration="3000">
           <div class="row mb-4">
             <div class="col-md-8">
@@ -803,17 +856,30 @@
 					</div>
 					</section> -->
 
-      <hr class="divider" />
+      <!-- New Image Section -->
+      <section class="col-lg-12">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+            <div class="custom-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Description of the image"
+                class="custom-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Project Section -->
-      <section class="container" id="Projects-section">
+      <section class="container col-md-10 py-5" id="Projects-section">
         <div
           class="projects-section"
           data-aos="fade-up"
           data-aos-duration="3000"
         >
           <div class="row">
-            <div class="col-md-8 order-md-2">
+            <div class="col-md-7 order-md-2">
               <h2 class="display-5 mb-4">Projects</h2>
               <p class="lead text text-muted mb-5">
                 The
@@ -830,449 +896,463 @@
                 Test-Driven Development.
               </p>
             </div>
+
             <div
-              class="col-md-4 d-flex justify-content-center align-items-center order-md-1"
+              class="col-md-4 d-flex justify-content-center align-items-center"
             >
-              <i class="feature-icon2 bi bi-suitcase-lg"></i>
+              <i class="feature-icon2 bi bi-folder"></i>
             </div>
           </div>
+
           <img
             class="scroll-image"
             alt="scroll to left to left"
             data-bs-toggle="popover"
             title="Scroll to the left to see more projects"
             src="./src/pics/scrolling_hand.svg"
-            alt="scroll to left to left"
           />
         </div>
 
-        <div class="container" data-aos="fade-up" data-aos-duration="3000">
-          <div class="row flex-row flex-nowrap scrollable-row">
-            <!-- Card 1 Js app-->
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="./src/pics/project-pics/JS-app.png"
-                  alt=""
-                  class="card-img-top"
-                  data-bs-toggle="popover"
-                  title="Scroll to the left to see more projects"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Pokemon Js App</h5>
-                  <p class="card-text mb-3">
-                    A JavaScript-based web app focused on Pokémon, utilizing
-                    HTML, CSS, and JavaScript to fetch and present detailed data
-                    from an external API.
-                  </p>
-                  <div class="mb-3">
-                    <a
-                      href="https://bobs83.github.io/simple-js-app/Index.html"
-                      title="Live link to Pokemon JS App"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      <img
-                        class="card-icon pulse"
-                        src="./src/pics/live-card-icon.svg"
-                        alt="live-icon"
-                    /></a>
-                    <a
-                      href="https://github.com/bobs83/simple-js-app?tab=readme-ov-file"
-                      title="GitHub link to Pokemon JS App"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon flap-animation"
-                        src="./src/pics/github-card-icon.svg"
-                        alt="github-icon"
-                    /></a>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Responsive Design</li>
-                        <li class="list-group-item">Fetch from API</li>
-                        <li class="list-group-item">Browse Pokemons</li>
-                      </ul>
-                      <br />
+        <!-- Cards Section -->
+        <section>
+          <div
+            class="container col-lg-11"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div class="row flex-row flex-nowrap scrollable-row">
+              <!-- Card 1 Js app-->
+              <div class="col-lg-6 mb-4">
+                <div class="card">
+                  <img
+                    src="./src/pics/project-pics/JS-app.png"
+                    alt=""
+                    class="card-img-top"
+                    data-bs-toggle="popover"
+                    title="Scroll to the left to see more projects"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pokemon Js App</h5>
+                    <p class="card-text mb-3">
+                      A JavaScript-based web app focused on Pokémon, utilizing
+                      HTML, CSS, and JavaScript to fetch and present detailed
+                      data from an external API.
+                    </p>
+                    <div class="mb-3">
+                      <a
+                        href="https://bobs83.github.io/simple-js-app/Index.html"
+                        title="Live link to Pokemon JS App"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="card-icon pulse"
+                          src="./src/pics/live-card-icon.svg"
+                          alt="live-icon"
+                      /></a>
+                      <a
+                        href="https://github.com/bobs83/simple-js-app?tab=readme-ov-file"
+                        title="GitHub link to Pokemon JS App"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon flap-animation"
+                          src="./src/pics/github-card-icon.svg"
+                          alt="github-icon"
+                      /></a>
                     </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Responsive Design</li>
+                          <li class="list-group-item">Fetch from API</li>
+                          <li class="list-group-item">Browse Pokemons</li>
+                        </ul>
+                        <br />
+                      </div>
 
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">
-                        Technologies
-                      </h6>
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Technologies
+                        </h6>
 
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">HTML</li>
-                        <li class="list-group-item">CSS</li>
-                        <li class="list-group-item">JavaScript</li>
-                        <li class="list-group-item">jQuery</li>
-                        <li class="list-group-item">Bootstrap</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 2 React -->
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="./src/pics/project-pics/react.jpg"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Myflix- Client (React)</h5>
-                  <p class="card-text mb-3">
-                    A myFlix React App is a client-side, React-built platform
-                    offering detailed movie information. Users can create
-                    profiles, save favorites, and explore movies, part of a
-                    full-stack MERN application
-                  </p>
-                  <div class="mb-3">
-                    <a
-                      href="https://spiffy-starship-cff8a2.netlify.app"
-                      title="Live link to Myflix-Client"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon pulse"
-                        src="./src/pics/live-card-icon.svg"
-                        alt="live-icon"
-                    /></a>
-                    <a
-                      href="https://github.com/bobs83/myflix-client"
-                      title="GitHub link to Myflix-Client"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon"
-                        src="./src/pics/github-card-icon.svg"
-                        alt="github-icon"
-                    /></a>
-                    <a
-                      href="./casestudy.html"
-                      title="Click to see the case study"
-                      target="_blank"
-                      data-bs-toggle="popover"
-                      title="Case Study of Myflix-Client"
-                      ><img
-                        class="card-icon-case-study clapperboard-animation"
-                        src="./src/pics/icon-card-case_study.svg"
-                        alt="github-icon"
-                    /></a>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          Access Movie Information
-                        </li>
-                        <li class="list-group-item">User Authentication</li>
-                        <li class="list-group-item">Manage Favorites</li>
-                        <li class="list-group-item">Manage Profile Data</li>
-                      </ul>
-                      <br />
-                    </div>
-
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">
-                        Technologies
-                      </h6>
-
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">React, Bootstrap</li>
-                        <li class="list-group-item">Express.js, Node.js</li>
-                        <li class="list-group-item">MongoDB</li>
-                        <li class="list-group-item">Passport.js</li>
-                        <li class="list-group-item">Parcel</li>
-                      </ul>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">HTML</li>
+                          <li class="list-group-item">CSS</li>
+                          <li class="list-group-item">JavaScript</li>
+                          <li class="list-group-item">jQuery</li>
+                          <li class="list-group-item">Bootstrap</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Card 3 Recat-native -->
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="./src/pics/project-pics/react-native.png"
-                  alt=""
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Chat App (React-native)</h5>
-                  <p class="card-text mb-3">
-                    React Native App - A real-time chat app allowing users to
-                    exchange messages, share photos, videos, and their location
-                    instantly.
-                  </p>
-                  <div class="mb-3">
-                    <a
-                      href="https://github.com/bobs83/chat-app"
-                      placeholder="Live link to Chat App"
-                      target="_blank"
-                      rel="noopener"
-                      title="Live link to Chat App"
-                    >
-                      <img
-                        class="card-icon pulse"
-                        src="./src/pics/live-card-icon.svg"
-                        alt="live-icon"
-                    /></a>
-                    <a
-                      href="https://github.com/bobs83/chat-app?tab=readme-ov-file#running-the-project"
-                      title="GitHub link to running the Chat App"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon flap-animation"
-                        src="./src/pics/github-card-icon.svg"
-                        alt="github-icon"
-                    /></a>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Share Pics and Videos</li>
-                        <li class="list-group-item">
-                          Photo Libary Integration
-                        </li>
-                        <li class="list-group-item">Share location</li>
-                        <li class="list-group-item">Real-time Chat</li>
-                        <li class="list-group-item">Offline Message Access</li>
-                      </ul>
-                      <br />
+              <!-- Card 2 React -->
+              <div class="col-lg-6 mb-4">
+                <div class="card">
+                  <img
+                    src="./src/pics/project-pics/react.jpg"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Myflix- Client (React)</h5>
+                    <p class="card-text mb-3">
+                      A myFlix React App is a client-side, React-built platform
+                      offering detailed movie information. Users can create
+                      profiles, save favorites, and explore movies, part of a
+                      full-stack MERN application
+                    </p>
+                    <div class="mb-3">
+                      <a
+                        href="https://spiffy-starship-cff8a2.netlify.app"
+                        title="Live link to Myflix-Client"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon pulse"
+                          src="./src/pics/live-card-icon.svg"
+                          alt="live-icon"
+                      /></a>
+                      <a
+                        href="https://github.com/bobs83/myflix-client"
+                        title="GitHub link to Myflix-Client"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon"
+                          src="./src/pics/github-card-icon.svg"
+                          alt="github-icon"
+                      /></a>
+                      <a
+                        href="./casestudy.html"
+                        title="Click to see the case study"
+                        target="_blank"
+                        data-bs-toggle="popover"
+                        title="Case Study of Myflix-Client"
+                        ><img
+                          class="card-icon-case-study clapperboard-animation"
+                          src="./src/pics/icon-card-case_study.svg"
+                          alt="github-icon"
+                      /></a>
                     </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            Access Movie Information
+                          </li>
+                          <li class="list-group-item">User Authentication</li>
+                          <li class="list-group-item">Manage Favorites</li>
+                          <li class="list-group-item">Manage Profile Data</li>
+                        </ul>
+                        <br />
+                      </div>
 
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">
-                        Technologies
-                      </h6>
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Technologies
+                        </h6>
 
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">React Native</li>
-                        <li class="list-group-item">Google Firestore</li>
-                        <li class="list-group-item">Expo Cli</li>
-                        <li class="list-group-item">Node.js</li>
-                        <li class="list-group-item">Gifted Chat</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 4 Angular -->
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="./src/pics/project-pics/angular.jpg"
-                  alt=""
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Myflix-client (Angular)</h5>
-                  <p class="card-text mb-3">
-                    This Angular app connects to a custom server-side REST API
-                    and database, offering access to a movie details.
-                  </p>
-                  <div class="mb-3">
-                    <a
-                      href="https://bobs83.github.io/myFlix-Angular-client/welcome"
-                      title="Live link to Myflix-Client"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon pulse"
-                        src="./src/pics/live-card-icon.svg"
-                        alt="live-icon"
-                    /></a>
-                    <a
-                      href="https://github.com/bobs83/myFlix-Angular-client"
-                      title="GitHub link to Myflix-Client"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon flap-animation"
-                        src="./src/pics/github-card-icon.svg"
-                        alt="github-icon"
-                    /></a>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">User Registration</li>
-                        <li class="list-group-item">View Movie Details</li>
-                        <li class="list-group-item">Save Movie Favorites</li>
-                        <li class="list-group-item">Edit User Profile</li>
-                      </ul>
-                      <br />
-                    </div>
-
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">
-                        Technologies
-                      </h6>
-
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Angular</li>
-                        <li class="list-group-item">Node.js</li>
-                        <li class="list-group-item">Angular Material</li>
-                        <li class="list-group-item">Typescript</li>
-                        <li class="list-group-item">Typedoc</li>
-                      </ul>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">React, Bootstrap</li>
+                          <li class="list-group-item">Express.js, Node.js</li>
+                          <li class="list-group-item">MongoDB</li>
+                          <li class="list-group-item">Passport.js</li>
+                          <li class="list-group-item">Parcel</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Card 5 Meet n Code-->
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="./src/pics/project-pics/meet.png"
-                  alt=""
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Meet N Code (Serveless PWA and TDD testing)
-                  </h5>
-                  <p class="card-text mb-3">
-                    Created a serverless React PWA applying TDD practices,
-                    integrated with Google Calendar API for event retrieval.
-                  </p>
-                  <div class="mb-3">
-                    <a
-                      href="https://bobs83.github.io/meetberlin_app/"
-                      title="Live link to Meet N Code"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon pulse"
-                        src="./src/pics/live-card-icon.svg"
-                        alt="live-icon pulse"
-                    /></a>
-                    <a
-                      href="https://github.com/bobs83/meetberlin_app?tab=readme-ov-file"
-                      title="GitHub link to Meet N Code"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon flap-animation"
-                        src="./src/pics/github-card-icon.svg"
-                        alt="github-icon"
-                    /></a>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Event Filtering</li>
-                        <li class="list-group-item">Detailed Event Views</li>
-                        <li class="list-group-item">Offline Functionality</li>
-                        <li class="list-group-item">Home Screen Shortcut</li>
-                        <li class="list-group-item">Data Visualization</li>
-                      </ul>
-                      <br />
+              <!-- Card 3 Recat-native -->
+              <div class="col-lg-6 mb-4">
+                <div class="card">
+                  <img
+                    src="./src/pics/project-pics/react-native.png"
+                    alt=""
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Chat App (React-native)</h5>
+                    <p class="card-text mb-3">
+                      React Native App - A real-time chat app allowing users to
+                      exchange messages, share photos, videos, and their
+                      location instantly.
+                    </p>
+                    <div class="mb-3">
+                      <a
+                        href="https://github.com/bobs83/chat-app"
+                        placeholder="Live link to Chat App"
+                        target="_blank"
+                        rel="noopener"
+                        title="Live link to Chat App"
+                      >
+                        <img
+                          class="card-icon pulse"
+                          src="./src/pics/live-card-icon.svg"
+                          alt="live-icon"
+                      /></a>
+                      <a
+                        href="https://github.com/bobs83/chat-app?tab=readme-ov-file#running-the-project"
+                        title="GitHub link to running the Chat App"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon flap-animation"
+                          src="./src/pics/github-card-icon.svg"
+                          alt="github-icon"
+                      /></a>
                     </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Share Pics and Videos</li>
+                          <li class="list-group-item">
+                            Photo Libary Integration
+                          </li>
+                          <li class="list-group-item">Share location</li>
+                          <li class="list-group-item">Real-time Chat</li>
+                          <li class="list-group-item">
+                            Offline Message Access
+                          </li>
+                        </ul>
+                        <br />
+                      </div>
 
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">
-                        Technologies
-                      </h6>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">OAuth Login</li>
-                        <li class="list-group-item">Google Cal. Integration</li>
-                        <li class="list-group-item">Puppeteer</li>
-                        <li class="list-group-item">JEST</li>
-                        <li class="list-group-item">Cucumber Gherkin</li>
-                      </ul>
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Technologies
+                        </h6>
+
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">React Native</li>
+                          <li class="list-group-item">Google Firestore</li>
+                          <li class="list-group-item">Expo Cli</li>
+                          <li class="list-group-item">Node.js</li>
+                          <li class="list-group-item">Gifted Chat</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Card 6  Api -->
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img src="./src/pics/api.svg" alt="" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">MyFlix Server (API)</h5>
-                  <p class="card-text mb-3">
-                    A server-side component for myFlix, built with Node.js,
-                    Express, and MongoDB, offering a robust RESTful API for
-                    efficient movie data management.
-                  </p>
-                  <div class="mb-3">
-                    <a
-                      href="https://bobs83.github.io/movie_api/public/documentation.html"
-                      title="Live link to MyFlix Api documentation"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon pulse"
-                        src="./src/pics/live-card-icon.svg"
-                        alt="live-image"
-                    /></a>
-                    <a
-                      href="https://github.com/bobs83/movie_api"
-                      title="GitHub link to MyFlix Server"
-                      target="_blank"
-                      rel="noopener"
-                      ><img
-                        class="card-icon flap-animation"
-                        src="./src/pics/github-card-icon.svg"
-                        alt="live-image"
-                    /></a>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Fetch All Movies</li>
-                        <li class="list-group-item">Detailed Movie Info</li>
-                        <li class="list-group-item">User Profile Management</li>
-                        <li class="list-group-item">Account Deletion</li>
-                      </ul>
-                      <br />
+              <!-- Card 4 Angular -->
+              <div class="col-lg-6 mb-4">
+                <div class="card">
+                  <img
+                    src="./src/pics/project-pics/angular.jpg"
+                    alt=""
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Myflix-client (Angular)</h5>
+                    <p class="card-text mb-3">
+                      This Angular app connects to a custom server-side REST API
+                      and database, offering access to a movie details.
+                    </p>
+                    <div class="mb-3">
+                      <a
+                        href="https://bobs83.github.io/myFlix-Angular-client/welcome"
+                        title="Live link to Myflix-Client"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon pulse"
+                          src="./src/pics/live-card-icon.svg"
+                          alt="live-icon"
+                      /></a>
+                      <a
+                        href="https://github.com/bobs83/myFlix-Angular-client"
+                        title="GitHub link to Myflix-Client"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon flap-animation"
+                          src="./src/pics/github-card-icon.svg"
+                          alt="github-icon"
+                      /></a>
                     </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">User Registration</li>
+                          <li class="list-group-item">View Movie Details</li>
+                          <li class="list-group-item">Save Movie Favorites</li>
+                          <li class="list-group-item">Edit User Profile</li>
+                        </ul>
+                        <br />
+                      </div>
 
-                    <div class="col-sm-6">
-                      <h6 class="card-subtitle mb-2 text-muted">
-                        Technologies
-                      </h6>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Express</li>
-                        <li class="list-group-item">Mongoose, MongoDB</li>
-                        <li class="list-group-item">Passport-JWT, Bcrypt</li>
-                        <li class="list-group-item">JSON Web Token (JWT)</li>
-                        <li class="list-group-item">JSDoc</li>
-                        <li class="list-group-item">Postman</li>
-                      </ul>
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Technologies
+                        </h6>
+
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Angular</li>
+                          <li class="list-group-item">Node.js</li>
+                          <li class="list-group-item">Angular Material</li>
+                          <li class="list-group-item">Typescript</li>
+                          <li class="list-group-item">Typedoc</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 Meet n Code-->
+              <div class="col-lg-6 mb-4">
+                <div class="card">
+                  <img
+                    src="./src/pics/project-pics/meet.png"
+                    alt=""
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Meet N Code (Serveless PWA and TDD testing)
+                    </h5>
+                    <p class="card-text mb-3">
+                      Created a serverless React PWA applying TDD practices,
+                      integrated with Google Calendar API for event retrieval.
+                    </p>
+                    <div class="mb-3">
+                      <a
+                        href="https://bobs83.github.io/meetberlin_app/"
+                        title="Live link to Meet N Code"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon pulse"
+                          src="./src/pics/live-card-icon.svg"
+                          alt="live-icon pulse"
+                      /></a>
+                      <a
+                        href="https://github.com/bobs83/meetberlin_app?tab=readme-ov-file"
+                        title="GitHub link to Meet N Code"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon flap-animation"
+                          src="./src/pics/github-card-icon.svg"
+                          alt="github-icon"
+                      /></a>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Event Filtering</li>
+                          <li class="list-group-item">Detailed Event Views</li>
+                          <li class="list-group-item">Offline Functionality</li>
+                          <li class="list-group-item">Home Screen Shortcut</li>
+                          <li class="list-group-item">Data Visualization</li>
+                        </ul>
+                        <br />
+                      </div>
+
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Technologies
+                        </h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">OAuth Login</li>
+                          <li class="list-group-item">
+                            Google Cal. Integration
+                          </li>
+                          <li class="list-group-item">Puppeteer</li>
+                          <li class="list-group-item">JEST</li>
+                          <li class="list-group-item">Cucumber Gherkin</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6  Api -->
+              <div class="col-lg-6 mb-4">
+                <div class="card">
+                  <img src="./src/pics/api.svg" alt="" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">MyFlix Server (API)</h5>
+                    <p class="card-text mb-3">
+                      A server-side component for myFlix, built with Node.js,
+                      Express, and MongoDB, offering a robust RESTful API for
+                      efficient movie data management.
+                    </p>
+                    <div class="mb-3">
+                      <a
+                        href="https://bobs83.github.io/movie_api/public/documentation.html"
+                        title="Live link to MyFlix Api documentation"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon pulse"
+                          src="./src/pics/live-card-icon.svg"
+                          alt="live-image"
+                      /></a>
+                      <a
+                        href="https://github.com/bobs83/movie_api"
+                        title="GitHub link to MyFlix Server"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="card-icon flap-animation"
+                          src="./src/pics/github-card-icon.svg"
+                          alt="live-image"
+                      /></a>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Fetch All Movies</li>
+                          <li class="list-group-item">Detailed Movie Info</li>
+                          <li class="list-group-item">
+                            User Profile Management
+                          </li>
+                          <li class="list-group-item">Account Deletion</li>
+                        </ul>
+                        <br />
+                      </div>
+
+                      <div class="col-sm-6">
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Technologies
+                        </h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Express</li>
+                          <li class="list-group-item">Mongoose, MongoDB</li>
+                          <li class="list-group-item">Passport-JWT, Bcrypt</li>
+                          <li class="list-group-item">JSON Web Token (JWT)</li>
+                          <li class="list-group-item">JSDoc</li>
+                          <li class="list-group-item">Postman</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
 
       <hr class="divider" />
 
       <!-- Journey into webdevelopment section -->
-      <section class="container">
+      <!-- <section class="container">
         <div
           class="h-100 p-5 bg-body-tertiary border rounded-4"
           data-aos="fade-up"
@@ -1311,7 +1391,7 @@
             solutions, solve complex problems, and drive customer satisfaction.
           </p>
         </div>
-      </section>
+      </section> -->
 
       <hr class="divider" />
 
@@ -1493,6 +1573,20 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container col-lg-12 py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+            <div class="custom-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1629905679177-4c4e2623654f?q=80&w=2718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Description of the image"
+                class="custom-img"
+              />
             </div>
           </div>
         </div>
