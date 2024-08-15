@@ -23,7 +23,6 @@ section {
 
 h1{
   position: relative;
-  /* margin-bottom: 40px; */
   font-family: 'Oswald', sans-serif;
   font-size: 44px;
   text-transform: uppercase;
@@ -574,6 +573,10 @@ list-inline {
   background: linear-gradient(45deg, #1487eb, #00ff00); /* Define the gradient */
   -webkit-background-clip: text; /* Clip the background to the text */
   background-clip: text; /* Clip the background to the text */
+	position: relative;
+	z-index: 10;
+	display: inline-block;
+	visibility: visible;
 }
 
 .feature-icon2 {
@@ -695,6 +698,7 @@ list-inline {
 	 position: relative;
 	 overflow: hidden;
 	 transition: all 0.3s ease-in-out;
+	 margin: 12px;
  }
  .butn2::before {
 	 background: #fff;
