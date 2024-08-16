@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <!-- Required meta tags -->
+    <!-- Required meta tags -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
 
     <meta
       name="description"
@@ -24,9 +26,19 @@
       rel="stylesheet"
     />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="src/pics/favicon.svg" />
 
+    <!-- Bootstrap-icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css"
     <!-- Bootstrap-icons -->
     <link
       rel="stylesheet"
@@ -53,6 +65,19 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- My JS -->
@@ -61,6 +86,22 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Bobby in Berlin your Fullstack Web Developer</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -211,7 +252,7 @@
                   />
                 </div>
               </div>
-              <h1>
+              <h1 class="py-3">
                 I am Bobby,
                 <br />
                 Your Fullstack Webdeveloper
@@ -276,11 +317,22 @@
 
       <!-- New about me Section -->
       <section class="container col-md-10 py-5" id="about-section">
+      <section class="container col-md-10 py-5" id="about-section">
         <div class="about-section" data-aos="fade-up" data-aos-duration="3000">
           <div class="row mb-4">
             <div class="col-md-8">
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center d-md-none mb-3"
+              >
+                <i class="feature-icon2 bi bi-info-circle"></i>
+              </div>
               <h2 class="display-5 mb-4">About</h2>
               <p class="lead text-muted mb-5">
+                I’ve had a varied career, working in both technical roles and
+                customer-focused positions. My interest for technology and
+                experience in tech support and software quality have helped me
+                pick up new skills quickly. Below, I share how my journey has
+                evolved and some of the activities I enjoy when I’m not working.
                 I’ve had a varied career, working in both technical roles and
                 customer-focused positions. My interest for technology and
                 experience in tech support and software quality have helped me
@@ -289,8 +341,9 @@
               </p>
             </div>
             <div
-              class="col-md-4 d-flex justify-content-center align-items-center"
+              class="col-md-4 d-flex justify-content-center align-items-center d-none d-md-flex"
             >
+              <i class="feature-icon2 bi bi-info-circle"></i>
               <i class="feature-icon2 bi bi-info-circle"></i>
             </div>
           </div>
@@ -300,8 +353,8 @@
             data-aos-duration="3000"
           >
             <div class="row">
-              <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
-                <i class="feature-icon bi bi-person-arms-up display-4"></i>
+              <div class="col-md-6 col-lg-4 feature-item mb-4">
+                <i class="feature-icon bi bi-person-arms-up"></i>
                 <h5 class="fw-bold mt-2 mb-2">Background</h5>
                 <p class="fw-light">
                   I’ve worn many hats, bridging technical expertise with B2B and
@@ -310,8 +363,8 @@
                   quickly acquire and implement new skills 🎯.
                 </p>
               </div>
-              <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
-                <i class="feature-icon bi bi-person-walking display-4"></i>
+              <div class="col-md-6 col-lg-4 feature-item mb-4">
+                <i class="feature-icon bi bi-person-walking"></i>
                 <h5 class="fw-bold mt-2 mb-2">Transition</h5>
                 <p class="fw-light">
                   Working with a SaaS solution sparked⚡️ my transition into web
@@ -320,8 +373,8 @@
                   skills with a user-centric approach.
                 </p>
               </div>
-              <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
-                <i class="feature-icon bi bi-chat-heart display-4"></i>
+              <div class="col-md-6 col-lg-4 feature-item mb-4">
+                <i class="feature-icon bi bi-chat-heart"></i>
                 <h5 class="fw-bold mt-2 mb-2">Downtime</h5>
                 <p class="fw-light">
                   When not coding, I enjoy curating playlists 🎶 on
@@ -605,7 +658,12 @@
         <div class="skills-section" data-aos="fade-up" data-aos-duration="3000">
           <div class="row mb-4">
             <div class="col-md-8">
-              <h2 class="display-5 mb-4">Skills</h2>
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center d-md-none mt-3 mb-3"
+              >
+                <i class="feature-icon2 bi bi-palette2"></i>
+              </div>
+              <h2 class="display-5 mb-4 mt-4">Skills</h2>
               <p class="lead text text-muted mb-5">
                 I am a versatile web developer specializing in both frontend and
                 backend development, with a focus on creating responsive,
@@ -615,15 +673,14 @@
               </p>
             </div>
             <div
-              class="col-md-4 d-flex justify-content-center align-items-center"
+              class="col-md-4 d-flex justify-content-center align-items-center d-none d-md-flex"
             >
-              <!-- <h1 class="display-1 mb-4">🧰</h1> -->
               <i class="feature-icon2 bi bi-palette2"></i>
             </div>
           </div>
           <div class="row">
             <!-- Frontend Skills -->
-            <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
+            <div class="col-md-6 col-lg-4 feature-item mb-4">
               <i class="feature-icon bi bi-code-slash"></i>
               <h5 class="fw-bold mt-2 mb-2">Frontend Development</h5>
               <p class="fw-light">
@@ -642,7 +699,7 @@
               </ul>
             </div>
             <!-- Backend Skills -->
-            <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
+            <div class="col-md-6 col-lg-4 feature-item mb-4">
               <i class="feature-icon bi bi-server"></i>
               <h5 class="fw-bold mt-2 mb-2">Backend Development</h5>
               <p class="fw-light">
@@ -659,7 +716,7 @@
               </ul>
             </div>
             <!-- Additional Skills -->
-            <div class="col-md-6 col-lg-4 feature-item text-start mb-4">
+            <div class="col-md-6 col-lg-4 feature-item mb-4">
               <i class="feature-icon bi bi-tools"></i>
               <h5 class="fw-bold mt-2 mb-2">Additional Skills</h5>
               <p class="fw-light">
@@ -667,7 +724,7 @@
                 advanced testing methodologies to ensure high-quality, secure
                 applications.
               </p>
-              <h6 class="fw-bold mt-2">Technologies & Tools:</h6>
+              <h6 class="fw-bold mt-2">Technologies &amp; Tools:</h6>
               <ul>
                 <li>Testing: Jest, Cucumber, Puppeteer</li>
                 <li>Data storage: AWS, Google Firestore</li>
@@ -719,22 +776,55 @@
                 Test-Driven Development.
               </p>
             </div>
+      <div class="bg-light">
+        <section
+          class="container col-md-10 py-5 bg-light"
+          id="Projects-section"
+        >
+          <div
+            class="projects-section"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div class="row">
+              <div class="col-md-8 order-md-2">
+                <div
+                  class="col-md-4 d-flex justify-content-center align-items-center d-md-none mt-3 mb-3"
+                >
+                  <i class="feature-icon2 bi bi-folder"></i>
+                </div>
+                <h2 class="display-5 mb-4">Projects</h2>
+                <p class="lead text text-muted mb-5">
+                  The
+                  <a
+                    href="https://careerfoundry.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >CareerFoundry</a
+                  >
+                  Full Stack Program catapulted me into the API realm,
+                  developing a backend API with Node.js as a base for clients in
+                  React and Angular. My journey expanded into mobile app
+                  development with React Native and crafting a Serverless App
+                  (PWA) using Test-Driven Development.
+                </p>
+              </div>
 
-            <div
-              class="col-md-4 d-flex justify-content-center align-items-center"
-            >
-              <i class="feature-icon2 bi bi-folder"></i>
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center d-none d-md-flex"
+              >
+                <i class="feature-icon2 bi bi-folder"></i>
+              </div>
             </div>
-          </div>
 
-          <img
-            class="scroll-image"
-            alt="scroll to left to left"
-            data-bs-toggle="popover"
-            title="Scroll to the left to see more projects"
-            src="./src/pics/scrolling_hand.svg"
-          />
-        </div>
+            <img
+              class="scroll-image"
+              alt="scroll to left to left"
+              data-bs-toggle="popover"
+              title="Scroll to the left to see more projects"
+              src="./src/pics/scrolling_hand.svg"
+            />
+          </div>
 
         <!-- Cards Section -->
         <section>
@@ -794,24 +884,86 @@
                         </ul>
                         <br />
                       </div>
+          <!-- Cards Section -->
+          <section
+            class="vh-80 d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="container col-lg-12"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <div class="row flex-row flex-nowrap scrollable-row">
+                <!-- Card 1 Js app-->
+                <div class="col-lg-6 mb-4">
+                  <div class="card">
+                    <img
+                      src="./src/pics/project-pics/JS-app.png"
+                      alt=""
+                      class="card-img-top"
+                      data-bs-toggle="popover"
+                      title="Scroll to the left to see more projects"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold mt-2 mb-2">Pokemon Js App</h5>
+                      <p class="fw-light card-text mb-3">
+                        A JavaScript-based web app focused on Pokémon, utilizing
+                        HTML, CSS, and JavaScript to fetch and present detailed
+                        data from an external API.
+                      </p>
+                      <div class="mb-3">
+                        <a
+                          href="https://bobs83.github.io/simple-js-app/Index.html"
+                          title="Live link to Pokemon JS App"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          <img
+                            class="card-icon pulse"
+                            src="./src/pics/live-card-icon.svg"
+                            alt="live-icon"
+                        /></a>
+                        <a
+                          href="https://github.com/bobs83/simple-js-app?tab=readme-ov-file"
+                          title="GitHub link to Pokemon JS App"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon flap-animation"
+                            src="./src/pics/github-card-icon.svg"
+                            alt="github-icon"
+                        /></a>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Features
+                          </h6>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Responsive Design</li>
+                            <li class="list-group-item">Fetch from API</li>
+                            <li class="list-group-item">Browse Pokemons</li>
+                          </ul>
+                          <br />
+                        </div>
 
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Technologies
-                        </h6>
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Technologies
+                          </h6>
 
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">HTML</li>
-                          <li class="list-group-item">CSS</li>
-                          <li class="list-group-item">JavaScript</li>
-                          <li class="list-group-item">jQuery</li>
-                          <li class="list-group-item">Bootstrap</li>
-                        </ul>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">CSS</li>
+                            <li class="list-group-item">JavaScript</li>
+                            <li class="list-group-item">jQuery</li>
+                            <li class="list-group-item">Bootstrap</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
               <!-- Card 2 React -->
               <div class="col-lg-6 mb-4">
@@ -873,305 +1025,389 @@
                         </ul>
                         <br />
                       </div>
+                <!-- Card 2 React -->
+                <div class="col-lg-6 mb-4">
+                  <div class="card">
+                    <img
+                      src="./src/pics/project-pics/react.jpg"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Myflix- Client (React)</h5>
+                      <p class="card-text mb-3 fw-light">
+                        A myFlix React App is a client-side, React-built
+                        platform offering detailed movie information. Users can
+                        create profiles, save favorites, and explore movies,
+                        part of a full-stack MERN application
+                      </p>
+                      <div class="mb-3">
+                        <a
+                          href="https://spiffy-starship-cff8a2.netlify.app"
+                          title="Live link to Myflix-Client"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon pulse"
+                            src="./src/pics/live-card-icon.svg"
+                            alt="live-icon"
+                        /></a>
+                        <a
+                          href="https://github.com/bobs83/myflix-client"
+                          title="GitHub link to Myflix-Client"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon"
+                            src="./src/pics/github-card-icon.svg"
+                            alt="github-icon"
+                        /></a>
+                        <a
+                          href="./casestudy.html"
+                          title="Click to see the case study"
+                          target="_blank"
+                          data-bs-toggle="popover"
+                          ><img
+                            class="card-icon-case-study clapperboard-animation"
+                            src="./src/pics/icon-card-case_study.svg"
+                            alt="github-icon"
+                        /></a>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Features
+                          </h6>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              Access Movie Information
+                            </li>
+                            <li class="list-group-item">User Authentication</li>
+                            <li class="list-group-item">Manage Favorites</li>
+                            <li class="list-group-item">Manage Profile Data</li>
+                          </ul>
+                          <br />
+                        </div>
 
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Technologies
-                        </h6>
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Technologies
+                          </h6>
 
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">React, Bootstrap</li>
-                          <li class="list-group-item">Express.js, Node.js</li>
-                          <li class="list-group-item">MongoDB</li>
-                          <li class="list-group-item">Passport.js</li>
-                          <li class="list-group-item">Parcel</li>
-                        </ul>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">React, Bootstrap</li>
+                            <li class="list-group-item">Express.js, Node.js</li>
+                            <li class="list-group-item">MongoDB</li>
+                            <li class="list-group-item">Passport.js</li>
+                            <li class="list-group-item">Parcel</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Card 3 Recat-native -->
-              <div class="col-lg-6 mb-4">
-                <div class="card">
-                  <img
-                    src="./src/pics/project-pics/react-native.png"
-                    alt=""
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Chat App (React-native)</h5>
-                    <p class="card-text mb-3">
-                      React Native App - A real-time chat app allowing users to
-                      exchange messages, share photos, videos, and their
-                      location instantly.
-                    </p>
-                    <div class="mb-3">
-                      <a
-                        href="https://github.com/bobs83/chat-app"
-                        placeholder="Live link to Chat App"
-                        target="_blank"
-                        rel="noopener"
-                        title="Live link to Chat App"
-                      >
-                        <img
-                          class="card-icon pulse"
-                          src="./src/pics/live-card-icon.svg"
-                          alt="live-icon"
-                      /></a>
-                      <a
-                        href="https://github.com/bobs83/chat-app?tab=readme-ov-file#running-the-project"
-                        title="GitHub link to running the Chat App"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="card-icon flap-animation"
-                          src="./src/pics/github-card-icon.svg"
-                          alt="github-icon"
-                      /></a>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Share Pics and Videos</li>
-                          <li class="list-group-item">
-                            Photo Libary Integration
-                          </li>
-                          <li class="list-group-item">Share location</li>
-                          <li class="list-group-item">Real-time Chat</li>
-                          <li class="list-group-item">
-                            Offline Message Access
-                          </li>
-                        </ul>
-                        <br />
+                <!-- Card 3 Recat-native -->
+                <div class="col-lg-6 mb-4">
+                  <div class="card">
+                    <img
+                      src="./src/pics/project-pics/react-native.png"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Chat App (React-native)</h5>
+                      <p class="card-text mb-3">
+                        React Native App - A real-time chat app allowing users
+                        to exchange messages, share photos, videos, and their
+                        location instantly.
+                      </p>
+                      <div class="mb-3">
+                        <a
+                          href="https://github.com/bobs83/chat-app"
+                          placeholder="Live link to Chat App"
+                          target="_blank"
+                          rel="noopener"
+                          title="Live link to Chat App"
+                        >
+                          <img
+                            class="card-icon pulse"
+                            src="./src/pics/live-card-icon.svg"
+                            alt="live-icon"
+                        /></a>
+                        <a
+                          href="https://github.com/bobs83/chat-app?tab=readme-ov-file#running-the-project"
+                          title="GitHub link to running the Chat App"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon flap-animation"
+                            src="./src/pics/github-card-icon.svg"
+                            alt="github-icon"
+                        /></a>
                       </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Features
+                          </h6>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              Share Pics and Videos
+                            </li>
+                            <li class="list-group-item">
+                              Photo Libary Integration
+                            </li>
+                            <li class="list-group-item">Share location</li>
+                            <li class="list-group-item">Real-time Chat</li>
+                            <li class="list-group-item">
+                              Offline Message Access
+                            </li>
+                          </ul>
+                          <br />
+                        </div>
 
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Technologies
-                        </h6>
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Technologies
+                          </h6>
 
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">React Native</li>
-                          <li class="list-group-item">Google Firestore</li>
-                          <li class="list-group-item">Expo Cli</li>
-                          <li class="list-group-item">Node.js</li>
-                          <li class="list-group-item">Gifted Chat</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 4 Angular -->
-              <div class="col-lg-6 mb-4">
-                <div class="card">
-                  <img
-                    src="./src/pics/project-pics/angular.jpg"
-                    alt=""
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Myflix-client (Angular)</h5>
-                    <p class="card-text mb-3">
-                      This Angular app connects to a custom server-side REST API
-                      and database, offering access to a movie details.
-                    </p>
-                    <div class="mb-3">
-                      <a
-                        href="https://bobs83.github.io/myFlix-Angular-client/welcome"
-                        title="Live link to Myflix-Client"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="card-icon pulse"
-                          src="./src/pics/live-card-icon.svg"
-                          alt="live-icon"
-                      /></a>
-                      <a
-                        href="https://github.com/bobs83/myFlix-Angular-client"
-                        title="GitHub link to Myflix-Client"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="card-icon flap-animation"
-                          src="./src/pics/github-card-icon.svg"
-                          alt="github-icon"
-                      /></a>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">User Registration</li>
-                          <li class="list-group-item">View Movie Details</li>
-                          <li class="list-group-item">Save Movie Favorites</li>
-                          <li class="list-group-item">Edit User Profile</li>
-                        </ul>
-                        <br />
-                      </div>
-
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Technologies
-                        </h6>
-
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Angular</li>
-                          <li class="list-group-item">Node.js</li>
-                          <li class="list-group-item">Angular Material</li>
-                          <li class="list-group-item">Typescript</li>
-                          <li class="list-group-item">Typedoc</li>
-                        </ul>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">React Native</li>
+                            <li class="list-group-item">Google Firestore</li>
+                            <li class="list-group-item">Expo Cli</li>
+                            <li class="list-group-item">Node.js</li>
+                            <li class="list-group-item">Gifted Chat</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Card 5 Meet n Code-->
-              <div class="col-lg-6 mb-4">
-                <div class="card">
-                  <img
-                    src="./src/pics/project-pics/meet.png"
-                    alt=""
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Meet N Code (Serveless PWA and TDD testing)
-                    </h5>
-                    <p class="card-text mb-3">
-                      Created a serverless React PWA applying TDD practices,
-                      integrated with Google Calendar API for event retrieval.
-                    </p>
-                    <div class="mb-3">
-                      <a
-                        href="https://bobs83.github.io/meetberlin_app/"
-                        title="Live link to Meet N Code"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="card-icon pulse"
-                          src="./src/pics/live-card-icon.svg"
-                          alt="live-icon pulse"
-                      /></a>
-                      <a
-                        href="https://github.com/bobs83/meetberlin_app?tab=readme-ov-file"
-                        title="GitHub link to Meet N Code"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="card-icon flap-animation"
-                          src="./src/pics/github-card-icon.svg"
-                          alt="github-icon"
-                      /></a>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Event Filtering</li>
-                          <li class="list-group-item">Detailed Event Views</li>
-                          <li class="list-group-item">Offline Functionality</li>
-                          <li class="list-group-item">Home Screen Shortcut</li>
-                          <li class="list-group-item">Data Visualization</li>
-                        </ul>
-                        <br />
+                <!-- Card 4 Angular -->
+                <div class="col-lg-6 mb-4">
+                  <div class="card">
+                    <img
+                      src="./src/pics/project-pics/angular.jpg"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Myflix-client (Angular)</h5>
+                      <p class="card-text mb-3">
+                        This Angular app connects to a custom server-side REST
+                        API and database, offering access to a movie details.
+                      </p>
+                      <div class="mb-3">
+                        <a
+                          href="https://bobs83.github.io/myFlix-Angular-client/welcome"
+                          title="Live link to Myflix-Client"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon pulse"
+                            src="./src/pics/live-card-icon.svg"
+                            alt="live-icon"
+                        /></a>
+                        <a
+                          href="https://github.com/bobs83/myFlix-Angular-client"
+                          title="GitHub link to Myflix-Client"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon flap-animation"
+                            src="./src/pics/github-card-icon.svg"
+                            alt="github-icon"
+                        /></a>
                       </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Features
+                          </h6>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">User Registration</li>
+                            <li class="list-group-item">View Movie Details</li>
+                            <li class="list-group-item">
+                              Save Movie Favorites
+                            </li>
+                            <li class="list-group-item">Edit User Profile</li>
+                          </ul>
+                          <br />
+                        </div>
 
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Technologies
-                        </h6>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">OAuth Login</li>
-                          <li class="list-group-item">
-                            Google Cal. Integration
-                          </li>
-                          <li class="list-group-item">Puppeteer</li>
-                          <li class="list-group-item">JEST</li>
-                          <li class="list-group-item">Cucumber Gherkin</li>
-                        </ul>
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Technologies
+                          </h6>
+
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Angular</li>
+                            <li class="list-group-item">Node.js</li>
+                            <li class="list-group-item">Angular Material</li>
+                            <li class="list-group-item">Typescript</li>
+                            <li class="list-group-item">Typedoc</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Card 6  Api -->
-              <div class="col-lg-6 mb-4">
-                <div class="card">
-                  <img src="./src/pics/api.svg" alt="" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">MyFlix Server (API)</h5>
-                    <p class="card-text mb-3">
-                      A server-side component for myFlix, built with Node.js,
-                      Express, and MongoDB, offering a robust RESTful API for
-                      efficient movie data management.
-                    </p>
-                    <div class="mb-3">
-                      <a
-                        href="https://bobs83.github.io/movie_api/public/documentation.html"
-                        title="Live link to MyFlix Api documentation"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="card-icon pulse"
-                          src="./src/pics/live-card-icon.svg"
-                          alt="live-image"
-                      /></a>
-                      <a
-                        href="https://github.com/bobs83/movie_api"
-                        title="GitHub link to MyFlix Server"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="card-icon flap-animation"
-                          src="./src/pics/github-card-icon.svg"
-                          alt="live-image"
-                      /></a>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">Features</h6>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Fetch All Movies</li>
-                          <li class="list-group-item">Detailed Movie Info</li>
-                          <li class="list-group-item">
-                            User Profile Management
-                          </li>
-                          <li class="list-group-item">Account Deletion</li>
-                        </ul>
-                        <br />
+                <!-- Card 5 Meet n Code-->
+                <div class="col-lg-6 mb-4">
+                  <div class="card">
+                    <img
+                      src="./src/pics/project-pics/meet.png"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Meet N Code (Serveless PWA and TDD testing)
+                      </h5>
+                      <p class="card-text mb-3">
+                        Created a serverless React PWA applying TDD practices,
+                        integrated with Google Calendar API for event retrieval.
+                      </p>
+                      <div class="mb-3">
+                        <a
+                          href="https://bobs83.github.io/meetberlin_app/"
+                          title="Live link to Meet N Code"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon pulse"
+                            src="./src/pics/live-card-icon.svg"
+                            alt="live-icon pulse"
+                        /></a>
+                        <a
+                          href="https://github.com/bobs83/meetberlin_app?tab=readme-ov-file"
+                          title="GitHub link to Meet N Code"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon flap-animation"
+                            src="./src/pics/github-card-icon.svg"
+                            alt="github-icon"
+                        /></a>
                       </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Features
+                          </h6>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Event Filtering</li>
+                            <li class="list-group-item">
+                              Detailed Event Views
+                            </li>
+                            <li class="list-group-item">
+                              Offline Functionality
+                            </li>
+                            <li class="list-group-item">
+                              Home Screen Shortcut
+                            </li>
+                            <li class="list-group-item">Data Visualization</li>
+                          </ul>
+                          <br />
+                        </div>
 
-                      <div class="col-sm-6">
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Technologies
-                        </h6>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Express</li>
-                          <li class="list-group-item">Mongoose, MongoDB</li>
-                          <li class="list-group-item">Passport-JWT, Bcrypt</li>
-                          <li class="list-group-item">JSON Web Token (JWT)</li>
-                          <li class="list-group-item">JSDoc</li>
-                          <li class="list-group-item">Postman</li>
-                        </ul>
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Technologies
+                          </h6>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">OAuth Login</li>
+                            <li class="list-group-item">
+                              Google Cal. Integration
+                            </li>
+                            <li class="list-group-item">Puppeteer</li>
+                            <li class="list-group-item">JEST</li>
+                            <li class="list-group-item">Cucumber Gherkin</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 6  Api -->
+                <div class="col-lg-6 mb-4">
+                  <div class="card">
+                    <img src="./src/pics/api.svg" alt="" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">MyFlix Server (API)</h5>
+                      <p class="card-text mb-3">
+                        A server-side component for myFlix, built with Node.js,
+                        Express, and MongoDB, offering a robust RESTful API for
+                        efficient movie data management.
+                      </p>
+                      <div class="mb-3">
+                        <a
+                          href="https://bobs83.github.io/movie_api/public/documentation.html"
+                          title="Live link to MyFlix Api documentation"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon pulse"
+                            src="./src/pics/live-card-icon.svg"
+                            alt="live-image"
+                        /></a>
+                        <a
+                          href="https://github.com/bobs83/movie_api"
+                          title="GitHub link to MyFlix Server"
+                          target="_blank"
+                          rel="noopener"
+                          ><img
+                            class="card-icon flap-animation"
+                            src="./src/pics/github-card-icon.svg"
+                            alt="live-image"
+                        /></a>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Features
+                          </h6>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Fetch All Movies</li>
+                            <li class="list-group-item">Detailed Movie Info</li>
+                            <li class="list-group-item">
+                              User Profile Management
+                            </li>
+                            <li class="list-group-item">Account Deletion</li>
+                          </ul>
+                          <br />
+                        </div>
+
+                        <div class="col-sm-6">
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            Technologies
+                          </h6>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Express</li>
+                            <li class="list-group-item">Mongoose, MongoDB</li>
+                            <li class="list-group-item">
+                              Passport-JWT, Bcrypt
+                            </li>
+                            <li class="list-group-item">
+                              JSON Web Token (JWT)
+                            </li>
+                            <li class="list-group-item">JSDoc</li>
+                            <li class="list-group-item">Postman</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
-      </section>
-
-      <hr class="divider" />
+      </div>
+      <!-- <hr class="divider" /> -->
 
       <!-- Journey into webdevelopment section -->
       <!-- <section class="container">
@@ -1216,51 +1452,29 @@
       </section> -->
 
       <!-- Bootstrap Contact  -->
-      <section
-        id="contact-form"
-        class="container bg-light rounded-5 border py-3 py-md-5"
-      >
+      <section id="contact-form" class="vh-100 py-5">
         <div class="container" data-aos="fade-up" data-aos-duration="3000">
-          <div class="row justify-content-md-center">
-            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-              <h2 class="display-5 mb-4 mb-md-2 text-center">Contact Me 🤙</h2>
-              <p class="lead text-center text-muted mb-5">
-                Open to joining creative ventures and projects. If you're in
-                need of a committed collaborator, let's get in touch.
-              </p>
-              <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="container"
-          id="contact-section"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
           <div class="row gy-3 gy-md-3 gy-lg-3 align-items-xl-center">
-            <div class="col-12 col-lg-6 d-none d-lg-block">
-              <div class="mail-container">
-                <div class="mailitem">
-                  <img src="./src/pics/mail.png" alt="pulseing-mail-picture" />
-                </div>
-                <div class="circle" style="animation-delay: -9s"></div>
-                <div class="circle" style="animation-delay: -6s"></div>
-                <div class="circle" style="animation-delay: -3s"></div>
-                <div class="circle" style="animation-delay: 0s"></div>
-              </div>
-              <!-- <img
-                class="letter-slow-speed"
-                loading="lazy"
-                src="./src/pics/letter-slow-speed.gif"
-                alt="picture of mail coming and going"
-              /> -->
-            </div>
-
             <div class="col-12 col-lg-6">
-              <div class="row justify-content-xl-center">
-                <div class="col-12 col-xl-11">
+              <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <i class="feature-icon2 bi bi-chat"></i>
+                  </div>
+                  <h2 class="display-5 mb-4 mb-md-2 text-center">
+                    Contact Me 🤙
+                  </h2>
+                  <p class="lead text-center text-muted mb-5">
+                    Open to joining creative ventures and projects. If you're in
+                    need of a committed collaborator, let's get in touch.
+                  </p>
+                  <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="row justify-content-center">
+                <div class="col-10">
                   <div
                     class="bg-white border rounded shadow-sm overflow-hidden"
                   >
@@ -1271,9 +1485,6 @@
                     >
                       <div class="row gy-4 p-4">
                         <div class="col-12">
-                          <!-- <label for="fullname" class="form-label">
-                            Name <span class="text-danger">*</span></label
-                          > -->
                           <div class="input-group">
                             <span class="input-group-text">
                               <svg
@@ -1281,7 +1492,7 @@
                                 width="16"
                                 height="16"
                                 fill="currentColor"
-                                class="bi bi-envelope"
+                                class="bi bi-person"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1300,10 +1511,7 @@
                             />
                           </div>
                         </div>
-                        <div class="col-12d">
-                          <!-- <label for="email" class="form-label"
-                            >Email <span class="text-danger">*</span></label
-                          > -->
+                        <div class="col-12">
                           <div class="input-group">
                             <span class="input-group-text">
                               <svg
@@ -1332,9 +1540,6 @@
                         </div>
 
                         <div class="col-12">
-                          <!-- <label for="subject" class="form-label"
-                            >Subject <span class="text-danger">*</span></label
-                          > -->
                           <div class="input-group">
                             <span class="input-group-text">
                               <svg
@@ -1342,7 +1547,7 @@
                                 width="16"
                                 height="16"
                                 fill="currentColor"
-                                class="bi bi-envelope"
+                                class="bi bi-card-text"
                                 viewBox="0 0 16 16"
                               >
                                 <path
@@ -1398,10 +1603,11 @@
         </div>
       </section>
 
-      <section class="container col-lg-12 py-5">
+      <!-- Image Section Bottom -->
+      <section class="col-lg-12">
         <div class="row justify-content-center">
           <div class="col-md-12 text-center">
-            <div class="custom-image-container">
+            <div class="custom-image-container-bottom">
               <img
                 src="https://images.unsplash.com/photo-1629905679177-4c4e2623654f?q=80&w=2718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Description of the image"
@@ -1496,6 +1702,7 @@
       id="myModal"
       tabindex="-1"
       aria-labelledby="Open Modal"
+      aria-labelledby="Open Modal"
       aria-hidden="true"
     >
       <div class="modal-dialog">
@@ -1555,6 +1762,7 @@
               </li>
               <li>
                 Rotating mail-circle:
+                Rotating mail-circle:
                 <a
                   href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_anim_transform"
                   title="w3schools"
@@ -1606,6 +1814,7 @@
               </li>
               <li>
                 Icon for Card Github:
+                Icon for Card Github:
                 <a
                   href="https://thenounproject.com/icon/github-4289652/"
                   title="Icon Finder"
@@ -1643,6 +1852,8 @@
               </li>
               <li>
                 Profile Image is AI-generated based on a real image of myself
+                using
+                <a href="https://www.fotor.com/" title="Fotor">Fotor</a>.
                 using
                 <a href="https://www.fotor.com/" title="Fotor">Fotor</a>.
               </li>
@@ -1686,12 +1897,31 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
 
+    <!-- Boostrap Popover -->
     <!-- Boostrap Popover -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
