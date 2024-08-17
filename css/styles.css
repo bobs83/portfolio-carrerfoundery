@@ -88,6 +88,11 @@ list-inline {
   transition: color 0.3s ease-in-out;
 }
 
+.navbar-nav .nav-link.active {
+	font-weight: bold;
+	color: #000000 !important;
+}
+
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem; /* Ensure consistent padding */
