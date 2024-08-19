@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<!-- Required meta tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-		<meta
-		name="description"
-		content="Bobby Singh is a full-stack web developer specializing in modern technologies like React, Node, Angular, and VueJS. Explore his portfolio, learn more about his skills, and get in touch for collaboration."
-	/>
-	<meta
-		name="keywords"
-		content="Bobby Singh, bobby in berlin, full-stack developer, web development, front-end development, back-end development, React, Node, Angular, VueJS, JavaScript, HTML, CSS, Bootstrap, Axios, PWA, TDD, APIs, Berlin web developer"
-	/>
-	<meta name="author" content="Bobby Singh" />
+    <meta
+      name="description"
+      content="Bobby Singh is a full-stack web developer specializing in modern technologies like React, Node, Angular, and VueJS. Explore his portfolio, learn more about his skills, and get in touch for collaboration."
+    />
+    <meta
+      name="keywords"
+      content="Bobby Singh, bobby in berlin, full-stack developer, web development, front-end development, back-end development, React, Node, Angular, VueJS, JavaScript, HTML, CSS, Bootstrap, Axios, PWA, TDD, APIs, Berlin web developer"
+    />
+    <meta name="author" content="Bobby Singh" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="src/pics/favicon.svg" />
+
+    <!-- Bootstrap-icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -30,6 +35,11 @@
     />
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
     <!-- My JS -->
     <!-- <script defer src="./js/app.js"></script> -->
     <!-- AOS -->
@@ -68,9 +78,8 @@
     <div class="scroll-watcher"></div>
     <div class="page-wrapper">
       <header>
-
- <!-- Navbar -->
-      <nav class="page-header navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar -->
+        <nav class="page-header navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href=""></a>
 
@@ -136,21 +145,15 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Purpose"
-                    >Purpose</a
-                  >
+                  <a class="nav-link" href="#Purpose">Purpose</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Server-Side"
-                    >Server-Side</a
-                  >
+                  <a class="nav-link" href="#Server-Side">Server-Side</a>
                 </li>
-								<li class="nav-item">
-                  <a class="nav-link" href="#Client-Side"
-                    >Client-Side</a
-                  >
+                <li class="nav-item">
+                  <a class="nav-link" href="#Client-Side">Client-Side</a>
                 </li>
-								<li class="nav-item">
+                <li class="nav-item">
                   <a class="nav-link" href="#Project-Feedback"
                     >Project Feedback</a
                   >
@@ -158,579 +161,1044 @@
               </ul>
             </div>
           </div>
-      </nav>
+        </nav>
       </header>
 
-<!-- Hero Section -->
-		<section>
-	<div class="hero-section-case-study">
-			<div class="col-md-8 col-lg-8 p-lg-5 mx-auto my-5">
-					<div class="hero-content-case-study">
-							<h1 class="display-5 mb-3 text-right text-primary"><strong> MYFLIX 
-									<br>
-									A FULL STACK 
-									<br>
-									CASE STUDY</strong></h1>
-							<p class="lead font-weight-normal">Welcome to the case study of Myflix, a movie viewer project showcasing my abilities in both back-end and front-end development.</p>
-							<a class="btn btn-outline-light" href="#overview">Lets Go! </a>
-					</div>
-			</div>
-	</div>
-		</section>
-			
-<!-- Overview Section -->
-		<section class="about-section container py-5" id="overview">
-				<div class="row rounded-5 justify-content-center" data-aos="fade-up" data-aos-duration="3000">
-						<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-								<img class="case-image img-fluid " src="./src/Case/search_1665703.png" alt="Bobby logo hero-image">
-						</div>
-						<div class="about-left col-lg-8 col-md-12 col-sm-12">
-								<div class="h-100 p-5">
-										<h2 class="display-5 mb-3 text-right text-primary">Overview</h2>
-										<p class="lead text-muted">
-											MyFlix is a web application developed using the MERN stack MongoDB, Express, React, and Node.js. It offers users access to information about movies, directors, and genres. Users can create an account, update their personal details, and curate a personalized list of favorite movies.											
-											
-											<div class="row text-center">
-												<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-														<img src="./src/case/mongodb-original.svg" class="img-fluid rounded w-50" alt="MongoDB">
-												</div>
-												<div class="col-lg-3 col-md-6 col-sm-6 mb-4 col-6 mb-4 mt-4">
-														<img src="./src/case/express-original.svg" class="img-fluid rounded w-50" alt="Express">
-												</div>
-												<div class="col-lg-3 col-md-6 col-sm-6 mb-4n col-6 mt-4">
-														<img src="./src/case/react-original.svg" class="img-fluid rounded w-50" alt="React">
-												</div>
-												<div class="col-lg-3 col-md-6 col-sm-6 mb-4 col-6 mt-4">
-														<img src="./src/case/nodejs-original.svg" class="img-fluid rounded w-50" alt="Node.js">
-												</div>
-										</div>
-								</div>
-						</div>
-				</div>
-		</section>
+      <!-- Hero Section Case Study  -->
+      <section>
+        <div class="hero-section-case-study">
+          <div class="col-md-8 col-lg-8 p-lg-5 mx-auto my-5">
+            <div class="hero-content-case-study">
+              <h1 class="display-5 mb-3 text-right text-primary">
+                <strong>
+                  MYFLIX
+                  <br />
+                  A FULL STACK
+                  <br />
+                  CASE STUDY</strong
+                >
+              </h1>
+              <p class="lead font-weight-normal">
+                Welcome to the case study of Myflix, a movie viewer project
+                showcasing my abilities in both back-end and front-end
+                development.
+              </p>
+              <a class="btn btn-outline-light" href="#overview">Lets Go! </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Overview Section -->
+      <section class="container py-5" id="overview">
+        <div
+          class="row rounded-5 justify-content-center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center ccd-md-flex mb-4 mt-4"
+          >
+            <i class="feature-icon4 bi bi-binoculars"></i>
+          </div>
+          <div class="about-left col-lg-8 col-md-12 col-sm-12">
+            <div class="h-100 p-2">
+              <h2 class="display-5 mb-3 text-right text-primary">Overview</h2>
+              <p class="lead text-muted">
+                MyFlix is a web application developed using the MERN stack
+                MongoDB, Express, React, and Node.js. It offers users access to
+                information about movies, directors, and genres. Users can
+                create an account, update their personal details, and curate a
+                personalized list of favorite movies.
+              </p>
+
+              <div class="row text-center">
+                <div class="col-lg-3 col-md-2 col-sm-2 col-3 mb-4 mt-4">
+                  <img
+                    src="./src/case/mongodb-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="MongoDB"
+                    data-bs-toggle="popover"
+                    title="MongoDB"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-2 mb-4 col-3 mb-2 mt-4">
+                  <img
+                    src="./src/case/express-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="Express"
+                    data-bs-toggle="popover"
+                    title="Express"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-2 mb-4 col-3 mt-4">
+                  <img
+                    src="./src/case/react-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="React"
+                    data-bs-toggle="popover"
+                    title="React"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-2 mb-4 col-3 mt-4">
+                  <img
+                    src="./src/case/nodejs-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="Node.js"
+                    data-bs-toggle="popover"
+                    title="Node.js"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <hr class="divider" />
 
-<!-- Purpose & Context -->
-		<section class="container py-5" id="Purpose">
-						<div
-							class="row rounded-5 justify-content-center"
-							data-aos="fade-up"
-							data-aos-duration="3000"
-						>
-							<div class="about-left col-lg-8 col-md-12 col-sm-12">
-								<div class="h-100 p-5  rounded-5">
-									<h2 class="display-5 mb-3 text-right text-primary">
-									  Purpose &amp; Context
-									</h2>
-									<p class="lead text-muted">
-										This is a personal project I created as part of my Full-Stack Web Development course at <a href="https://careerfoundry.com/en/courses/become-a-web-developer/?utm_campaign=123330850798&utm_term=careerfoundry%20web%20development&utm_source=google&utm_medium=cpc&utm_content=527778821907&hsa_mt=p&hsa_ad=527778821907&hsa_ver=3&hsa_tgt=aud-1281289956874:kwd-1435809176868&hsa_net=adwords&hsa_grp=123330850798&hsa_src=g&hsa_cam=1598884281&hsa_acc=1437185464&hsa_kw=careerfoundry%20web%20development&gad_source=1&gclid=Cj0KCQjwzby1BhCQARIsAJ_0t5Om3rWW1IgMdTwkXSnCC5UftUbmaKGW8xcO5wXUqDpHQ2a8BCwbAiMaAsQREALw_wcB#curriculum" target="_blank" rel="noopener noreferrer">CareerFoundry</a>. The objective was to develop skills in both front-end and back-end development, including creating databases, server-side APIs, and building the front end using React. Through this project, I aimed to gain holistic proficiency in full-stack application development.									</p>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-12 d-none d-lg-block">
-								<img
-									class="case-image"
-									src="./src/case/briefcase_14255348.png"
-									alt="Bobby logo hero-image"
-								/>
-							</div>
-						</div>
-		</section>
-
-<!-- Carrerfoundery Picture Section -->
-		<section class="py-5">
-						<div class="container" data-aos="fade-up"
-						data-aos-duration="3000">
-								<div class="row justify-content-center">
-										<div class="col-md-8">
-												<img src="/src/case/CFpic.jpg" alt="Placeholder Image" class="img-fluid rounded shadow-lg">
-										</div>
-								</div>
-						</div>
-		</section>
-
-<!-- Duration Methodologies, Credits -->
-		<section class="container col-lg-10">
-	<div class="h-100 p-5  rounded-4" data-aos="fade-up" data-aos-duration="3000">
-			<div class="container px-3 py-3" id="featured-3">
-					<div class="row g-4 py-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
-							<div class="feature col">
-									<div class="pb-3 border-bottom text-start">
-											<img src="./src/case/hourglass_747821 .png" alt="Icon" class="feature-icon-img rotate-animation img-fluid">
-									</div>
-									<h2 class="display-6 mb-3 text-start text-primary">Duration</h2>
-									<p class="fw-light text-start">Creating the client-side took about twice as long as creating the server-side. The back end was relatively easy and quick to implement while the front-end, React had steeper learning curve. </p>
-							</div>
-							<div class="feature col">
-									<div class="pb-3 border-bottom text-start">
-											<img src="./src/case/idea_1388453.png" alt="Icon" class="feature-icon-img pulse img-fluid">
-									</div>
-									<h2 class="display-6 mb-3 text-start text-primary">Methodologies</h2>
-									<ul class="two-column-list text-start">
-											<li class="fw-light">MERN stack</li>
-											<li class="fw-light">RESTful API</li>
-											<li class="fw-light">Bootstrap</li>
-											<li class="fw-light">Postman</li>
-											<li class="fw-light">Heroku</li>
-											<li class="fw-light">Netlify</li>
-									</ul>
-							</div>
-							<div class="feature col">
-									<div class="pb-3 border-bottom text-start">
-											<img src="./src/case/group_1622082.png" alt="Icon" class="feature-icon-img bounce img-fluid">
-									</div>
-									<h2 class="display-6 mb-3 text-start text-primary">Credits</h2>
-									<p class="fw-light text-start">
-											<strong>Tutor:</strong> Timothy Nyabongo <br>
-											<strong>Mentor:</strong> Stephen Barungi<br>
-											<strong>Coach:</strong> Theano Eirini Kakaziani
-
-									</p>
-							</div>
-					</div>
-			</div>
-	</div>
-		</section>
-
-			<hr class="divider" />
-
-<!-- Technologies Image Section -->
-		<section class="container py-5">
-	<div class="container" data-aos="fade-up" data-aos-duration="3000">
-			<div class="row justify-content-center">
-					<div class="col-md-8">
-							<div class="row text-center">
-									<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-											<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" class="img-fluid rounded w-50" alt="MongoDB">
-									</div>
-									<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-											<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" class="img-fluid rounded w-50" alt="Express">
-									</div>
-									<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-											<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" class="img-fluid rounded w-50" alt="React">
-									</div>
-									<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-											<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" class="img-fluid rounded w-50" alt="Node.js">
-									</div>
-									<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-											<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-original.svg" class="img-fluid rounded w-50" alt="Heroku">
-									</div>
-									<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-											<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" class="img-fluid rounded w-50" alt="Bootstrap">
-									</div>
-									<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-											<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" class="img-fluid rounded w-50" alt="Postman">
-									</div>
-									<div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
-											<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/netlify/netlify-original.svg" class="img-fluid rounded w-50" alt="Netlify">
-									</div>
-							</div>
-					</div>
-			</div>
-	</div>
-		</section>
-
-		<hr class="divider" />
-
-<!-- Server-Side Development -->
-		<section class="container py-5 rounded-4 col-lg-8" id="Server-Side">
-	<div class="container" data-aos="fade-up" data-aos-duration="3000">
-			<div class="row justify-content-center"></div>
-			<div class="h-100 p-5 bg-white">
-					<div class="col-12">
-							<div class="text-center mb-4">
-									<img src="./src/case/api-svgrepo-com.svg" alt="API Icon" class="img-fluid rotate-gear">
-							</div>
-							<h2 class="display-5 text-center text-primary">Server-Side Development</h2>
-					</div>
-					<p class="lead text-muted mb-4">
-							I set out to create a RESTful API using Node.js and Express, aiming to build an application that would interact well with a non-relational database, MongoDB. This API would handle basic CRUD operations, letting users retrieve and store data, with movie information provided in JSON format. You can see more details about the endpoints by clicking on the button below.
-					</p>
-					<div class="text-center">
-							<a href="https://bobs83.github.io/movie_api/public/documentation.html" target="_blank">
-									<button type="button" class="btn btn-primary">View Endpoints</button>
-							</a>
-					</div>
-			</div>
-			<div class="row mt-4">
-					<div class="col-12 col-lg-12">
-							<div class="h-100 p-4">
-									<div class="row">
-											<!-- Nested Grid Column 1 -->
-											<div class="col-12 col-md-6 mb-4">
-													<div class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light">
-															<div class="pb-2 border-bottom">
-																	<img src="./src/case/server_1622295.png" alt="Icon" class="feature-icon-img mb-2">
-															</div>
-															<h3 class="h5 mb-3">1. Choosing the Database</h3>
-															<p class="fw-light">
-																My first task was to decide whether to use a relational or non-relational database. I tested both PostgreSQL (a relational database) and MongoDB (a non-relational database). In the end, I chose MongoDB because of its flexible schema designs and ease of use.															</p>
-													</div>
-											</div>
-											<!-- Nested Grid Column 2 -->
-											<div class="col-12 col-md-6 mb-4">
-													<div class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light">
-															<div class="pb-2 border-bottom">
-																	<img src="./src/case/development_1923594.png" alt="Icon" class="feature-icon-img mb-2">
-															</div>
-															<h3 class="h5 mb-3">2. Developing Business Logic</h3>
-															<p class="fw-light">
-																	Next, I focused on the core functionality. I created models to keep my data consistently formatted and used Mongoose to interact with the database, which made managing and manipulating data much easier.
-															</p>
-													</div>
-											</div>
-									</div>
-									<div class="row">
-											<!-- Nested Grid Column 3 -->
-											<div class="col-12 col-md-6 mb-4">
-													<div class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light">
-															<div class="pb-2 border-bottom">
-																	<img src="./src/case/computer_9078577.png" alt="Icon" class="feature-icon-img mb-2">
-															</div>
-															<h3 class="h5 mb-3">3. Deploying the Application</h3>
-															<p class="fw-light">
-																	Once I had tested all endpoints using Postman, it was time to deploy the app. I used Heroku for deployment, ensuring it was accessible to users. For the database, I hosted it on MongoDB Atlas, which provided a reliable and easy implementation.
-															</p>
-													</div>
-											</div>
-											<!-- Nested Grid Column 4 -->
-											<div class="col-12 col-md-6 mb-4">
-													<div class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light">
-															<div class="pb-2 border-bottom">
-																	<img src="./src/case/shield_15113380.png" alt="Icon" class="feature-icon-img mb-2">
-															</div>
-															<h3 class="h5 mb-3">4. Implementing Security</h3>
-															<p class="fw-light">
-																I started with basic HTTP for login, then improved security using Passport for authentication and JWT (JSON Web Token) for session authorization. I set up CORS to handle cross-origin requests and used password hashing to protect user passwords.															
-															</p>
-													</div>
-											</div>
-									</div>
-									<!-- Available on GitHub section -->
-									<div class="col-12">
-											<div class="row justify-content-md-end">
-													<div class="col-6 col-md-3 text-center">
-															<a href="https://github.com/bobs83/movie_api" target="_blank">
-																	<img src="./src/case/availgithub.png" alt="Available on GitHub" class="img-fluid mb-2 small-pic">
-															</a>
-													</div>
-											</div>
-									</div>
-							</div>
-					</div>
-			</div>
-	</div>		
-		</section>
-
-
-<!-- Server-Side-Carousel Section -->
-		<section class="container py-5 col-lg-8">
-	<div data-aos="fade-up" data-aos-duration="3000">
-			<div id="server-side-carousel" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-							<div class="carousel-item active">
-									<img src="/src/case/mangoDB.jpg" class="d-block w-100" alt="mangoDB View">
-									<div class="carousel-caption">
-											<h5 class="carousel-title">mangoDB</h5>
-											<p class="d-none d-md-block">I used mangoDB because it is a NoSQL database program that uses JSON-like documents with optional schemas, making it flexible for various data structures.</p>
-									</div>
-							</div>
-							<div class="carousel-item">
-									<img src="/src/case/postmasn.jpg" class="d-block w-100" alt="Postman View">
-									<div class="carousel-caption d-md-block">
-											<h5 class="carousel-title">Postman</h5>
-											<p class="d-none d-md-block">I used Postman as a collaboration platform for API development, enabling me to create, test, the API efficiently.</p>
-									</div>
-							</div>
-							<div class="carousel-item">
-									<img src="/src/case/netlify.jpg" class="d-block w-100" alt="Netlify View">
-									<div class="carousel-caption">
-											<h5 class="carousel-title">Netlify</h5>
-											<p class="d-none d-md-block">I chose Netlify for its platform that automates modern web projects, providing simple hosting and serverless backend services.</p>
-									</div>
-							</div>
-							<div class="carousel-item">
-									<img src="/src/case/Herku.jpg" class="d-block w-100" alt="Heroku View">
-									<div class="carousel-caption">
-											<h5 class="carousel-title">Heroku</h5>
-											<p class="d-none d-md-block">I utilized Heroku to host the API, allowing me to build, deliver and monitor my API. </p>
-									</div>
-							</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#server-side-carousel" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#server-side-carousel" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-					</button>
-			</div>
-	</div>
-		</section>
-
-		<hr class="divider" />
-
-<!-- Client-Side Development Section -->
-		<section class="container py-5 col-lg-8" id="Client-Side">
-	<div data-aos="fade-up" data-aos-duration="3000">
-			<div class="row justify-content-center">
-					<div class="col-md-12">
-							<div class="text-center mb-4">
-									<img src="./src/case/internet_13903851.png" alt="API Icon" class="img-fluid rotate-gear zoom-animation">
-							</div>
-							<h2 class="display-5 mb-4 text-center text-primary">Client-Side Development</h2>
-							<p class="lead text-muted mb-5">
-									After completing the API, I built the user interface for MyFlix, a single-page, responsive application using React. Using Bootstrap, I designed a responsive interface that allows users to navigate movie selections, access detailed movie views, manage their profiles, and set their favorite movies.
-							</p>
-					</div>
-			</div>
-			<div class="row">
-					<div class="col-md-6 mb-4 d-flex align-items-stretch">
-							<div class="card h-100 p-3 border rounded-3 shadow-sm bg-light">
-									<div class="pb-3 border-bottom">
-											<img src="./src/case/settings_1545290.png" alt="Settings Icon" class="feature-icon-img">
-									</div>
-									<h3 class="h5 mb-3 text-right">1. The Build</h3>
-									<p class="fw-light">
-											One aim of this project was to understand the use of MVC (Model View Controller) architecture as a design pattern. To achieve this, I chose React for its speed, ease of maintenance, and good documentation. I also used Parcel to manage the build operations.
-									</p>
-							</div>
-					</div>
-					<div class="col-md-6 mb-4 d-flex align-items-stretch">
-							<div class="card h-100 p-3 border rounded-3 shadow-sm bg-light">
-									<div class="pb-3 border-bottom">
-											<img src="./src/case/ui_1294442.png" alt="UI Icon" class="feature-icon-img">
-									</div>
-									<h3 class="h5 mb-3 text-right">2. Create Components</h3>
-									<p class="fw-light">
-											Once the initial build was done, I created components for the different views and hooks to control the state. I used Axios to pull in the API I had previously created.
-									</p>
-							</div>
-					</div>
-			</div>
-			<div class="row">
-					<div class="col-md-6 mb-4 d-flex align-items-stretch">
-							<div class="card h-100 p-3 border rounded-3 shadow-sm bg-light">
-									<div class="pb-3 border-bottom">
-											<img src="./src/case/graphic-design_1285954.png" alt="Design Icon" class="feature-icon-img">
-									</div>
-									<h3 class="h5 mb-3 text-right">3. Design</h3>
-									<p class="fw-light">
-											I used React Bootstrap to design the pages and cards, ensuring consistent, responsive styling across all devices. Its pre-built components streamlined the development process, making the design both efficient and cohesive.
-									</p>
-							</div>
-					</div>
-					<div class="col-md-6 mb-4 d-flex align-items-stretch">
-							<div class="card h-100 p-3 border rounded-3 shadow-sm bg-light">
-									<div class="pb-3 border-bottom">
-											<img src="./src/case/flag_1622306.png" alt="Flag Icon" class="feature-icon-img">
-									</div>
-									<h3 class="h5 mb-3 text-right">4. Final Product</h3>
-									<p class="fw-light">
-											In the end, I added a search function to simplify navigation among the movie titles. After integration, I deployed and hosted the app on Netlify.
-									</p>
-							</div>
-					</div>
-			</div>
-			<div class="row justify-content-md-end">
-					<div class="col-6 col-md-3 text-center">
-							<a href="https://github.com/bobs83/movie_api" target="_blank">
-									<img src="./src/case/availgithub.png" alt="Available on GitHub" class="img-fluid mb-2 small-pic">
-							</a>
-					</div>
-			</div>
-	</div>
-		</section>
-
-		
-<!-- Views Carousel Section -->
-		<section class="container py-5 col-lg-8">
-	<div data-aos="fade-up" data-aos-duration="3000">
-			<div id="ViewsCarousel" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-							<div class="carousel-item active">
-									<img src="/src/case/login-view.jjpg.jpg" class="d-block w-100" alt="Login View">
-									<div class="carousel-caption">
-											<h5 class="carousel-title">Login View</h5>
-											<p class="d-none d-md-block">I aimed to design a clean and simple login page that is user-friendly and easy to understand. To enhance the user experience, I included an eye icon that allows users to show or hide their password.</p>
-									</div>
-							</div>
-							<div class="carousel-item">
-									<img src="/src/case/all-Movies-view-slide.jpg" class="d-block w-100" alt="All Movies View">
-									<div class="carousel-caption">
-											<h5 class="carousel-title">Movies View Landing Page</h5>
-											<p class="d-none d-md-block">I was inspired by other movie-viewing platforms to add a carousel at the top of the page. My goal was to create an impressive landing page with a clear and attractive display of the movies.</p>
-									</div>
-							</div>
-							<div class="carousel-item">
-									<img src="/src/case/movie-card.jpg" class="d-block w-100" alt="Movie View">
-									<div class="carousel-caption">
-											<h5 class="carousel-title">Movie Card</h5>
-											<p class="d-none d-md-block">The movie card is simple and informative, showing the title, genre, year, and rating for quick scanning. Hovering over the card reveals a synopsis for more detailed information.</p>
-									</div>
-							</div>
-							<div class="carousel-item">
-									<img src="/src/case/movie-view.jpg" class="d-block w-100" alt="Movie View">
-									<div class="carousel-caption">
-											<h5 class="carousel-title">Movie View</h5>
-											<p class="d-none d-md-block">The movie view could be accessed by clicking on a movie card. I designed this view to provide detailed information about the movie, including the title, genre, director, and description.</p>
-									</div>
-							</div>
-							<div class="carousel-item">
-									<img src="/src/case/profile-view.jpg" class="d-block w-100" alt="Profile View">
-									<div class="carousel-caption">
-											<h5 class="carousel-title">Profile View</h5>
-											<p class="d-none d-md-block">The profile view lets users update their password, email, and date of birth. They can also delete their account. I designed this view to be clear and easy to navigate.</p>
-									</div>
-							</div>
-							<div class="carousel-item">
-									<img src="/src/case/similar-movies-view.jpg" class="d-block w-100" alt="Similar Movie View">
-									<div class="carousel-caption">
-											<h5 class="carousel-title">Similar Movie View</h5>
-											<p class="d-none d-md-block">On the single movie view page, I included a section that displays similar movies. This feature allows users to explore other movies that are in the same genre to the one they are currently viewing.</p>
-									</div>
-							</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#ViewsCarousel" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#ViewsCarousel" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-					</button>
-			</div>
-	</div>
-		</section>
-
-		<hr class="divider" />
-
-<!-- Project Feedback -->
-		<section class="container py-5 rounded-4 col-lg-10 bg-light" id="Project-Feedback">
-    <div class="container" data-aos="fade-up" data-aos-duration="3000">
-        <div class="row justify-content-center"></div>
-        <div class="h-100 p-5">
-            <div class="col-12">
-							<div class="text-center mb-4">
-								<img src="./src/case/writing_1001371.png" alt="Feedback Icon" class="img-fluid rotate-gear flap-animation">
-						</div>
-                <h2 class="display-5 m-4 text-center text-primary">Project Feedback</h2>
+      <!-- Purpose & Context -->
+      <section class="container py-5" id="Purpose">
+        <div
+          class="row rounded-5 justify-content-center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <div class="about-left col-lg-8 col-md-12 col-sm-12">
+            <div class="h-100 p-5 rounded-5">
+              <h2 class="display-5 mb-3 text-right text-primary">
+                Purpose &amp; Context
+              </h2>
+              <p class="lead text-muted">
+                This is a personal project I created as part of my Full-Stack
+                Web Development course at
+                <a
+                  href="https://careerfoundry.com/en/courses/become-a-web-developer/?utm_campaign=123330850798&utm_term=careerfoundry%20web%20development&utm_source=google&utm_medium=cpc&utm_content=527778821907&hsa_mt=p&hsa_ad=527778821907&hsa_ver=3&hsa_tgt=aud-1281289956874:kwd-1435809176868&hsa_net=adwords&hsa_grp=123330850798&hsa_src=g&hsa_cam=1598884281&hsa_acc=1437185464&hsa_kw=careerfoundry%20web%20development&gad_source=1&gclid=Cj0KCQjwzby1BhCQARIsAJ_0t5Om3rWW1IgMdTwkXSnCC5UftUbmaKGW8xcO5wXUqDpHQ2a8BCwbAiMaAsQREALw_wcB#curriculum"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CareerFoundry</a
+                >. The objective was to develop skills in both front-end and
+                back-end development, including creating databases, server-side
+                APIs, and building the front end using React. Through this
+                project, I aimed to gain holistic proficiency in full-stack
+                application development.
+              </p>
             </div>
-						<p class="lead text-muted mb-5">
-							As I reflect on this project, I’ve taken some time to think about what went smoothly and where I ran into challenges. In this reflection, I’ll share what worked, what didn’t, and some ideas for future improvements, along with my final thoughts on the entire experience.						
-						</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 d-none d-lg-block">
+            <img
+              class="case-image"
+              src="./src/case/briefcase_14255348.png"
+              alt="image of briefacase"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Carrerfoundery Picture Section -->
+      <section class="py-5">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <img
+                src="/src/case/CFpic.jpg"
+                alt="Placeholder Image"
+                class="img-fluid rounded shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Duration Methodologies, Credits -->
+      <section class="container col-lg-10">
+        <div
+          class="h-100 p-5 rounded-4"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <div class="container px-3 py-3" id="featured-3">
+            <div class="row g-4 py-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+              <div class="feature col">
+                <div class="pb-3 border-bottom text-start">
+                  <img
+                    src="./src/case/hourglass_747821 .png"
+                    alt="Icon"
+                    class="feature-icon-img rotate-animation img-fluid"
+                  />
+                </div>
+                <h2 class="display-6 mb-3 text-start text-primary">Duration</h2>
+                <p class="fw-light text-start">
+                  Creating the client-side took about twice as long as creating
+                  the server-side. The back end was relatively easy and quick to
+                  implement while the front-end, React had steeper learning
+                  curve.
+                </p>
+              </div>
+              <div class="feature col">
+                <div class="pb-3 border-bottom text-start">
+                  <img
+                    src="./src/case/idea_1388453.png"
+                    alt="Icon"
+                    class="feature-icon-img pulse img-fluid"
+                  />
+                </div>
+                <h2 class="display-6 mb-3 text-start text-primary">
+                  Methodologies
+                </h2>
+                <ul class="two-column-list text-start">
+                  <li class="fw-light">MERN stack</li>
+                  <li class="fw-light">RESTful API</li>
+                  <li class="fw-light">Bootstrap</li>
+                  <li class="fw-light">Postman</li>
+                  <li class="fw-light">Heroku</li>
+                  <li class="fw-light">Netlify</li>
+                </ul>
+              </div>
+              <div class="feature col">
+                <div class="pb-3 border-bottom text-start">
+                  <img
+                    src="./src/case/group_1622082.png"
+                    alt="Icon"
+                    class="feature-icon-img bounce img-fluid"
+                  />
+                </div>
+                <h2 class="display-6 mb-3 text-start text-primary">Credits</h2>
+                <p class="fw-light text-start">
+                  <strong>Tutor:</strong> Timothy Nyabongo <br />
+                  <strong>Mentor:</strong> Stephen Barungi<br />
+                  <strong>Coach:</strong> Theano Eirini Kakaziani
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Technologies Image Section -->
+      <section class="container py-5">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="row text-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="MongoDB"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="Express"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="React"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="Node.js"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="Heroku"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="Bootstrap"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="Postman"
+                  />
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/netlify/netlify-original.svg"
+                    class="img-fluid rounded w-50"
+                    alt="Netlify"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Server-Side Development -->
+      <section class="container py-5 rounded-4 col-lg-8" id="Server-Side">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+          <div class="row justify-content-center"></div>
+          <div class="h-100 p-5 bg-white">
+            <div class="row">
+              <div class="col-8 d-flex align-items-center">
+                <h2 class="display-5 text-primary">Server-Side Development</h2>
+              </div>
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center d-none d-md-flex"
+              >
+                <i class="feature-icon3 bi bi-hdd-rack"></i>
+              </div>
+            </div>
+            <div class="py-1">
+              <p class="lead text-muted mb-4">
+                I set out to create a RESTful API using Node.js and Express,
+                aiming to build an application that would interact well with a
+                non-relational database, MongoDB. This API would handle basic
+                CRUD operations, letting users retrieve and store data, with
+                movie information provided in JSON format. You can see more
+                details about the endpoints by clicking on the button below.
+              </p>
+            </div>
+            <div class="d-flex justify-content-start">
+              <a
+                href="https://bobs83.github.io/movie_api/public/documentation.html"
+                target="_blank"
+                rel="noopener"
+              >
+                <button type="button" class="btn btn-primary">
+                  View Endpoints
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-lg-12">
+              <div class="h-100 p-4">
+                <div class="row">
+                  <!-- Nested Grid Column 1 -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <div
+                      class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
+                    >
+                      <div class="pb-2 border-bottom">
+                        <img
+                          src="./src/case/server_1622295.png"
+                          alt="Icon"
+                          class="feature-icon-img mb-2"
+                        />
+                      </div>
+                      <h3 class="h5 mb-3">1. Choosing the Database</h3>
+                      <p class="fw-light">
+                        My first task was to decide whether to use a relational
+                        or non-relational database. I tested both PostgreSQL (a
+                        relational database) and MongoDB (a non-relational
+                        database). In the end, I chose MongoDB because of its
+                        flexible schema designs and ease of use.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Nested Grid Column 2 -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <div
+                      class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
+                    >
+                      <div class="pb-2 border-bottom">
+                        <img
+                          src="./src/case/development_1923594.png"
+                          alt="Icon"
+                          class="feature-icon-img mb-2"
+                        />
+                      </div>
+                      <h3 class="h5 mb-3">2. Developing Business Logic</h3>
+                      <p class="fw-light">
+                        Next, I focused on the core functionality. I created
+                        models to keep my data consistently formatted and used
+                        Mongoose to interact with the database, which made
+                        managing and manipulating data much easier.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Nested Grid Column 3 -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <div
+                      class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
+                    >
+                      <div class="pb-2 border-bottom">
+                        <img
+                          src="./src/case/computer_9078577.png"
+                          alt="Icon"
+                          class="feature-icon-img mb-2"
+                        />
+                      </div>
+                      <h3 class="h5 mb-3">3. Deploying the Application</h3>
+                      <p class="fw-light">
+                        Once I had tested all endpoints using Postman, it was
+                        time to deploy the app. I used Heroku for deployment,
+                        ensuring it was accessible to users. For the database, I
+                        hosted it on MongoDB Atlas, which provided a reliable
+                        and easy implementation.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Nested Grid Column 4 -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <div
+                      class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
+                    >
+                      <div class="pb-2 border-bottom">
+                        <img
+                          src="./src/case/shield_15113380.png"
+                          alt="Icon"
+                          class="feature-icon-img mb-2"
+                        />
+                      </div>
+                      <h3 class="h5 mb-3">4. Implementing Security</h3>
+                      <p class="fw-light">
+                        I started with basic HTTP for login, then improved
+                        security using Passport for authentication and JWT (JSON
+                        Web Token) for session authorization. I set up CORS to
+                        handle cross-origin requests and used password hashing
+                        to protect user passwords.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Available on GitHub section -->
+                <div class="col-12">
+                  <div class="row justify-content-md-end">
+                    <div class="col-6 col-md-3 text-center">
+                      <a
+                        href="https://github.com/bobs83/movie_api"
+                        target="_blank"
+                      >
+                        <img
+                          src="./src/case/availgithub.png"
+                          alt="Available on GitHub"
+                          class="img-fluid mb-2 small-pic"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Server-Side-Carousel Section -->
+      <section class="container py-5 col-lg-8">
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div
+            id="server-side-carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/src/case/mangoDB.jpg"
+                  class="d-block w-100"
+                  alt="mangoDB View"
+                />
+                <div class="carousel-caption">
+                  <h5 class="carousel-title">mangoDB</h5>
+                  <p class="fw-light d-none d-md-block">
+                    I used mangoDB because it is a NoSQL database program that
+                    uses JSON-like documents with optional schemas, making it
+                    flexible for various data structures.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/src/case/postmasn.jpg"
+                  class="d-block w-100"
+                  alt="Postman View"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5 class="carousel-title">Postman</h5>
+                  <p class="fw-light d-none d-md-block">
+                    I used Postman as a collaboration platform for API
+                    development, enabling me to create, test, the API
+                    efficiently.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/src/case/netlify.jpg"
+                  class="d-block w-100"
+                  alt="Netlify View"
+                />
+                <div class="carousel-caption">
+                  <h5 class="carousel-title">Netlify</h5>
+                  <p class="fw-light d-none d-md-block">
+                    I chose Netlify for its platform that automates modern web
+                    projects, providing simple hosting and serverless backend
+                    services.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/src/case/Herku.jpg"
+                  class="d-block w-100"
+                  alt="Heroku View"
+                />
+                <div class="carousel-caption">
+                  <h5 class="carousel-title">Heroku</h5>
+                  <p class="fw-light d-none d-md-block">
+                    I utilized Heroku to host the API, allowing me to build,
+                    deliver and monitor my API.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#server-side-carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#server-side-carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Client-Side Development Section -->
+      <section class="container py-5 col-lg-8" id="Client-Side">
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="text-center mb-4">
+                <img
+                  src="./src/case/internet_13903851.png"
+                  alt="API Icon"
+                  class="img-fluid rotate-gear zoom-animation"
+                />
+              </div>
+              <h2 class="display-5 mb-4 text-center text-primary">
+                Client-Side Development
+              </h2>
+              <p class="lead text-muted mb-5">
+                After completing the API, I built the user interface for MyFlix,
+                a single-page, responsive application using React. Using
+                Bootstrap, I designed a responsive interface that allows users
+                to navigate movie selections, access detailed movie views,
+                manage their profiles, and set their favorite movies.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4 d-flex align-items-stretch">
+              <div class="card h-100 p-3 border rounded-3 shadow-sm bg-light">
+                <div class="pb-3 border-bottom">
+                  <img
+                    src="./src/case/settings_1545290.png"
+                    alt="Settings Icon"
+                    class="feature-icon-img"
+                  />
+                </div>
+                <h3 class="h5 mb-3 text-right">1. The Build</h3>
+                <p class="fw-light">
+                  One aim of this project was to understand the use of MVC
+                  (Model View Controller) architecture as a design pattern. To
+                  achieve this, I chose React for its speed, ease of
+                  maintenance, and good documentation. I also used Parcel to
+                  manage the build operations.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 d-flex align-items-stretch">
+              <div class="card h-100 p-3 border rounded-3 shadow-sm bg-light">
+                <div class="pb-3 border-bottom">
+                  <img
+                    src="./src/case/ui_1294442.png"
+                    alt="UI Icon"
+                    class="feature-icon-img"
+                  />
+                </div>
+                <h3 class="h5 mb-3 text-right">2. Create Components</h3>
+                <p class="fw-light">
+                  Once the initial build was done, I created components for the
+                  different views and hooks to control the state. I used Axios
+                  to pull in the API I had previously created.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4 d-flex align-items-stretch">
+              <div class="card h-100 p-3 border rounded-3 shadow-sm bg-light">
+                <div class="pb-3 border-bottom">
+                  <img
+                    src="./src/case/graphic-design_1285954.png"
+                    alt="Design Icon"
+                    class="feature-icon-img"
+                  />
+                </div>
+                <h3 class="h5 mb-3 text-right">3. Design</h3>
+                <p class="fw-light">
+                  I used React Bootstrap to design the pages and cards, ensuring
+                  consistent, responsive styling across all devices. Its
+                  pre-built components streamlined the development process,
+                  making the design both efficient and cohesive.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 d-flex align-items-stretch">
+              <div class="card h-100 p-3 border rounded-3 shadow-sm bg-light">
+                <div class="pb-3 border-bottom">
+                  <img
+                    src="./src/case/flag_1622306.png"
+                    alt="Flag Icon"
+                    class="feature-icon-img"
+                  />
+                </div>
+                <h3 class="h5 mb-3 text-right">4. Final Product</h3>
+                <p class="fw-light">
+                  In the end, I added a search function to simplify navigation
+                  among the movie titles. After integration, I deployed and
+                  hosted the app on Netlify.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-md-end">
+            <div class="col-6 col-md-3 text-center">
+              <a href="https://github.com/bobs83/movie_api" target="_blank">
+                <img
+                  src="./src/case/availgithub.png"
+                  alt="Available on GitHub"
+                  class="img-fluid mb-2 small-pic"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Views Carousel Section -->
+      <section class="container py-5 col-lg-8">
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div
+            id="ViewsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/src/case/login-view.jjpg.jpg"
+                  class="d-block w-100"
+                  alt="Login View"
+                />
+                <div class="carousel-caption">
+                  <h5 class="carousel-title">Login View</h5>
+                  <p class="fw-light d-none d-md-block">
+                    I aimed to design a clean and simple login page that is
+                    user-friendly and easy to understand. To enhance the user
+                    experience, I included an eye icon that allows users to show
+                    or hide their password.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/src/case/all-Movies-view-slide.jpg"
+                  class="d-block w-100"
+                  alt="All Movies View"
+                />
+                <div class="carousel-caption">
+                  <h5 class="carousel-title">Movies View Landing Page</h5>
+                  <p class="fw-light d-none d-md-block">
+                    I was inspired by other movie-viewing platforms to add a
+                    carousel at the top of the page. My goal was to create an
+                    impressive landing page with a clear and attractive display
+                    of the movies.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/src/case/movie-card.jpg"
+                  class="d-block w-100"
+                  alt="Movie View"
+                />
+                <div class="carousel-caption">
+                  <h5 class="carousel-title">Movie Card</h5>
+                  <p class="fw-light d-none d-md-block">
+                    The movie card is simple and informative, showing the title,
+                    genre, year, and rating for quick scanning. Hovering over
+                    the card reveals a synopsis for more detailed information.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/src/case/movie-view.jpg"
+                  class="d-block w-100"
+                  alt="Movie View"
+                />
+                <div class="carousel-caption">
+                  <h5 class="carousel-title">Movie View</h5>
+                  <p class="fw-light d-none d-md-block">
+                    The movie view could be accessed by clicking on a movie
+                    card. I designed this view to provide detailed information
+                    about the movie, including the title, genre, director, and
+                    description.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/src/case/profile-view.jpg"
+                  class="d-block w-100"
+                  alt="Profile View"
+                />
+                <div class="carousel-caption">
+                  <h5 class="carousel-title">Profile View</h5>
+                  <p class="fw-light d-none d-md-block">
+                    The profile view lets users update their password, email,
+                    and date of birth. They can also delete their account. I
+                    designed this view to be clear and easy to navigate.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/src/case/similar-movies-view.jpg"
+                  class="d-block w-100"
+                  alt="Similar Movie View"
+                />
+                <div class="carousel-caption">
+                  <h5 class="carousel-title">Similar Movie View</h5>
+                  <p class="fw-light d-none d-md-block">
+                    On the single movie view page, I included a section that
+                    displays similar movies. This feature allows users to
+                    explore other movies that are in the same genre to the one
+                    they are currently viewing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#ViewsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#ViewsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Project Feedback -->
+      <section
+        class="container py-5 rounded-4 col-lg-10 bg-light"
+        id="Project-Feedback"
+      >
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+          <div class="row justify-content-center"></div>
+          <div class="h-100 p-5">
+            <div class="col-12">
+              <div class="text-center mb-4">
+                <img
+                  src="./src/case/writing_1001371.png"
+                  alt="Feedback Icon"
+                  class="img-fluid rotate-gear flap-animation"
+                />
+              </div>
+              <h2 class="display-5 m-4 text-center text-primary">
+                Project Feedback
+              </h2>
+            </div>
+            <p class="lead text-muted mb-5">
+              As I reflect on this project, I’ve taken some time to think about
+              what went smoothly and where I ran into challenges. In this
+              reflection, I’ll share what worked, what didn’t, and some ideas
+              for future improvements, along with my final thoughts on the
+              entire experience.
+            </p>
             <div class="row mt-4">
-                <!-- What Went Well -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="feature col h-100 p-3 border rounded-3 shadow-sm bg-white">
-                        <div class="pb-2 border-bottom">
-                            <img src="./src/case/like_1288745.png" alt="Success Icon" class="feature-icon-img mb-2">
-                        </div>
-                        <h3 class="h5 mb-3">What went well?</h3>
-                        <p class="fw-light">
-													When working on the backend, I found the process quite straightforward. Creating the database and interacting with it using the terminal was relatively easy. Mongoose, a tool designed for managing databases, greatly simplified the task of defining the data structure. It provided built-in methods that made performing CRUD operations—creating, reading, updating, and deleting data—much more efficient. Additionally, setting up the API using Express was also a smooth experience.													<br>
-													<br>
-													On the frontend, I thoroughly enjoyed working with and mastering Bootstrap, as I designed a responsive website that was both functional, responsive and visually appealing. Eventually, I also came to good terms with React, which initially had a steep learning curve but proved rewarding as I became more proficient.												 
-												</p>
-                    </div>
+              <!-- What Went Well -->
+              <div class="col-12 col-md-6 mb-4">
+                <div
+                  class="feature col h-100 p-3 border rounded-3 shadow-sm bg-white"
+                >
+                  <div class="pb-2 border-bottom">
+                    <img
+                      src="./src/case/like_1288745.png"
+                      alt="Success Icon"
+                      class="feature-icon-img mb-2"
+                    />
+                  </div>
+                  <h3 class="h5 mb-3">What went well?</h3>
+                  <p class="fw-light">
+                    When working on the backend, I found the process quite
+                    straightforward. Creating the database and interacting with
+                    it using the terminal was relatively easy. Mongoose, a tool
+                    designed for managing databases, greatly simplified the task
+                    of defining the data structure. It provided built-in methods
+                    that made performing CRUD operations—creating, reading,
+                    updating, and deleting data—much more efficient.
+                    Additionally, setting up the API using Express was also a
+                    smooth experience. <br />
+                    <br />
+                    On the frontend, I thoroughly enjoyed working with and
+                    mastering Bootstrap, as I designed a responsive website that
+                    was both functional, responsive and visually appealing.
+                    Eventually, I also came to good terms with React, which
+                    initially had a steep learning curve but proved rewarding as
+                    I became more proficient.
+                  </p>
                 </div>
-                <!-- What Didn't Go Well -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="feature col h-100 p-3 border rounded-3 shadow-sm bg-white">
-                        <div class="pb-2 border-bottom">
-                            <img src="./src/case/thumb-down_1622048.png" alt="Challenge Icon" class="feature-icon-img mb-2">
-                        </div>
-                        <h3 class="h5 mb-3">What didn't go well?</h3>
-                        <p class="fw-light">
-													In the backend, I encountered significant challenges with authentication. Due to an unconventional setup, I couldn’t directly access the user token to retrieve user information. To work around this, I had to send the information via parameters. My mentor assisted me with this workaround and emphasized the importance of correctly setting up the models and backend architecture to avoid such issues in the future.
-													<br>
-													<br>
-													On the frontend, I struggled with state management, particularly in passing functions through different levels of components. Additionally, implementing the search function from the top navigation presented difficulties. I realized that a more comprehensive understanding of state management and component interaction is crucial for smoother development.
-																									 </p>
-                    </div>
+              </div>
+              <!-- What Didn't Go Well -->
+              <div class="col-12 col-md-6 mb-4">
+                <div
+                  class="feature col h-100 p-3 border rounded-3 shadow-sm bg-white"
+                >
+                  <div class="pb-2 border-bottom">
+                    <img
+                      src="./src/case/thumb-down_1622048.png"
+                      alt="Challenge Icon"
+                      class="feature-icon-img mb-2"
+                    />
+                  </div>
+                  <h3 class="h5 mb-3">What didn't go well?</h3>
+                  <p class="fw-light">
+                    In the backend, I encountered significant challenges with
+                    authentication. Due to an unconventional setup, I couldn’t
+                    directly access the user token to retrieve user information.
+                    To work around this, I had to send the information via
+                    parameters. My mentor assisted me with this workaround and
+                    emphasized the importance of correctly setting up the models
+                    and backend architecture to avoid such issues in the future.
+                    <br />
+                    <br />
+                    On the frontend, I struggled with state management,
+                    particularly in passing functions through different levels
+                    of components. Additionally, implementing the search
+                    function from the top navigation presented difficulties. I
+                    realized that a more comprehensive understanding of state
+                    management and component interaction is crucial for smoother
+                    development.
+                  </p>
                 </div>
+              </div>
             </div>
             <!-- Future Steps -->
             <div class="row mt-4 justify-content-center">
-                <div class="col-10">
-                    <div class="pb-2 border-bottom">
-                        <img src="./src/case/magic-ball_10971301.png" alt="Future Steps Icon" class="feature-icon-img mb-2">
-                    </div>
-                    <h3 class="h5 mb-3">Future Steps</h3>
-                    <p class="fw-light">
-											There are many possible ways to expand this project. One potential enhancement is to add OAuth to the login view, facilitating the login process by allowing users to authenticate through third-party services like Google or Facebook. Another update would be to implement a ‘Forgot Password’ feature, providing users with a way to recover their accounts easily through a token email. 
-											<br>
-											<br>
-											Additionally, incorporating Toastify for better unobtrusive pop-up messages could improve user feedback and overall experience. Another interesting expansion involves fully utilizing the director information stored in the database used for my Angular project. Adding a director’s view card with detailed information and a pic and a secondary view under showcasing other movies by the same director would enrich the app’s content. 
-											<br>
-											<br>
-											On the UI side, introducing a dark mode option would cater to user preferences and improve accessibility, especially since it’s so bright. Moreover, refining the movie card design to make it more adapt for bigger screens and functional is another area for improvement, ensuring that the layout and presentation are optimal.                    
-										 </p>
+              <div class="col-10">
+                <div class="pb-2 border-bottom">
+                  <img
+                    src="./src/case/magic-ball_10971301.png"
+                    alt="Future Steps Icon"
+                    class="feature-icon-img mb-2"
+                  />
                 </div>
+                <h3 class="h5 mb-3">Future Steps</h3>
+                <p class="fw-light">
+                  There are many possible ways to expand this project. One
+                  potential enhancement is to add OAuth to the login view,
+                  facilitating the login process by allowing users to
+                  authenticate through third-party services like Google or
+                  Facebook. Another update would be to implement a ‘Forgot
+                  Password’ feature, providing users with a way to recover their
+                  accounts easily through a token email.
+                  <br />
+                  <br />
+                  Additionally, incorporating Toastify for better unobtrusive
+                  pop-up messages could improve user feedback and overall
+                  experience. Another interesting expansion involves fully
+                  utilizing the director information stored in the database used
+                  for my Angular project. Adding a director’s view card with
+                  detailed information and a pic and a secondary view under
+                  showcasing other movies by the same director would enrich the
+                  app’s content.
+                  <br />
+                  <br />
+                  On the UI side, introducing a dark mode option would cater to
+                  user preferences and improve accessibility, especially since
+                  it’s so bright. Moreover, refining the movie card design to
+                  make it more adapt for bigger screens and functional is
+                  another area for improvement, ensuring that the layout and
+                  presentation are optimal.
+                </p>
+              </div>
             </div>
             <!-- Final Thoughts -->
             <div class="row mt-4 justify-content-center">
-                <div class="col-10">
-                    <div class="pb-2 border-bottom">
-                        <img src="./src/case/idea_1292916.png" alt="Final Thoughts Icon" class="feature-icon-img mb-2">
-                    </div>
-                    <h3 class="h5 mb-3">Final Thoughts</h3>
-                    <p class="fw-light">
-											This project has been the most challenging yet rewarding experience in my course at CareerFoundry. Its difficulty tested my skills and patience, pushing me to become a better problem solver. I had to learn not only how to code but also to understand the dependencies and packages involved, which added another layer of complexity. I encountered numerous issues with Parcel, the bundler I used, which often led to frustrating errors.
-											<br>
-											<br>
-											I spent much more time learning React than focusing on the backend. React, with its steep learning curve, required more practice and a deeper understanding. The component-based architecture, state management, and JSX syntax were all new to me, demanding a different approach and mindset.
-											<br>
-											<br>
-											To complete this project, I sought help from various sources. YouTube and ChatGPT provided quick clarifications and insights that helped me overcome several hurdles. I also enrolled in a Udemy course, which offered more context and practical examples to guide me through the challenges.
-											<br>
-											<br>
-											There were moments when the project felt overwhelming, and I considered giving up. However, I found joy in crafting the site and adding functionalities. Seeing everything come together and work as intended was incredibly satisfying and kept me motivated. I also enjoyed learning Bootstrap and designing visually pleasing design. Crafting a user-centric, attractive interface was both time-consuming and rewarding.
-											<br>
-											<br>
-											In the end, despite the difficulties, completing this project has been a valuable experience. It taught me patience, debugging, problem-solving, and the importance of seeking external resources when needed. I look forward to deepen my knowledge of React and Bootstrap while also expanding my backend skills.
+              <div class="col-10">
+                <div class="pb-2 border-bottom">
+                  <img
+                    src="./src/case/idea_1292916.png"
+                    alt="Final Thoughts Icon"
+                    class="feature-icon-img mb-2"
+                  />
                 </div>
+                <h3 class="h5 mb-3">Final Thoughts</h3>
+                <p class="fw-light">
+                  This project has been the most challenging yet rewarding
+                  experience in my course at CareerFoundry. Its difficulty
+                  tested my skills and patience, pushing me to become a better
+                  problem solver. I had to learn not only how to code but also
+                  to understand the dependencies and packages involved, which
+                  added another layer of complexity. I encountered numerous
+                  issues with Parcel, the bundler I used, which often led to
+                  frustrating errors.
+                  <br />
+                  <br />
+                  I spent much more time learning React than focusing on the
+                  backend. React, with its steep learning curve, required more
+                  practice and a deeper understanding. The component-based
+                  architecture, state management, and JSX syntax were all new to
+                  me, demanding a different approach and mindset.
+                  <br />
+                  <br />
+                  To complete this project, I sought help from various sources.
+                  YouTube and ChatGPT provided quick clarifications and insights
+                  that helped me overcome several hurdles. I also enrolled in a
+                  Udemy course, which offered more context and practical
+                  examples to guide me through the challenges.
+                  <br />
+                  <br />
+                  There were moments when the project felt overwhelming, and I
+                  considered giving up. However, I found joy in crafting the
+                  site and adding functionalities. Seeing everything come
+                  together and work as intended was incredibly satisfying and
+                  kept me motivated. I also enjoyed learning Bootstrap and
+                  designing visually pleasing design. Crafting a user-centric,
+                  attractive interface was both time-consuming and rewarding.
+                  <br />
+                  <br />
+                  In the end, despite the difficulties, completing this project
+                  has been a valuable experience. It taught me patience,
+                  debugging, problem-solving, and the importance of seeking
+                  external resources when needed. I look forward to deepen my
+                  knowledge of React and Bootstrap while also expanding my
+                  backend skills.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-		</section>
+      </section>
 
-		<hr class="divider" />
+      <hr class="divider" />
 
-		<!-- Case Study Video Section -->
-		<section class="container py-5 col-lg-8 mb-4">
-	<div data-aos="fade-up" data-aos-duration="3000">
-			<div class="col-md-12">
-					<div class="text-center mb-4">
-							<img src="./src/case/clapperboard_7585579.png" alt="clapperboard" class="img-fluid clapperboard-animation">
-					</div>
-					<h2 class="display-5 mb-4 text-center text-primary">Video Demo</h2>
-					<p class="lead text-muted mb-5">
-						Below is a video demonstration of the project, showcasing the complete experience. You can watch the entire process, from creating a user and login page to navigating through the movie view, favorite movie view, and editing profile information.				</p>
-			</div>
-			<div>
-				<video controls autoplay muted loop playsinline class="d-block w-100">
-					<source src="src/case/casestudy-video1.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
-	</div>
-		</section>
+      <!-- Case Study Video Section -->
+      <section class="container py-5 col-lg-8 mb-4">
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div class="col-md-12">
+            <div class="text-center mb-4">
+              <img
+                src="./src/case/clapperboard_7585579.png"
+                alt="clapperboard"
+                class="img-fluid clapperboard-animation"
+              />
+            </div>
+            <h2 class="display-5 mb-4 text-center text-primary">Video Demo</h2>
+            <p class="lead text-muted mb-5">
+              Below is a video demonstration of the project, showcasing the
+              complete experience. You can watch the entire process, from
+              creating a user and login page to navigating through the movie
+              view, favorite movie view, and editing profile information.
+            </p>
+          </div>
+          <div>
+            <video
+              controls
+              autoplay
+              muted
+              loop
+              playsinline
+              class="d-block w-100"
+            >
+              <source src="src/case/casestudy-video1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
 
-	<!-- Back to Main Page Section -->
-		<section class="container py-5 col-lg-8 text-center">
-		<div class="py-5">
-			<h2 class="display-5 mb-4 text-primary">Thank You for Viewing</h2>
-			<p class="lead text-muted mb-4">We hope you enjoyed the case study. <br>
-				Click the button below to view the live page or return to the main page</p>
-			<a href="https://spiffy-starship-cff8a2.netlify.app/" class="btn btn-primary btn-md me-4">View Live Page</a>
-			<a href="index.html" class="btn btn-primary btn-md">Back to Main Page</a>
-	</div>
-		</section>
+      <!-- Back to Main Page Section -->
+      <section class="container py-5 col-lg-8 text-center">
+        <div class="py-5">
+          <h2 class="display-5 mb-4 text-primary">Thank You for Viewing</h2>
+          <p class="lead text-muted mb-4">
+            We hope you enjoyed the case study. <br />
+            Click the button below to view the live page or return to the main
+            page
+          </p>
+          <a
+            href="https://spiffy-starship-cff8a2.netlify.app/"
+            class="btn btn-primary btn-md me-4"
+            >View Live Page</a
+          >
+          <a href="index.html" class="btn btn-primary btn-md"
+            >Back to Main Page</a
+          >
+        </div>
+      </section>
 
-<!-- Footer -->
-    <footer
+      <!-- Footer -->
+      <footer
         class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
         <!-- Logo and copyright notice section -->
@@ -785,7 +1253,7 @@
                 >Home</a
               >
             </li>
-            
+
             <!-- Button trigger modal -->
             <li class="nav-item">
               <a
@@ -804,9 +1272,9 @@
                 >Impressum</a
               >
             </li>
-						<li class="nav-item">
+            <li class="nav-item">
               <a
-								href="src/downloads/bobby_singh_resume.pdf"
+                href="src/downloads/bobby_singh_resume.pdf"
                 class="btn btn-dark rounded-pill btn-sm"
                 title="Link to Bobby's Resume"
                 alt="Link to Bobby's Resume"
@@ -815,13 +1283,12 @@
                 >Download Resume</a
               >
             </li>
-						
           </ul>
         </div>
-    </footer>
+      </footer>
     </div>
-    
-<!-- Modal -->
+
+    <!-- Modal -->
     <div
       class="modal fade"
       id="myModal"
@@ -884,7 +1351,7 @@
                   >Kirupa</a
                 >
               </li>
-							<li>
+              <li>
                 Rotating mail-circle
                 <a
                   href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_anim_transform"
@@ -901,39 +1368,68 @@
               </li>
             </ul>
 
-						<h3>Images</h3>
-						<ul id="image-credits">
-								<li>
-										Live icon: <a href="https://thenounproject.com/icon/live-3400442/" title="The Noun Project">The Noun Project</a>
-								</li>
-								<li>
-										GitHub Icon: <a href="https://www.iconfinder.com/icons/1608908/github_icon" title="Icon Finder">Icon Finder</a>
-								</li>
-								<li>
-										LinkedIn Icon: <a href="https://www.iconfinder.com/icons/104493/linkedin_icon" title="Icon Finder">Icon Finder</a>
-								</li>
-								<li>
-										Moving hand left: <a href="https://thenounproject.com/icon/swipe-left-hand-1025774/" title="The Noun Project">The Noun Project</a>
-								</li>
-								<li>
-										The Menu bar icons (GitHub, Instagram, LinkedIn) are all from <a href="https://simplelineicons.github.io/" title="Simple Line Icons">Simple Line Icons</a>.
-								</li>
-								<li>
-										The {B} Icon made with <a href="https://www.canva.com/" title="Canva">Canva</a> by myself.
-								</li>
-								<li>
-										Profile Image is AI-generated based on a real image of myself using <a href="https://www.fotor.com/" title="Fotor">Fotor</a>.
-								</li>
-								<li>
-										Hero rolling text made with <a href="https://jitter.video/" title="Jitter Video">Jitter Video</a>.
-								</li>
-								<li>
-										Project image API: Unidentified source (Free SVG)
-								</li>
-								<li>
-									Mail-image: Unidentified source (Free SVG)
-							</li>
-						</ul>
+            <h3>Images</h3>
+            <ul id="image-credits">
+              <li>
+                Live icon:
+                <a
+                  href="https://thenounproject.com/icon/live-3400442/"
+                  title="The Noun Project"
+                  >The Noun Project</a
+                >
+              </li>
+              <li>
+                GitHub Icon:
+                <a
+                  href="https://www.iconfinder.com/icons/1608908/github_icon"
+                  title="Icon Finder"
+                  >Icon Finder</a
+                >
+              </li>
+              <li>
+                LinkedIn Icon:
+                <a
+                  href="https://www.iconfinder.com/icons/104493/linkedin_icon"
+                  title="Icon Finder"
+                  >Icon Finder</a
+                >
+              </li>
+              <li>
+                Moving hand left:
+                <a
+                  href="https://thenounproject.com/icon/swipe-left-hand-1025774/"
+                  title="The Noun Project"
+                  >The Noun Project</a
+                >
+              </li>
+              <li>
+                The Menu bar icons (GitHub, Instagram, LinkedIn) are all from
+                <a
+                  href="https://simplelineicons.github.io/"
+                  title="Simple Line Icons"
+                  >Simple Line Icons</a
+                >.
+              </li>
+              <li>
+                The {B} Icon made with
+                <a href="https://www.canva.com/" title="Canva">Canva</a> by
+                myself.
+              </li>
+              <li>
+                Profile Image is AI-generated based on a real image of myself
+                using <a href="https://www.fotor.com/" title="Fotor">Fotor</a>.
+              </li>
+              <li>
+                Hero rolling text made with
+                <a href="https://jitter.video/" title="Jitter Video"
+                  >Jitter Video</a
+                >.
+              </li>
+              <li>Project image API: Unidentified source (Free SVG)</li>
+              <li>Mail-image: Unidentified source (Free SVG)</li>
+            </ul>
+          </div>
+          <!-- Moved modal-footer outside the unordered list -->
           <div class="modal-footer">
             <button
               type="button"
@@ -946,10 +1442,23 @@
         </div>
       </div>
     </div>
-
     <!-- Optional JavaScript -->
     <script>
       AOS.init();
+    </script>
+    <!-- Boostrap Popover -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var popoverTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl, {
+            trigger: "hover",
+            html: true,
+          });
+        });
+      });
     </script>
   </body>
 </html>

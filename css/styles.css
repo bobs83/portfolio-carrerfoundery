@@ -1,5 +1,8 @@
 /* Base styles for the entire document */
-body,
+body {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 
@@ -591,6 +594,32 @@ list-inline {
   background: linear-gradient(45deg, #1487eb, #da54ef); /* Define the gradient */
   -webkit-background-clip: text; /* Clip the background to the text */
   background-clip: text; /* Clip the background to the text */
+}
+
+.feature-icon3 {
+  font-size: 8rem;
+  color: transparent; /* Make the text color transparent */
+	background: linear-gradient(135deg, #a5f3fc, #818cf8); /* Adjust colors as needed */
+	background-clip: text; /* Clip the background to the text */
+}
+
+.feature-icon4 {
+  font-size: 10rem;
+  color: transparent; /* Make the text color transparent */
+  background: linear-gradient(120deg, #2ceefc, #4dadfd); /* Adjust colors as needed */
+  -webkit-background-clip: text; /* For Safari */
+	background-clip: text; /* Clip the background to the text */
+  animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+
+@keyframes bouncebounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 .profile-section {
