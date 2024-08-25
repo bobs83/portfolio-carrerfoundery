@@ -130,7 +130,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-md-auto gap-2">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./index.html#home-section"
                     ><i class="bi bi-house-fill me-2"></i>Home</a
                   >
                 </li>
@@ -206,7 +209,10 @@
           <div
             class="col-md-4 d-flex justify-content-center align-items-center ccd-md-flex mb-4 mt-4"
           >
-            <i class="feature-icon4 bi bi-binoculars"></i>
+            <i
+              class="feature-icon4 bi bi-binoculars"
+              title="binoculars overview icon"
+            ></i>
           </div>
           <div class="about-left col-lg-8 col-md-8 col-sm-8">
             <div class="h-100 p-2">
@@ -292,12 +298,13 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 d-none d-lg-block">
-            <img
-              class="case-image"
-              src="./src/case/briefcase_14255348.png"
-              alt="image of briefacase"
-            />
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center ccd-md-flex mb-4 mt-4"
+          >
+            <i
+              class="feature-icon4 bi bi-clipboard-check"
+              title="binoculars overview icon"
+            ></i>
           </div>
         </div>
       </section>
@@ -455,22 +462,17 @@
       <hr class="divider" />
 
       <!-- Server-Side Development -->
-      <section class="container py-5 rounded-4 col-lg-8" id="Server-Side">
-        <div class="container" data-aos="fade-up" data-aos-duration="3000">
-          <div class="row justify-content-center"></div>
-          <div class="h-100 p-5 bg-white">
-            <div class="row">
-              <div class="col-8 d-flex align-items-center">
-                <h2 class="display-5 text-primary">Server-Side Development</h2>
-              </div>
-              <div
-                class="col-md-4 d-flex justify-content-center align-items-center d-none d-md-flex"
-              >
+      <section class="container py-5 col-lg-8" id="Server-Side">
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div class="row justify-content-center">
+            <div class="col-md-12 p-3">
+              <div class="text-center">
                 <i class="feature-icon3 bi bi-hdd-rack"></i>
               </div>
-            </div>
-            <div class="py-1">
-              <p class="lead text-muted mb-4">
+              <h2 class="display-5 mb-4 text-center text-primary">
+                Server-Side Development
+              </h2>
+              <p class="lead text-muted mb-2">
                 I set out to create a RESTful API using Node.js and Express,
                 aiming to build an application that would interact well with a
                 non-relational database, MongoDB. This API would handle basic
@@ -479,129 +481,123 @@
                 details about the endpoints by clicking on the button below.
               </p>
             </div>
-            <div class="d-flex justify-content-start">
+            <div class="d-flex justify-content-end mb-5">
               <a
                 href="https://bobs83.github.io/movie_api/public/documentation.html"
                 target="_blank"
                 rel="noopener"
               >
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-primary me-4">
                   View Endpoints
                 </button>
               </a>
             </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-12 col-lg-12">
-              <div class="h-100 p-4">
-                <div class="row">
-                  <!-- Nested Grid Column 1 -->
-                  <div class="col-12 col-md-6 mb-4">
-                    <div
-                      class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
-                    >
-                      <div class="pb-2 border-bottom">
-                        <img
-                          src="./src/case/server_1622295.png"
-                          alt="Icon"
-                          class="feature-icon-img mb-2"
-                        />
-                      </div>
-                      <h3 class="h5 mb-3">1. Choosing the Database</h3>
-                      <p class="fw-light">
-                        My first task was to decide whether to use a relational
-                        or non-relational database. I tested both PostgreSQL (a
-                        relational database) and MongoDB (a non-relational
-                        database). In the end, I chose MongoDB because of its
-                        flexible schema designs and ease of use.
-                      </p>
-                    </div>
+            <div class="row">
+              <!-- Nested Grid Column 1 -->
+              <div class="col-12 col-md-6 mb-4">
+                <div
+                  class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
+                >
+                  <div class="pb-2 border-bottom">
+                    <img
+                      src="./src/case/server_1622295.png"
+                      alt="Icon"
+                      class="feature-icon-img mb-2"
+                    />
                   </div>
-                  <!-- Nested Grid Column 2 -->
-                  <div class="col-12 col-md-6 mb-4">
-                    <div
-                      class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
-                    >
-                      <div class="pb-2 border-bottom">
-                        <img
-                          src="./src/case/development_1923594.png"
-                          alt="Icon"
-                          class="feature-icon-img mb-2"
-                        />
-                      </div>
-                      <h3 class="h5 mb-3">2. Developing Business Logic</h3>
-                      <p class="fw-light">
-                        Next, I focused on the core functionality. I created
-                        models to keep my data consistently formatted and used
-                        Mongoose to interact with the database, which made
-                        managing and manipulating data much easier.
-                      </p>
-                    </div>
-                  </div>
+                  <h3 class="h5 mb-3">1. Choosing the Database</h3>
+                  <p class="fw-light">
+                    My first task was to decide whether to use a relational or
+                    non-relational database. I tested both PostgreSQL (a
+                    relational database) and MongoDB (a non-relational
+                    database). In the end, I chose MongoDB because of its
+                    flexible schema designs and ease of use.
+                  </p>
                 </div>
-                <div class="row">
-                  <!-- Nested Grid Column 3 -->
-                  <div class="col-12 col-md-6 mb-4">
-                    <div
-                      class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
-                    >
-                      <div class="pb-2 border-bottom">
-                        <img
-                          src="./src/case/computer_9078577.png"
-                          alt="Icon"
-                          class="feature-icon-img mb-2"
-                        />
-                      </div>
-                      <h3 class="h5 mb-3">3. Deploying the Application</h3>
-                      <p class="fw-light">
-                        Once I had tested all endpoints using Postman, it was
-                        time to deploy the app. I used Heroku for deployment,
-                        ensuring it was accessible to users. For the database, I
-                        hosted it on MongoDB Atlas, which provided a reliable
-                        and easy implementation.
-                      </p>
-                    </div>
+              </div>
+              <!-- Nested Grid Column 2 -->
+              <div class="col-12 col-md-6 mb-4">
+                <div
+                  class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
+                >
+                  <div class="pb-2 border-bottom">
+                    <img
+                      src="./src/case/development_1923594.png"
+                      alt="Icon"
+                      class="feature-icon-img mb-2"
+                    />
                   </div>
-                  <!-- Nested Grid Column 4 -->
-                  <div class="col-12 col-md-6 mb-4">
-                    <div
-                      class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
-                    >
-                      <div class="pb-2 border-bottom">
-                        <img
-                          src="./src/case/shield_15113380.png"
-                          alt="Icon"
-                          class="feature-icon-img mb-2"
-                        />
-                      </div>
-                      <h3 class="h5 mb-3">4. Implementing Security</h3>
-                      <p class="fw-light">
-                        I started with basic HTTP for login, then improved
-                        security using Passport for authentication and JWT (JSON
-                        Web Token) for session authorization. I set up CORS to
-                        handle cross-origin requests and used password hashing
-                        to protect user passwords.
-                      </p>
-                    </div>
-                  </div>
+                  <h3 class="h5 mb-3">2. Developing Business Logic</h3>
+                  <p class="fw-light">
+                    Next, I focused on the core functionality. I created models
+                    to keep my data consistently formatted and used Mongoose to
+                    interact with the database, which made managing and
+                    manipulating data much easier.
+                  </p>
                 </div>
-                <!-- Available on GitHub section -->
-                <div class="col-12">
-                  <div class="row justify-content-md-end">
-                    <div class="col-6 col-md-3 text-center">
-                      <a
-                        href="https://github.com/bobs83/movie_api"
-                        target="_blank"
-                      >
-                        <img
-                          src="./src/case/availgithub.png"
-                          alt="Available on GitHub"
-                          class="img-fluid mb-2 small-pic"
-                        />
-                      </a>
-                    </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Nested Grid Column 3 -->
+              <div class="col-12 col-md-6 mb-4">
+                <div
+                  class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
+                >
+                  <div class="pb-2 border-bottom">
+                    <img
+                      src="./src/case/computer_9078577.png"
+                      alt="Icon"
+                      class="feature-icon-img mb-2"
+                    />
                   </div>
+                  <h3 class="h5 mb-3">3. Deploying the Application</h3>
+                  <p class="fw-light">
+                    Once I had tested all endpoints using Postman, it was time
+                    to deploy the app. I used Heroku for deployment, ensuring it
+                    was accessible to users. For the database, I hosted it on
+                    MongoDB Atlas, which provided a reliable and easy
+                    implementation.
+                  </p>
                 </div>
+              </div>
+              <!-- Nested Grid Column 4 -->
+              <div class="col-12 col-md-6 mb-4">
+                <div
+                  class="feature col h-100 p-3 border rounded-3 shadow-sm bg-light"
+                >
+                  <div class="pb-2 border-bottom">
+                    <img
+                      src="./src/case/shield_15113380.png"
+                      alt="Icon"
+                      class="feature-icon-img mb-2"
+                    />
+                  </div>
+                  <h3 class="h5 mb-3">4. Implementing Security</h3>
+                  <p class="fw-light">
+                    I started with basic HTTP for login, then improved security
+                    using Passport for authentication and JWT (JSON Web Token)
+                    for session authorization. I set up CORS to handle
+                    cross-origin requests and used password hashing to protect
+                    user passwords.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Available on GitHub section -->
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <a
+                  href="https://github.com/bobs83/movie_api"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./src/case/availgithub.png"
+                    alt="Available on GitHub"
+                    class="img-fluid mb-2 small-pic"
+                    title="Available on GitHub"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -710,14 +706,13 @@
       <!-- Client-Side Development Section -->
       <section class="container py-5 col-lg-8" id="Client-Side">
         <div data-aos="fade-up" data-aos-duration="3000">
-          <div class="row justify-content-center">
-            <div class="col-md-12">
-              <div class="text-center mb-4">
-                <img
-                  src="./src/case/internet_13903851.png"
-                  alt="API Icon"
-                  class="img-fluid rotate-gear zoom-animation"
-                />
+          <div class="row justify-content-start">
+            <div class="col-md-12 p-3">
+              <div class="text-center">
+                <i
+                  class="feature-icon3 bi bi-window me-2 zoom-animation"
+                  title="browser window"
+                ></i>
               </div>
               <h2 class="display-5 mb-4 text-center text-primary">
                 Client-Side Development
@@ -806,13 +801,19 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-md-end">
-            <div class="col-6 col-md-3 text-center">
-              <a href="https://github.com/bobs83/movie_api" target="_blank">
+
+          <div class="row justify-content-end">
+            <div class="col-auto">
+              <a
+                href="https://github.com/bobs83/movie_api"
+                target="_blank"
+                rel="noopener"
+              >
                 <img
                   src="./src/case/availgithub.png"
                   alt="Available on GitHub"
                   class="img-fluid mb-2 small-pic"
+                  title="Available on GitHub"
                 />
               </a>
             </div>
@@ -956,191 +957,192 @@
 
       <!-- Project Feedback -->
       <section
-        class="container py-5 rounded-4 col-lg-10 bg-light"
+        class="justify-content-center py-5 bg-light"
         id="Project-Feedback"
       >
         <div class="container" data-aos="fade-up" data-aos-duration="3000">
-          <div class="row justify-content-center"></div>
-          <div class="h-100 p-5">
-            <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
               <div class="text-center mb-4">
-                <img
-                  src="./src/case/writing_1001371.png"
-                  alt="Feedback Icon"
-                  class="img-fluid rotate-gear flap-animation"
-                />
+                <i
+                  class="feature-icon3 bi bi-pencil-square me-2 flap-animation"
+                  title="Pen writing on paper"
+                ></i>
+                <h2 class="display-5 m-4 text-center text-primary">
+                  Project Feedback
+                </h2>
               </div>
-              <h2 class="display-5 m-4 text-center text-primary">
-                Project Feedback
-              </h2>
-            </div>
-            <p class="lead text-muted mb-5">
-              As I reflect on this project, I’ve taken some time to think about
-              what went smoothly and where I ran into challenges. In this
-              reflection, I’ll share what worked, what didn’t, and some ideas
-              for future improvements, along with my final thoughts on the
-              entire experience.
-            </p>
-            <div class="row mt-4">
-              <!-- What Went Well -->
-              <div class="col-12 col-md-6 mb-4">
-                <div
-                  class="feature col h-100 p-3 border rounded-3 shadow-sm bg-white"
-                >
+              <p class="lead text-muted mb-5">
+                As I reflect on this project, I’ve taken some time to think
+                about what went smoothly and where I ran into challenges. In
+                this reflection, I’ll share what worked, what didn’t, and some
+                ideas for future improvements, along with my final thoughts on
+                the entire experience.
+              </p>
+              <div class="row mt-4">
+                <!-- What Went Well -->
+                <div class="col-12 col-md-6 mb-4">
+                  <div
+                    class="feature h-100 p-3 border rounded-3 shadow-sm bg-white"
+                  >
+                    <div class="pb-2 border-bottom">
+                      <img
+                        src="./src/case/thumb-up_1622048.png"
+                        alt="Success Icon"
+                        class="feature-icon-img mb-2 img-fluid"
+                      />
+                    </div>
+                    <h3 class="h5 mb-3">What went well?</h3>
+                    <p class="fw-light">
+                      When working on the backend, I found the process quite
+                      straightforward. Creating the database and interacting
+                      with it using the terminal was relatively easy. Mongoose,
+                      a tool designed for managing databases, greatly simplified
+                      the task of defining the data structure. It provided
+                      built-in methods that made performing CRUD
+                      operations—creating, reading, updating, and deleting
+                      data—much more efficient. Additionally, setting up the API
+                      using Express was also a smooth experience. <br />
+                      <br />
+                      On the frontend, I thoroughly enjoyed working with and
+                      mastering Bootstrap, as I designed a responsive website
+                      that was both functional, responsive and visually
+                      appealing. Eventually, I also came to good terms with
+                      React, which initially had a steep learning curve but
+                      proved rewarding as I became more proficient.
+                    </p>
+                  </div>
+                </div>
+                <div class="w-100 d-sm-block d-md-none"></div>
+                <!-- Force row break on small screens -->
+                <!-- What Didn't Go Well -->
+                <div class="col-12 col-md-6 mb-4">
+                  <div
+                    class="feature h-100 p-3 border rounded-3 shadow-sm bg-white"
+                  >
+                    <div class="pb-2 border-bottom">
+                      <img
+                        src="./src/case/thumb-down_1622048.png"
+                        alt="Challenge Icon"
+                        class="feature-icon-img mb-2 img-fluid"
+                      />
+                    </div>
+                    <h3 class="h5 mb-3">What didn't go well?</h3>
+                    <p class="fw-light">
+                      In the backend, I encountered significant challenges with
+                      authentication. Due to an unconventional setup, I couldn’t
+                      directly access the user token to retrieve user
+                      information. To work around this, I had to send the
+                      information via parameters. My mentor assisted me with
+                      this workaround and emphasized the importance of correctly
+                      setting up the models and backend architecture to avoid
+                      such issues in the future.
+                      <br />
+                      <br />
+                      On the frontend, I struggled with state management,
+                      particularly in passing functions through different levels
+                      of components. Additionally, implementing the search
+                      function from the top navigation presented difficulties. I
+                      realized that a more comprehensive understanding of state
+                      management and component interaction is crucial for
+                      smoother development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Future Steps -->
+              <div class="row mt-4 justify-content-center">
+                <div class="col-12 col-md-10">
                   <div class="pb-2 border-bottom">
                     <img
-                      src="./src/case/like_1288745.png"
-                      alt="Success Icon"
+                      src="./src/case/magic-ball_10971301.png"
+                      alt="Future Steps Icon"
                       class="feature-icon-img mb-2"
                     />
                   </div>
-                  <h3 class="h5 mb-3">What went well?</h3>
+                  <h3 class="h5 mb-3">Future Steps</h3>
                   <p class="fw-light">
-                    When working on the backend, I found the process quite
-                    straightforward. Creating the database and interacting with
-                    it using the terminal was relatively easy. Mongoose, a tool
-                    designed for managing databases, greatly simplified the task
-                    of defining the data structure. It provided built-in methods
-                    that made performing CRUD operations—creating, reading,
-                    updating, and deleting data—much more efficient.
-                    Additionally, setting up the API using Express was also a
-                    smooth experience. <br />
+                    There are many possible ways to expand this project. One
+                    potential enhancement is to add OAuth to the login view,
+                    facilitating the login process by allowing users to
+                    authenticate through third-party services like Google or
+                    Facebook. Another update would be to implement a ‘Forgot
+                    Password’ feature, providing users with a way to recover
+                    their accounts easily through a token email.
                     <br />
-                    On the frontend, I thoroughly enjoyed working with and
-                    mastering Bootstrap, as I designed a responsive website that
-                    was both functional, responsive and visually appealing.
-                    Eventually, I also came to good terms with React, which
-                    initially had a steep learning curve but proved rewarding as
-                    I became more proficient.
+                    <br />
+                    Additionally, incorporating Toastify for better unobtrusive
+                    pop-up messages could improve user feedback and overall
+                    experience. Another interesting expansion involves fully
+                    utilizing the director information stored in the database
+                    used for my Angular project. Adding a director’s view card
+                    with detailed information and a pic and a secondary view
+                    under showcasing other movies by the same director would
+                    enrich the app’s content.
+                    <br />
+                    <br />
+                    On the UI side, introducing a dark mode option would cater
+                    to user preferences and improve accessibility, especially
+                    since it’s so bright. Moreover, refining the movie card
+                    design to make it more adapt for bigger screens and
+                    functional is another area for improvement, ensuring that
+                    the layout and presentation are optimal.
                   </p>
                 </div>
               </div>
-              <!-- What Didn't Go Well -->
-              <div class="col-12 col-md-6 mb-4">
-                <div
-                  class="feature col h-100 p-3 border rounded-3 shadow-sm bg-white"
-                >
+              <!-- Final Thoughts -->
+              <div class="row mt-4 justify-content-center">
+                <div class="col-12 col-md-10">
                   <div class="pb-2 border-bottom">
                     <img
-                      src="./src/case/thumb-down_1622048.png"
-                      alt="Challenge Icon"
+                      src="./src/case/idea_1292916.png"
+                      alt="Final Thoughts Icon"
                       class="feature-icon-img mb-2"
                     />
                   </div>
-                  <h3 class="h5 mb-3">What didn't go well?</h3>
+                  <h3 class="h5 mb-3">Final Thoughts</h3>
                   <p class="fw-light">
-                    In the backend, I encountered significant challenges with
-                    authentication. Due to an unconventional setup, I couldn’t
-                    directly access the user token to retrieve user information.
-                    To work around this, I had to send the information via
-                    parameters. My mentor assisted me with this workaround and
-                    emphasized the importance of correctly setting up the models
-                    and backend architecture to avoid such issues in the future.
+                    This project has been the most challenging yet rewarding
+                    experience in my course at CareerFoundry. Its difficulty
+                    tested my skills and patience, pushing me to become a better
+                    problem solver. I had to learn not only how to code but also
+                    to understand the dependencies and packages involved, which
+                    added another layer of complexity. I encountered numerous
+                    issues with Parcel, the bundler I used, which often led to
+                    frustrating errors.
                     <br />
                     <br />
-                    On the frontend, I struggled with state management,
-                    particularly in passing functions through different levels
-                    of components. Additionally, implementing the search
-                    function from the top navigation presented difficulties. I
-                    realized that a more comprehensive understanding of state
-                    management and component interaction is crucial for smoother
-                    development.
+                    I spent much more time learning React than focusing on the
+                    backend. React, with its steep learning curve, required more
+                    practice and a deeper understanding. The component-based
+                    architecture, state management, and JSX syntax were all new
+                    to me, demanding a different approach and mindset.
+                    <br />
+                    <br />
+                    To complete this project, I sought help from various
+                    sources. YouTube and ChatGPT provided quick clarifications
+                    and insights that helped me overcome several hurdles. I also
+                    enrolled in a Udemy course, which offered more context and
+                    practical examples to guide me through the challenges.
+                    <br />
+                    <br />
+                    There were moments when the project felt overwhelming, and I
+                    considered giving up. However, I found joy in crafting the
+                    site and adding functionalities. Seeing everything come
+                    together and work as intended was incredibly satisfying and
+                    kept me motivated. I also enjoyed learning Bootstrap and
+                    designing visually pleasing design. Crafting a user-centric,
+                    attractive interface was both time-consuming and rewarding.
+                    <br />
+                    <br />
+                    In the end, despite the difficulties, completing this
+                    project has been a valuable experience. It taught me
+                    patience, debugging, problem-solving, and the importance of
+                    seeking external resources when needed. I look forward to
+                    deepen my knowledge of React and Bootstrap while also
+                    expanding my backend skills.
                   </p>
                 </div>
-              </div>
-            </div>
-            <!-- Future Steps -->
-            <div class="row mt-4 justify-content-center">
-              <div class="col-10">
-                <div class="pb-2 border-bottom">
-                  <img
-                    src="./src/case/magic-ball_10971301.png"
-                    alt="Future Steps Icon"
-                    class="feature-icon-img mb-2"
-                  />
-                </div>
-                <h3 class="h5 mb-3">Future Steps</h3>
-                <p class="fw-light">
-                  There are many possible ways to expand this project. One
-                  potential enhancement is to add OAuth to the login view,
-                  facilitating the login process by allowing users to
-                  authenticate through third-party services like Google or
-                  Facebook. Another update would be to implement a ‘Forgot
-                  Password’ feature, providing users with a way to recover their
-                  accounts easily through a token email.
-                  <br />
-                  <br />
-                  Additionally, incorporating Toastify for better unobtrusive
-                  pop-up messages could improve user feedback and overall
-                  experience. Another interesting expansion involves fully
-                  utilizing the director information stored in the database used
-                  for my Angular project. Adding a director’s view card with
-                  detailed information and a pic and a secondary view under
-                  showcasing other movies by the same director would enrich the
-                  app’s content.
-                  <br />
-                  <br />
-                  On the UI side, introducing a dark mode option would cater to
-                  user preferences and improve accessibility, especially since
-                  it’s so bright. Moreover, refining the movie card design to
-                  make it more adapt for bigger screens and functional is
-                  another area for improvement, ensuring that the layout and
-                  presentation are optimal.
-                </p>
-              </div>
-            </div>
-            <!-- Final Thoughts -->
-            <div class="row mt-4 justify-content-center">
-              <div class="col-10">
-                <div class="pb-2 border-bottom">
-                  <img
-                    src="./src/case/idea_1292916.png"
-                    alt="Final Thoughts Icon"
-                    class="feature-icon-img mb-2"
-                  />
-                </div>
-                <h3 class="h5 mb-3">Final Thoughts</h3>
-                <p class="fw-light">
-                  This project has been the most challenging yet rewarding
-                  experience in my course at CareerFoundry. Its difficulty
-                  tested my skills and patience, pushing me to become a better
-                  problem solver. I had to learn not only how to code but also
-                  to understand the dependencies and packages involved, which
-                  added another layer of complexity. I encountered numerous
-                  issues with Parcel, the bundler I used, which often led to
-                  frustrating errors.
-                  <br />
-                  <br />
-                  I spent much more time learning React than focusing on the
-                  backend. React, with its steep learning curve, required more
-                  practice and a deeper understanding. The component-based
-                  architecture, state management, and JSX syntax were all new to
-                  me, demanding a different approach and mindset.
-                  <br />
-                  <br />
-                  To complete this project, I sought help from various sources.
-                  YouTube and ChatGPT provided quick clarifications and insights
-                  that helped me overcome several hurdles. I also enrolled in a
-                  Udemy course, which offered more context and practical
-                  examples to guide me through the challenges.
-                  <br />
-                  <br />
-                  There were moments when the project felt overwhelming, and I
-                  considered giving up. However, I found joy in crafting the
-                  site and adding functionalities. Seeing everything come
-                  together and work as intended was incredibly satisfying and
-                  kept me motivated. I also enjoyed learning Bootstrap and
-                  designing visually pleasing design. Crafting a user-centric,
-                  attractive interface was both time-consuming and rewarding.
-                  <br />
-                  <br />
-                  In the end, despite the difficulties, completing this project
-                  has been a valuable experience. It taught me patience,
-                  debugging, problem-solving, and the importance of seeking
-                  external resources when needed. I look forward to deepen my
-                  knowledge of React and Bootstrap while also expanding my
-                  backend skills.
-                </p>
               </div>
             </div>
           </div>
@@ -1154,11 +1156,9 @@
         <div data-aos="fade-up" data-aos-duration="3000">
           <div class="col-md-12">
             <div class="text-center mb-4">
-              <img
-                src="./src/case/clapperboard_7585579.png"
-                alt="clapperboard"
-                class="img-fluid clapperboard-animation"
-              />
+              <i
+                class="feature-icon3 bi bi-youtube me-2 clapperboard-animation"
+              ></i>
             </div>
             <h2 class="display-5 mb-4 text-center text-primary">Video Demo</h2>
             <p class="lead text-muted mb-5">

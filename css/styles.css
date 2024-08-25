@@ -547,6 +547,8 @@ list-inline {
 .clapperboard-animation {
 	animation: clapperboard-shake 4s infinite;
 	transform-origin: top center; 
+	display: inline-block; /* Ensures the element can be animated */
+	will-change: transform; /* Optimizes the element for animation */
 }
 
 .hero-section-case-study {
@@ -555,7 +557,6 @@ list-inline {
 	background: linear-gradient(rgba(100, 99, 99, 0.7), rgba(255, 255, 255, 0.9)), url('https://github.com/bobs83/portfolio-carrerfoundery/blob/main/src/case/backround_main.jpg?raw=true');
 	background-size: cover;
 	background-position: center;
-
 }
 
 .hero-content-case-study {
@@ -591,10 +592,25 @@ list-inline {
 }
 
 .feature-icon3 {
-  font-size: 8rem;
-  color: transparent; /* Make the text color transparent */
+	font-size: 8rem;
+	color: transparent; /* Make the text color transparent */
 	background: linear-gradient(135deg, #a5f3fc, #818cf8); /* Adjust colors as needed */
 	background-clip: text; /* Clip the background to the text */
+	-webkit-background-clip: text; /* Ensure compatibility with Webkit browsers */
+	-moz-background-clip: text; /* Ensure compatibility with older Mozilla browsers */
+	display: inline-block; /* Ensure the element respects its size */
+}
+
+@keyframes zoom {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+
+.zoom-animation {
+	animation: zoom 4s infinite;
+	display: inline-block; /* Ensures the element can be animated */
+	will-change: transform; /* Optimizes the element for animation */
 }
 
 .feature-icon4 {
