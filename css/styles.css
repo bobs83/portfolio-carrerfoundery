@@ -571,6 +571,10 @@ list-inline {
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+.svg-icon {
+	height: 2em;
+}
+
 .feature-icon {
   font-size: 5rem;
   color: transparent; /* Make the text color transparent */
@@ -607,6 +611,7 @@ list-inline {
 	100% { transform: scale(1); }
 }
 
+
 .zoom-animation {
 	animation: zoom 4s infinite;
 	display: inline-block; /* Ensures the element can be animated */
@@ -630,6 +635,15 @@ list-inline {
   100% {
     transform: translateY(-10px);
   }
+}
+
+.feature-icon5 {
+	font-size: 2.1rem;
+	color: transparent; /* Make the text color transparent */
+	background: linear-gradient(135deg, #a5f3fc, #818cf8); /* Adjust colors as needed */
+	-webkit-background-clip: text; /* Ensure compatibility with Webkit browsers */
+	-moz-background-clip: text; /* Ensure compatibility with older Mozilla browsers */
+	display: inline-block; /* Ensure the element respects its size */
 }
 
 .profile-section {
