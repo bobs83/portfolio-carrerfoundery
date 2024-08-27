@@ -18,7 +18,7 @@
     <meta name="author" content="Bobby Singh" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="src/pics/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="src/pics/favicon/favicon.svg" />
 
     <!-- Bootstrap-icons -->
     <link
@@ -53,6 +53,12 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Simple Line Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
     />
 
     <title>Bobby in Berlin your Fullstack Web Developer</title>
@@ -1178,17 +1184,22 @@
         </div>
 
         <!-- Social media links section -->
-        <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
-          <a href="https://github.com/bobs83">
+        <div
+          class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0"
+        >
+          <a
+            href="https://github.com/bobs83"
+            target="_blank"
+            rel="noopener"
+            class="mx-2"
+          >
             <img
               class="socialmedia"
               src="./src/pics/social-pics/github.svg"
               alt="link to Bobby's GitHub"
-              target="_blank"
-              rel="noopener"
             />
           </a>
-          <a href="#navbarNav">
+          <a href="#navbarNav" class="mx-2">
             <img
               class="Logo-bottom"
               src="./src/pics/transparent-logo.png"
@@ -1200,14 +1211,12 @@
             title="LinkedIn Profile"
             target="_blank"
             rel="noopener"
-            alt="Link to Bobby's LinkedIn"
+            class="mx-2"
           >
             <img
               class="socialmedia"
               src="./src/pics/social-pics/inkedin.svg"
               alt="link to Bobby's LinkedIn"
-              target="_blank"
-              rel="noopener"
             />
           </a>
         </div>
@@ -1218,21 +1227,21 @@
         >
           <ul class="nav flex-column flex-md-row">
             <li class="nav-item">
-              <a href="#navbarNav" class="nav-link px-2 text-body-secondary"
+              <a
+                href="/index.html"
+                class="nav-link px-2 text-body-secondary"
+                alt="Back to Main Page"
                 >Home</a
               >
             </li>
-
-            <!-- Button trigger modal -->
             <li class="nav-item">
               <a
                 href="#"
                 class="nav-link px-2 text-body-secondary"
                 data-bs-toggle="modal"
                 data-bs-target="#myModal"
+                >Credits</a
               >
-                Credits
-              </a>
             </li>
             <li class="nav-item">
               <a
@@ -1243,14 +1252,13 @@
             </li>
             <li class="nav-item">
               <a
+                class="btn btn-dark btn-sm"
                 href="src/downloads/bobby_singh_resume.pdf"
-                class="btn btn-dark rounded-pill btn-sm"
-                title="Link to Bobby's Resume"
-                alt="Link to Bobby's Resume"
                 target="_blank"
                 rel="noopener"
-                >Download Resume</a
               >
+                <i class="bi bi-download"></i> Download Resume
+              </a>
             </li>
           </ul>
         </div>
@@ -1258,6 +1266,7 @@
     </div>
 
     <!-- Modal -->
+
     <div
       class="modal fade"
       id="myModal"
@@ -1312,41 +1321,53 @@
                   >Animate on Scroll</a
                 >
               </li>
-              <li>
-                Pulsing circle:
-                <a
-                  href="https://www.kirupa.com/animations/creating_pulsing_circle_animation.htm"
-                  title="Kirupa"
-                  >Kirupa</a
-                >
-              </li>
-              <li>
-                Rotating mail-circle
-                <a
-                  href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_anim_transform"
-                  title="w3schools"
-                  >w3schools</a
-                >
-              </li>
-              <li>Moving hand: Chat GPT</li>
-              <li>
-                Bouncing 'B':
-                <a href="https://jordannelson.dev/" title="Jordan Nelson"
-                  >Jordan Nelson</a
-                >
-              </li>
             </ul>
 
             <h3>Images</h3>
             <ul id="image-credits">
               <li>
-                Live icon:
-                <a
-                  href="https://thenounproject.com/icon/live-3400442/"
-                  title="The Noun Project"
-                  >The Noun Project</a
+                MERN and Methodology Icons:
+                <a href="https://devicon.dev/" title="Devicon Icons"
+                  >Divicon Icons</a
                 >
               </li>
+              <li>
+                AI modifed Carrerfoundery Picture:
+                <a href="https://www.fotor.com/" title="Fotor Image Editor"
+                  >Fotor</a
+                >
+              </li>
+              <li>
+                Server-Side and Client-Side Icons:
+                <a
+                  href="https://www.freepik.com/author/freepik/icons/super-basic-omission-gradient_58#from_element=resource_detail"
+                  title="Freepik Super Basic Omission Gradient collection"
+                  >Freepik</a
+                >
+              </li>
+              <li>
+                Big Icons:
+                <a
+                  href="https://icons.getbootstrap.com/"
+                  title="Bootstrap-icons Finder"
+                  >Boostrap Icons:</a
+                >
+              </li>
+              <li>
+                Project Feedback Icons:
+                <a href="https://fontawesome.com/" title="Font Awesome"
+                  >Font Awesome</a
+                >
+              </li>
+              <li>
+                Available on GitHub Icon:
+                <a
+                  href="https://github.com/Chillandchat/mobile"
+                  title="Profile Chillandchat on github"
+                  >Profile Chillandchat on github</a
+                >
+              </li>
+
               <li>
                 GitHub Icon:
                 <a
@@ -1364,14 +1385,6 @@
                 >
               </li>
               <li>
-                Moving hand left:
-                <a
-                  href="https://thenounproject.com/icon/swipe-left-hand-1025774/"
-                  title="The Noun Project"
-                  >The Noun Project</a
-                >
-              </li>
-              <li>
                 The Menu bar icons (GitHub, Instagram, LinkedIn) are all from
                 <a
                   href="https://simplelineicons.github.io/"
@@ -1384,21 +1397,8 @@
                 <a href="https://www.canva.com/" title="Canva">Canva</a> by
                 myself.
               </li>
-              <li>
-                Profile Image is AI-generated based on a real image of myself
-                using <a href="https://www.fotor.com/" title="Fotor">Fotor</a>.
-              </li>
-              <li>
-                Hero rolling text made with
-                <a href="https://jitter.video/" title="Jitter Video"
-                  >Jitter Video</a
-                >.
-              </li>
-              <li>Project image API: Unidentified source (Free SVG)</li>
-              <li>Mail-image: Unidentified source (Free SVG)</li>
             </ul>
           </div>
-          <!-- Moved modal-footer outside the unordered list -->
           <div class="modal-footer">
             <button
               type="button"
