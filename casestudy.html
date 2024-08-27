@@ -81,103 +81,104 @@
   <body>
     <div class="scroll-watcher"></div>
     <div class="page-wrapper">
-      <header>
-        <!-- Navbar -->
-        <nav class="page-header navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href=""></a>
+      <header></header>
+      <!-- Navbar -->
+      <nav
+        class="page-header navbar navbar-expand-lg navbar-light bg-light sticky-top custom-navbar"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""></a>
 
-            <ul class="list-inline mt-1 mb-0">
-              <li class="list-inline-item mr-4">
+          <ul class="list-inline mt-1 mb-0">
+            <li class="list-inline-item mr-4">
+              <a
+                class="link-social"
+                href="https://github.com/bobs83"
+                title="GitHub Profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="icon-social-github"></span>
+              </a>
+            </li>
+            <li class="list-inline-item mr-4">
+              <a
+                class="link-social"
+                href="https://www.instagram.com/bobby.inberlin/"
+                title="Instagram Profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="icon-social-instagram"></span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="link-social"
+                href="https://www.linkedin.com/in/bobbyinberlin/"
+                title="LinkedIn Profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="icon-social-linkedin"></span>
+              </a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item">
                 <a
-                  class="link-social"
-                  href="https://github.com/bobs83"
-                  title="GitHub Profile"
-                  target="_blank"
-                  rel="noopener"
+                  class="nav-link"
+                  aria-current="back to main page"
+                  href="./index.html#home-section"
+                  ><i class="bi bi-house-fill me-2"></i>Back Home</a
                 >
-                  <span class="icon-social-github"></span>
-                </a>
               </li>
-              <li class="list-inline-item mr-4">
-                <a
-                  class="link-social"
-                  href="https://www.instagram.com/bobby.inberlin/"
-                  title="Instagram Profile"
-                  target="_blank"
-                  rel="noopener"
+              <li class="nav-item">
+                <a class="nav-link" href="#overview"
+                  ><i class="bi bi-binoculars me-2"></i>Overview</a
                 >
-                  <span class="icon-social-instagram"></span>
-                </a>
               </li>
-              <li class="list-inline-item">
-                <a
-                  class="link-social"
-                  href="https://www.linkedin.com/in/bobbyinberlin/"
-                  title="LinkedIn Profile"
-                  target="_blank"
-                  rel="noopener"
+              <li class="nav-item">
+                <a class="nav-link" href="#Purpose"
+                  ><i class="bi bi-clipboard-check me-2"></i>Purpose</a
                 >
-                  <span class="icon-social-linkedin"></span>
-                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Server-Side"
+                  ><i class="bi bi-hdd-rack me-2"></i>Server-Side</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Client-Side"
+                  ><i class="bi bi-window me-2"></i>Client-Side</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Project-Feedback"
+                  ><i class="bi bi-pencil-square me-2"></i>Project Feedback</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#video-section"
+                  ><i class="bi bi-play-btn me-2"></i>Video</a
+                >
               </li>
             </ul>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-md-auto gap-2">
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="./index.html#home-section"
-                    ><i class="bi bi-house-fill me-2"></i>Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#overview"
-                    ><i class="bi bi-binoculars me-2"></i>Overview</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Purpose"
-                    ><i class="bi bi-clipboard-check me-2"></i>Purpose</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Server-Side"
-                    ><i class="bi bi-hdd-rack me-2"></i>Server-Side</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Client-Side"
-                    ><i class="bi bi-window me-2"></i>Client-Side</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Project-Feedback"
-                    ><i class="bi bi-pencil-square me-2"></i>Project Feedback</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#video-section"
-                    ><i class="bi bi-play-btn me-2"></i>Video</a
-                  >
-                </li>
-              </ul>
-            </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
 
       <!-- Hero Section Case Study  -->
       <section>
@@ -766,7 +767,7 @@
               <div class="card h-100 p-3 border rounded-3 shadow-sm bg-light">
                 <div class="pb-3 border-bottom">
                   <img
-                    src="./src/case/flag_1622306.svg"
+                    src="./src/case/icons/flag_1622306.svg"
                     alt="Flag Icon"
                     class="svg-icon feature-icon-img"
                   />
@@ -1228,14 +1229,6 @@
           <ul class="nav flex-column flex-md-row">
             <li class="nav-item">
               <a
-                href="/index.html"
-                class="nav-link px-2 text-body-secondary"
-                alt="Back to Main Page"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
                 href="#"
                 class="nav-link px-2 text-body-secondary"
                 data-bs-toggle="modal"
@@ -1252,7 +1245,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="btn btn-dark btn-sm"
+                class="btn btn-dark btn-sm ms-1"
                 href="src/downloads/bobby_singh_resume.pdf"
                 target="_blank"
                 rel="noopener"
