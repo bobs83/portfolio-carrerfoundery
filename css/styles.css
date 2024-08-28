@@ -12,7 +12,7 @@ html {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #b817dc;
+  color: #8802a6;
 }
 
 section {
@@ -39,7 +39,7 @@ h1{
   position: fixed;
   top: 0;
   z-index: 1000;
-  background-color: #b817dc;
+  background-color: #8802a6;
   width: 100%;
   scale: 0 1;
   transform-origin: left;
@@ -84,10 +84,18 @@ list-inline {
 
 .nav-item {
 	font-size: 17px;
+	color: #000000 !important;
+}
+
+.nav-link {
+	color: #383636 !important;
+	font-size: 17px;
+
 }
 
 a.nav-link:hover {
-  color: hsl(289, 98%, 33%) !important;
+  color: #8802a7 !important;
+	transition: color 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-item a.nav-link:hover {
