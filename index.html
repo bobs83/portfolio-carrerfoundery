@@ -27,12 +27,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="src/pics/favicon/favicon.svg" />
 
-    <!-- Bootstrap-icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css"
-    />
-
     <!-- Devicon -->
     <link
       rel="stylesheet"
@@ -100,7 +94,7 @@
         class="page-header navbar navbar-expand-lg navbar-light bg-light sticky-top custom-navbar"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href=""></a>
+          <a class="navbar-brand" href="" aria-label="Homepage"></a>
           <ul class="list-inline mt-1 mb-0">
             <li class="list-inline-item mr-4">
               <a
@@ -109,8 +103,9 @@
                 title="GitHub Profile"
                 target="_blank"
                 rel="noopener"
+                aria-label="GitHub Profile"
               >
-                <span class="icon-social-github"></span>
+                <span class="icon-social-github" title="GitHub"></span>
               </a>
             </li>
             <li class="list-inline-item mr-4">
@@ -120,8 +115,9 @@
                 title="Instagram Profile"
                 target="_blank"
                 rel="noopener"
+                aria-label="Instagram Profile"
               >
-                <span class="icon-social-instagram"></span>
+                <span class="icon-social-instagram" title="Instagram"></span>
               </a>
             </li>
             <li class="list-inline-item">
@@ -131,8 +127,9 @@
                 title="LinkedIn Profile"
                 target="_blank"
                 rel="noopener"
+                aria-label="LinkedIn Profile"
               >
-                <span class="icon-social-linkedin"></span>
+                <span class="icon-social-linkedin" title="LinkedIn"></span>
               </a>
             </li>
           </ul>
@@ -145,7 +142,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" title="Toggle navigation"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-md-auto gap-2">
@@ -154,23 +151,36 @@
                   class="nav-link active"
                   aria-current="page"
                   href="#home-section"
+                  aria-label="Home section"
                 >
-                  <i class="bi bi-house"></i> Home
+                  <i class="bi bi-house" title="Home"></i> Home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-section">
-                  <i class="bi bi-info-circle"></i> About
+                <a
+                  class="nav-link"
+                  href="#about-section"
+                  aria-label="About section"
+                >
+                  <i class="bi bi-info-circle" title="About"></i> About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills-section">
-                  <i class="bi bi-palette2"></i> Skills
+                <a
+                  class="nav-link"
+                  href="#skills-section"
+                  aria-label="Skills section"
+                >
+                  <i class="bi bi-palette2" title="Skills"></i> Skills
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Projects-section">
-                  <i class="bi bi-folder"></i> Projects
+                <a
+                  class="nav-link"
+                  href="#Projects-section"
+                  aria-label="Projects section"
+                >
+                  <i class="bi bi-folder" title="Projects"></i> Projects
                 </a>
               </li>
               <li class="nav-item">
@@ -179,13 +189,19 @@
                   href="./casestudy.html"
                   target="_blank"
                   rel="noopener"
+                  aria-label="Case Study"
                 >
-                  <i class="bi bi-file-earmark-text"></i> Case
+                  <i class="bi bi-file-earmark-text" title="Case Study"></i>
+                  Case
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact-section">
-                  <i class="bi bi-chat"></i> Contact
+                <a
+                  class="nav-link"
+                  href="#contact-section"
+                  aria-label="Contact section"
+                >
+                  <i class="bi bi-chat" title="Contact"></i> Contact
                 </a>
               </li>
               <li class="nav-item">
@@ -194,8 +210,10 @@
                   href="src/downloads/bobby_singh_resume.pdf"
                   target="_blank"
                   rel="noopener"
+                  aria-label="Download Resume"
                 >
-                  <i class="bi bi-download"></i> Download Resume
+                  <i class="bi bi-download" title="Download Resume"></i>
+                  Download Resume
                 </a>
               </li>
             </ul>
@@ -214,7 +232,7 @@
                 >
                   <img
                     src="./src/pics/hero-image-profile_30.jpg"
-                    alt="Bobby Singh"
+                    alt="Bobby Singh picture of face"
                     class="hero-image"
                     title="Picture of Webdeveloper Bobby in Berlin"
                     loading="lazy"
@@ -237,9 +255,17 @@
                 target="_blank"
                 rel="noopener"
                 class="butn butn__new"
+                aria-label="Download Resume"
+                alt="Download Resume"
                 >Download Resume</a
               >
-              <a href="#contact-form" class="butn2 butn2__new">Contact Me</a>
+              <a
+                href="#contact-form"
+                class="butn2 butn2__new"
+                aria-label="Cantact Form"
+                alt="Link to cobtact-form"
+                >Contact Me</a
+              >
               <div class="mt-3 social-icons">
                 <ul class="my-tech-stack">
                   <li><i class="devicon-javascript-plain"></i></li>
@@ -256,17 +282,6 @@
                   <li><i class="devicon-googlecloud-plain-wordmark"></i></li>
                   <li><i class="devicon-rest-plain-wordmark"></i></li>
                 </ul>
-                <!-- <a href="https://github.com/bobs83" target="_blank"
-                  ><i class="bi bi-github"></i
-                ></a>
-                <a href="https://linkedin.com/in/bobbyinberlin" target="_blank"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
-                <a
-                  href="https://www.instagram.com/bobby.inberlin/"
-                  target="_blank"
-                  ><i class="bi bi-instagram"></i
-                ></a> -->
               </div>
             </div>
             <div
@@ -274,7 +289,7 @@
             >
               <img
                 src="./src/pics/hero-image-profile_30.jpg"
-                alt="Bobby Singh"
+                alt="Bobby Singh picture of face"
                 class="hero-image"
                 title="Picture of Webdeveloper Bobby in Berlin"
                 loading="lazy"
@@ -703,7 +718,7 @@
             <div class="custom-image-container">
               <img
                 src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Description of the image"
+                alt="image of a computer"
                 class="custom-img"
               />
             </div>
@@ -775,7 +790,7 @@
                   <div class="card">
                     <img
                       src="./src/pics/project-pics/JS-app.png"
-                      alt=""
+                      alt="picture of Pokemon JS App"
                       class="card-img-top"
                       data-bs-toggle="popover"
                       title="Scroll to the left to see more projects"
@@ -797,7 +812,7 @@
                           <img
                             class="card-icon pulse"
                             src="./src/pics/live-card-icon.svg"
-                            alt="live-icon"
+                            alt="live-icon antenna"
                         /></a>
                         <a
                           href="https://github.com/bobs83/simple-js-app?tab=readme-ov-file"
@@ -865,7 +880,7 @@
                           ><img
                             class="card-icon pulse"
                             src="./src/pics/live-card-icon.svg"
-                            alt="live-icon"
+                            alt="live-icon antenna"
                         /></a>
                         <a
                           href="https://github.com/bobs83/myflix-client"
@@ -927,7 +942,7 @@
                   <div class="card">
                     <img
                       src="./src/pics/project-pics/react-native.png"
-                      alt=""
+                      alt="picture of Chat App"
                       class="card-img-top"
                     />
                     <div class="card-body">
@@ -948,7 +963,7 @@
                           <img
                             class="card-icon pulse"
                             src="./src/pics/live-card-icon.svg"
-                            alt="live-icon"
+                            alt="live-icon antenna"
                         /></a>
                         <a
                           href="https://github.com/bobs83/chat-app?tab=readme-ov-file#running-the-project"
@@ -1005,7 +1020,7 @@
                   <div class="card">
                     <img
                       src="./src/pics/project-pics/angular.jpg"
-                      alt=""
+                      alt="picture of Myflix-Client in angular"
                       class="card-img-top"
                     />
                     <div class="card-body">
@@ -1023,7 +1038,7 @@
                           ><img
                             class="card-icon pulse"
                             src="./src/pics/live-card-icon.svg"
-                            alt="live-icon"
+                            alt="live-icon antenna"
                         /></a>
                         <a
                           href="https://github.com/bobs83/myFlix-Angular-client"
@@ -1075,7 +1090,7 @@
                   <div class="card">
                     <img
                       src="./src/pics/project-pics/meet.png"
-                      alt=""
+                      alt="picture of app Meet N Code"
                       class="card-img-top"
                     />
                     <div class="card-body">
@@ -1095,7 +1110,7 @@
                           ><img
                             class="card-icon pulse"
                             src="./src/pics/live-card-icon.svg"
-                            alt="live-icon pulse"
+                            alt="live-icon antenna"
                         /></a>
                         <a
                           href="https://github.com/bobs83/meetberlin_app?tab=readme-ov-file"
@@ -1151,7 +1166,11 @@
                 <!-- Card 6  Api -->
                 <div class="col-lg-5 mb-4">
                   <div class="card">
-                    <img src="./src/pics/api.svg" alt="" class="card-img-top" />
+                    <img
+                      src="./src/pics/api.svg"
+                      alt="logo api"
+                      class="card-img-top"
+                    />
                     <div class="card-body">
                       <h5 class="fw-bold mt-2 mb-2">MyFlix Server (API)</h5>
                       <p class="card-text fw-light mb-3">
@@ -1168,7 +1187,7 @@
                           ><img
                             class="card-icon pulse"
                             src="./src/pics/live-card-icon.svg"
-                            alt="live-image"
+                            alt="live-image antenna"
                         /></a>
                         <a
                           href="https://github.com/bobs83/movie_api"
@@ -1178,7 +1197,7 @@
                           ><img
                             class="card-icon flap-animation"
                             src="./src/pics/github-card-icon.svg"
-                            alt="live-image"
+                            alt="live-image antenna"
                         /></a>
                       </div>
                       <div class="row">
@@ -1424,7 +1443,7 @@
             <div class="custom-image-container-bottom">
               <img
                 src="https://images.unsplash.com/photo-1629905679177-4c4e2623654f?q=80&w=2718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Description of the image"
+                alt="image of people working at thier desk in a open office space"
                 class="custom-img"
               />
             </div>
@@ -1451,18 +1470,21 @@
             target="_blank"
             rel="noopener"
             class="mx-2"
+            aria-label="Bobby's GitHub Profile"
           >
             <img
               class="socialmedia"
               src="./src/pics/social-pics/github.svg"
-              alt="link to Bobby's GitHub"
+              alt="GitHub icon"
+              title="Bobby's GitHub Profile"
             />
           </a>
-          <a href="#navbarNav" class="mx-2">
+          <a href="#navbarNav" class="mx-2" aria-label="Back to top">
             <img
               class="Logo-bottom"
               src="./src/pics/transparent-logo.png"
               alt="Bobby in Berlin's Logo"
+              title="Back to top"
             />
           </a>
           <a
@@ -1471,11 +1493,13 @@
             target="_blank"
             rel="noopener"
             class="mx-2"
+            aria-label="Bobby's LinkedIn Profile"
           >
             <img
               class="socialmedia"
               src="./src/pics/social-pics/inkedin.svg"
-              alt="link to Bobby's LinkedIn"
+              alt="Bobbys LinkedIn profile"
+              title="Bobby's LinkedIn Profile"
             />
           </a>
         </div>
@@ -1486,7 +1510,10 @@
         >
           <ul class="nav flex-column flex-md-row">
             <li class="nav-item">
-              <a href="#navbarNav" class="nav-link px-2 text-body-secondary"
+              <a
+                href="#navbarNav"
+                class="nav-link px-2 text-body-secondary"
+                aria-label="About Section"
                 >About</a
               >
             </li>
@@ -1496,6 +1523,7 @@
                 class="nav-link px-2 text-body-secondary"
                 data-bs-toggle="modal"
                 data-bs-target="#myModal"
+                aria-label="Credits Modal"
                 >Credits</a
               >
             </li>
@@ -1503,6 +1531,7 @@
               <a
                 href="/src/files/impressum.pdf"
                 class="nav-link px-2 text-body-secondary"
+                aria-label="Impressum PDF"
                 >Impressum</a
               >
             </li>

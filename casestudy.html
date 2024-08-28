@@ -25,12 +25,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="src/pics/favicon/favicon.svg" />
 
-    <!-- Bootstrap-icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css"
-    />
-
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -92,7 +86,7 @@
         class="page-header navbar navbar-expand-lg navbar-light bg-light sticky-top custom-navbar"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href=""></a>
+          <a class="navbar-brand" href="" aria-label="Homepage"></a>
 
           <ul class="list-inline mt-1 mb-0">
             <li class="list-inline-item mr-4">
@@ -102,8 +96,9 @@
                 title="GitHub Profile"
                 target="_blank"
                 rel="noopener"
+                aria-label="GitHub Profile"
               >
-                <span class="icon-social-github"></span>
+                <span class="icon-social-github" title="GitHub"></span>
               </a>
             </li>
             <li class="list-inline-item mr-4">
@@ -113,19 +108,21 @@
                 title="Instagram Profile"
                 target="_blank"
                 rel="noopener"
+                aria-label="Instagram Profile"
               >
-                <span class="icon-social-instagram"></span>
+                <span class="icon-social-instagram" title="Instagram"></span>
               </a>
             </li>
             <li class="list-inline-item">
               <a
                 class="link-social"
                 href="https://www.linkedin.com/in/bobbyinberlin/"
-                title="LinkedIn Profile"
+                title="Bobby Singh's LinkedIn Profile"
                 target="_blank"
                 rel="noopener"
+                aria-label="LinkedIn Profile"
               >
-                <span class="icon-social-linkedin"></span>
+                <span class="icon-social-linkedin" title="LinkedIn"></span>
               </a>
             </li>
           </ul>
@@ -138,46 +135,71 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" title="Toggle navigation"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-md-auto gap-2">
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  aria-current="back to main page"
+                  aria-current="page"
+                  aria-label="Back to main page"
                   href="./index.html#home-section"
-                  ><i class="bi bi-house-fill me-2"></i>Back Home</a
+                  ><i class="bi bi-house-fill me-2" title="Home"></i>Back
+                  Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#overview"
-                  ><i class="bi bi-binoculars me-2"></i>Overview</a
+                <a
+                  class="nav-link"
+                  href="#overview"
+                  aria-label="Overview section"
+                  ><i class="bi bi-binoculars me-2" title="Overview"></i
+                  >Overview</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Purpose"
-                  ><i class="bi bi-clipboard-check me-2"></i>Purpose</a
+                <a class="nav-link" href="#Purpose" aria-label="Purpose section"
+                  ><i class="bi bi-clipboard-check me-2" title="Purpose"></i
+                  >Purpose</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Server-Side"
-                  ><i class="bi bi-hdd-rack me-2"></i>Server-Side</a
+                <a
+                  class="nav-link"
+                  href="#Server-Side"
+                  aria-label="Server-Side section"
+                  ><i class="bi bi-hdd-rack me-2" title="Server-Side"></i
+                  >Server-Side</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Client-Side"
-                  ><i class="bi bi-window me-2"></i>Client-Side</a
+                <a
+                  class="nav-link"
+                  href="#Client-Side"
+                  aria-label="Client-Side section"
+                  ><i class="bi bi-window me-2" title="Client-Side"></i
+                  >Client-Side</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Project-Feedback"
-                  ><i class="bi bi-pencil-square me-2"></i>Project Feedback</a
+                <a
+                  class="nav-link"
+                  href="#Project-Feedback"
+                  aria-label="Project Feedback section"
+                  ><i
+                    class="bi bi-pencil-square me-2"
+                    title="Project Feedback"
+                  ></i
+                  >Project Feedback</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#video-section"
-                  ><i class="bi bi-play-btn me-2"></i>Video</a
+                <a
+                  class="nav-link"
+                  href="#video-section"
+                  aria-label="Video section"
+                  ><i class="bi bi-play-btn me-2" title="Video"></i>Video</a
                 >
               </li>
             </ul>
@@ -186,7 +208,7 @@
       </nav>
 
       <!-- Hero Section Case Study  -->
-      <section>
+      <section aria-label="Hero-Section-For-Case-Study">
         <div class="hero-section-case-study vh-100 d-flex align-items-center">
           <div class="container">
             <div class="row justify-content-center">
@@ -218,7 +240,11 @@
 
       <hr class="divider" />
       <!-- Overview Section -->
-      <section class="container py-5 mt-5" id="overview">
+      <section
+        class="container py-5 mt-5"
+        id="overview"
+        aria-label="Overview Section"
+      >
         <div
           class="row rounded-5 justify-content-center"
           data-aos="fade-up"
@@ -250,7 +276,10 @@
       <hr class="divider" />
 
       <!-- Technologies Image Section I -->
-      <section class="container py-5 mt-3">
+      <section
+        class="container py-5 mt-3"
+        aria-label="Technologies Image Section"
+      >
         <div class="container" data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-center">
             <div class="col-md-8">
@@ -259,7 +288,7 @@
                   <img
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
                     class="img-fluid rounded w-50"
-                    alt="MongoDB"
+                    alt="MongoDB logo"
                     data-bs-container="body"
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
@@ -270,7 +299,7 @@
                   <img
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
                     class="img-fluid rounded w-50"
-                    alt="Express"
+                    alt="Express logo"
                     data-bs-container="body"
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
@@ -281,7 +310,7 @@
                   <img
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
                     class="img-fluid rounded w-50"
-                    alt="React"
+                    alt="Picure of React"
                     data-bs-container="body"
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
@@ -292,7 +321,7 @@
                   <img
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
                     class="img-fluid rounded w-50"
-                    alt="Node.js"
+                    alt="Node.js logo"
                     data-bs-container="body"
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
@@ -308,7 +337,7 @@
       <hr class="divider" />
 
       <!-- Purpose & Context -->
-      <section class="container py-5" id="Purpose">
+      <section class="container py-5" id="Purpose" aria-label="Purpose-header">
         <div
           class="row rounded-5 justify-content-center"
           data-aos="fade-up"
@@ -349,14 +378,16 @@
       <hr class="divider" />
 
       <!-- Carrerfoundery Picture Section -->
-      <section class="py-5">
+      <section class="py-5" aria-label="CarrerFoundery Picture Section">
         <div class="container" data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-center">
             <div class="col-md-8">
               <img
                 src="/src/pics/CFpic.jpg"
-                alt="Image of guy working on computer"
+                alt="Image of guy working on
+              computer"
                 class="img-fluid rounded shadow-lg"
+                loading="lazy"
               />
             </div>
           </div>
@@ -366,7 +397,10 @@
       <hr class="divider" />
 
       <!-- Duration Methodologies, Credits -->
-      <section class="container col-lg-10">
+      <section
+        class="container col-lg-10"
+        aria-label="Duration Methodologies, Credits"
+      >
         <div
           class="h-100 p-5 rounded-4"
           data-aos="fade-up"
@@ -390,7 +424,7 @@
               </div>
               <div class="feature col d-flex flex-column">
                 <div class="pb-2 border-bottom text-start">
-                  <i class="feature-icon5 bi bi-tools"></i>
+                  <i class="feature-icon5 bi bi-tools" title="tools icon"></i>
                 </div>
                 <h2 class="display-6 mb-3 text-start text-primary">
                   Methodologies
@@ -406,7 +440,10 @@
               </div>
               <div class="feature col d-flex flex-column">
                 <div class="pb-2 border-bottom text-start">
-                  <i class="feature-icon5 bi-person-heart"></i>
+                  <i
+                    class="feature-icon5 bi-person-heart"
+                    title="person with a heart icon"
+                  ></i>
                 </div>
                 <h2 class="display-6 mb-3 text-start text-primary">Credits</h2>
                 <p class="fw-light text-start">
@@ -423,7 +460,7 @@
       <hr class="divider" />
 
       <!-- Technologies Image Section 2-->
-      <section class="container py-5">
+      <section class="container py-5" aria-label="Technologies Image Section 2">
         <div class="container" data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-center">
             <div class="col-md-8">
@@ -432,7 +469,7 @@
                   <img
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-original.svg"
                     class="img-fluid rounded w-50"
-                    alt="Heroku"
+                    alt="Heroku logo"
                     data-bs-container="body"
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
@@ -443,7 +480,7 @@
                   <img
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"
                     class="img-fluid rounded w-50"
-                    alt="Bootstrap"
+                    alt="Bootstrap logo"
                     data-bs-container="body"
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
@@ -454,7 +491,7 @@
                   <img
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg"
                     class="img-fluid rounded w-50"
-                    alt="Postman"
+                    alt="  Postman logo"
                     data-bs-container="body"
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
@@ -465,7 +502,7 @@
                   <img
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/netlify/netlify-original.svg"
                     class="img-fluid rounded w-50"
-                    alt="Netlify"
+                    alt="  Netlify logo"
                     data-bs-container="body"
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
@@ -481,12 +518,19 @@
       <hr class="divider" />
 
       <!-- Server-Side Development -->
-      <section class="container py-5 col-lg-8" id="Server-Side">
+      <section
+        class="container py-5 col-lg-8"
+        id="Server-Side"
+        aria-labelledby="server-side-heading"
+      >
         <div data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-center">
             <div class="col-md-12 p-3">
               <div class="text-center">
-                <i class="feature-icon3 fa-bounce bi bi-hdd-rack"></i>
+                <i
+                  class="feature-icon3 fa-bounce bi bi-hdd-rack"
+                  title="hardrive-icon"
+                ></i>
               </div>
               <h2 class="display-5 mb-4 text-center text-primary">
                 Server-Side Development
@@ -520,7 +564,7 @@
                   <div class="pb-2 border-bottom">
                     <img
                       src="./src/case/icons/server_1622295.svg"
-                      alt="Icon"
+                      alt="Icon of a server"
                       class="svg-icon feature-icon-img mb-2"
                     />
                   </div>
@@ -542,7 +586,7 @@
                   <div class="pb-2 border-bottom">
                     <img
                       src="./src/case/icons/development_1923594.svg"
-                      alt="Icon"
+                      alt="Icon of head with gear inside it"
                       class="svg-icon feature-icon-img mb-2"
                     />
                   </div>
@@ -565,7 +609,7 @@
                   <div class="pb-2 border-bottom">
                     <img
                       src="./src/case/icons/computer_9078577.svg"
-                      alt="Icon"
+                      alt="Icon of a computer with a rocket on Screen"
                       class="svg-icon flap-animation feature-icon-img mb-2"
                     />
                   </div>
@@ -587,7 +631,7 @@
                   <div class="pb-2 border-bottom">
                     <img
                       src="./src/case/icons/shield_10234305.svg"
-                      alt="Icon"
+                      alt="Icon of a shild with a lock"
                       class="svg-icon feature-icon-img mb-2"
                     />
                   </div>
@@ -612,7 +656,7 @@
                 >
                   <img
                     src="./src/pics/availgithub.png"
-                    alt="Available on GitHub"
+                    alt="Available on GitHub picture"
                     class="img-fluid mb-2 available-on-github"
                     title="Available on GitHub"
                   />
@@ -624,7 +668,10 @@
       </section>
 
       <!-- Server-Side-Carousel Section -->
-      <section class="container py-5 col-lg-8">
+      <section
+        class="container py-5 col-lg-8"
+        aria-label="Carousel with images from tools used during the project"
+      >
         <div data-aos="fade-up" data-aos-duration="3000">
           <div
             id="server-side-carousel"
@@ -636,12 +683,12 @@
                 <img
                   src="/src/case/slides-back/mangoDB.jpg"
                   class="d-block w-100"
-                  alt="mangoDB View"
+                  alt="mongoDB View"
                 />
                 <div class="carousel-caption">
-                  <h5 class="carousel-title">mangoDB</h5>
+                  <h5 class="carousel-title">MongoDB</h5>
                   <p class="fw-light d-none d-md-block">
-                    I used mangoDB because it is a NoSQL database program that
+                    I used mongoDB because it is a NoSQL database program that
                     uses JSON-like documents with optional schemas, making it
                     flexible for various data structures.
                   </p>
@@ -651,8 +698,9 @@
                 <img
                   src="/src/case/slides-back/postmasn.jpg"
                   class="d-block w-100"
-                  alt="Postman View"
+                  alt="The Postman View"
                 />
+
                 <div class="carousel-caption d-md-block">
                   <h5 class="carousel-title">Postman</h5>
                   <p class="fw-light d-none d-md-block">
@@ -723,7 +771,11 @@
       <hr class="divider" />
 
       <!-- Client-Side Development Section -->
-      <section class="container py-5 col-lg-8" id="Client-Side">
+      <section
+        class="container py-5 col-lg-8"
+        id="Client-Side"
+        aria-label="Information about my server side development starts here "
+      >
         <div data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-start">
             <div class="col-md-12 p-3">
@@ -751,7 +803,7 @@
                 <div class="pb-3 border-bottom">
                   <img
                     src="./src/case/icons/settings_1545290.svg"
-                    alt="Settings Icon"
+                    alt="Settings Icon "
                     class="svg-icon clapperboard-animation feature-icon-img"
                   />
                 </div>
@@ -770,7 +822,7 @@
                 <div class="pb-3 border-bottom">
                   <img
                     src="./src/case/icons/ui_1294442.svg"
-                    alt="UI Icon"
+                    alt="UI Icon with diffrrent components"
                     class="svg-icon feature-icon-img"
                   />
                 </div>
@@ -789,7 +841,7 @@
                 <div class="pb-3 border-bottom">
                   <img
                     src="./src/case/icons/graphic-design_1285954.svg"
-                    alt="Design Icon"
+                    alt="Design Icon with a paintbruch on a screen"
                     class="svg-icon feature-icon-img"
                   />
                 </div>
@@ -807,7 +859,7 @@
                 <div class="pb-3 border-bottom">
                   <img
                     src="./src/case/icons/flag_1622306.svg"
-                    alt="Flag Icon"
+                    alt="Flag Icon you reched the end"
                     class="svg-icon feature-icon-img"
                   />
                 </div>
@@ -841,7 +893,10 @@
       </section>
 
       <!-- Views Carousel Section -->
-      <section class="container py-5 col-lg-8">
+      <section
+        class="container py-5 col-lg-8"
+        aria-label="Carousel with images of diffrent views of th interface"
+      >
         <div data-aos="fade-up" data-aos-duration="3000">
           <div
             id="ViewsCarousel"
@@ -853,7 +908,7 @@
                 <img
                   src="/src/case/slides-front/login-view.jpg"
                   class="d-block w-100"
-                  alt="Login View"
+                  alt="The Login View"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Login View</h5>
@@ -885,7 +940,7 @@
                 <img
                   src="/src/case/slides-front/movie-card.jpg"
                   class="d-block w-100"
-                  alt="Movie View"
+                  alt="The Movie card view"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Movie Card</h5>
@@ -900,7 +955,7 @@
                 <img
                   src="/src/case/slides-front/movie-view.jpg"
                   class="d-block w-100"
-                  alt="Movie View"
+                  alt="  the Movie View"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Movie View</h5>
@@ -916,7 +971,7 @@
                 <img
                   src="/src/case/slides-front/profile-view.jpg"
                   class="d-block w-100"
-                  alt="Profile View"
+                  alt="  the Profile View"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Profile View</h5>
@@ -931,7 +986,7 @@
                 <img
                   src="/src/case/slides-front/similar-movies-view.jpg"
                   class="d-block w-100"
-                  alt="Similar Movie View"
+                  alt="The Similar Movie View"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Similar Movie View</h5>
@@ -978,6 +1033,7 @@
       <section
         class="justify-content-center py-5 bg-light"
         id="Project-Feedback"
+        aria-label="Project Feedback"
       >
         <div class="container" data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-center">
@@ -1107,7 +1163,10 @@
               <div class="row mt-4 justify-content-center">
                 <div class="col-12 col-md-10">
                   <div class="pb-3 border-bottom">
-                    <i class="feature-icon5 bounce fa-regular fa-lightbulb"></i>
+                    <i
+                      class="feature-icon5 bounce fa-regular fa-lightbulb"
+                      title="lightbulb icon"
+                    ></i>
                   </div>
                   <h3 class="h5 mb-3">Final Thoughts</h3>
                   <p class="fw-light">
@@ -1161,7 +1220,11 @@
       <hr class="divider" />
 
       <!-- Case Study Video Section -->
-      <section class="container py-5 col-lg-8 mb-4" id="video-section">
+      <section
+        class="container py-5 col-lg-8 mb-4"
+        id="video-section"
+        aria-label="This is the video section where a video is playing showcasing the use of the application"
+      >
         <div data-aos="fade-up" data-aos-duration="3000">
           <div class="col-md-12">
             <div class="text-center mb-4">
@@ -1199,7 +1262,10 @@
       <hr class="divider" />
 
       <!-- Back to Main Page Section -->
-      <section class="container py-5 col-lg-8 text-center">
+      <section
+        class="container py-5 col-lg-8 text-center"
+        aria-label="Thank you and back to Main Page section"
+      >
         <div class="py-5">
           <h2 class="display-5 mb-4 text-primary">Thank You for Viewing</h2>
           <p class="lead text-muted mb-4">
@@ -1221,6 +1287,7 @@
       <!-- Footer -->
       <footer
         class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        aria-label="Footer Section"
       >
         <!-- Logo and copyright notice section -->
         <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
@@ -1232,6 +1299,7 @@
         <!-- Social media links section -->
         <div
           class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0"
+          aria-label="Social-media-links-section"
         >
           <a
             href="https://github.com/bobs83"
@@ -1270,6 +1338,7 @@
         <!-- Navigation links section -->
         <div
           class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end"
+          aria-labelledby="Navigation-links-section"
         >
           <ul class="nav flex-column flex-md-row">
             <li class="nav-item">
@@ -1294,8 +1363,10 @@
                 href="src/downloads/bobby_singh_resume.pdf"
                 target="_blank"
                 rel="noopener"
+                alt="Download Bobby's Resume"
               >
-                <i class="bi bi-download"></i> Download Resume
+                <i class="bi bi-download" title="download-icon"></i> Download
+                Resume
               </a>
             </li>
           </ul>
@@ -1370,7 +1441,7 @@
                 >
               </li>
               <li>
-                AI modifed Carrerfoundery Picture:
+                AI modifed CarrerFoundery Picture:
                 <a href="https://www.fotor.com/" title="Fotor Image Editor"
                   >Fotor</a
                 >
