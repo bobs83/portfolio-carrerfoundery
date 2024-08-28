@@ -20,9 +20,17 @@
 
     <!-- Google Fonts -->
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="src/pics/favicon/favicon.svg" />
@@ -87,8 +95,20 @@
         <div class="container d-flex align-items-center justify-content-center">
           <div class="row justify-content-center">
             <div class="col-md-12 d-flex justify-content-center">
-              <video class="hero-video" autoplay muted playsinline>
-                <source src="./src/videos/Hero-video.mp4" type="video/mp4" />
+              <video
+                class="hero-video"
+                autoplay
+                muted
+                playsinline
+                title="Hello I am Bobby Webdeveloper based in Berlin"
+              >
+                <source src="./src/videos/Hero-video2.webm" type="video/mp4" />
+                <img
+                  src="./src/pics/fall-back-image.png"
+                  alt="Text: Hello I am Bobby Webdeveloper based in Berlin"
+                  loading="lazy"
+                />
+                Your browser does not support the video tag.
               </video>
             </div>
           </div>
@@ -410,6 +430,7 @@
                     data-bs-toggle="popover"
                     title="HTML"
                     data-content="HyperText Markup Language"
+                    loading="lazy"
                   />
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-4 mb-3">
@@ -420,6 +441,7 @@
                     data-bs-toggle="popover"
                     title="CSS"
                     data-content="Cascading Style Sheets"
+                    loading="lazy"
                   />
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-4 mb-3">
@@ -430,6 +452,7 @@
                     data-bs-toggle="popover"
                     title="JavaScript"
                     data-content="Programming Language for Web Development"
+                    loading="lazy"
                   />
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-4 mb-3">
@@ -723,7 +746,7 @@
           <div class="col-md-12 text-center">
             <div class="custom-image-container">
               <img
-                src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="./src/pics/computer-unsplash.jpg"
                 alt="image of a computer"
                 class="custom-img"
               />
@@ -800,6 +823,7 @@
                       class="card-img-top"
                       data-bs-toggle="popover"
                       title="Scroll to the left to see more projects"
+                      loading="lazy"
                     />
                     <div class="card-body">
                       <h5 class="fw-bold mt-2 mb-2">Pokemon Js App</h5>
@@ -869,6 +893,7 @@
                       src="./src/pics/project-pics/react.jpg"
                       class="card-img-top"
                       alt="picture of Myflix-Client in react"
+                      loading="lazy"
                     />
                     <div class="card-body">
                       <h5 class="fw-bold mt-2 mb-2">Myflix- Client (React)</h5>
@@ -951,6 +976,7 @@
                       src="./src/pics/project-pics/react-native.png"
                       alt="picture of Chat App"
                       class="card-img-top"
+                      loading="lazy"
                     />
                     <div class="card-body">
                       <h5 class="fw-bold mt-2 mb-2">Chat App (React-native)</h5>
@@ -1029,6 +1055,7 @@
                       src="./src/pics/project-pics/angular.jpg"
                       alt="picture of Myflix-Client in angular"
                       class="card-img-top"
+                      loading="lazy"
                     />
                     <div class="card-body">
                       <h5 class="fw-bold mt-2 mb-2">Myflix-client (Angular)</h5>
@@ -1099,10 +1126,11 @@
                       src="./src/pics/project-pics/meet.png"
                       alt="picture of app Meet N Code"
                       class="card-img-top"
+                      loading="lazy"
                     />
                     <div class="card-body">
                       <h5 class="fw-bold mt-2 mb-2">
-                        Meet N Code (Serveless PWA and TDD testing)
+                        Meet N Code (Serveless PWA &amp; TDD testing)
                       </h5>
                       <p class="card-text fw-light mb-3">
                         Created a serverless React PWA applying TDD practices,
@@ -1174,9 +1202,10 @@
                 <div class="col-lg-5 mb-4">
                   <div class="card">
                     <img
-                      src="./src/pics/api.svg"
+                      src="./src/pics/project-pics/api.svg"
                       alt="logo api"
                       class="card-img-top"
+                      loading="lazy"
                     />
                     <div class="card-body">
                       <h5 class="fw-bold mt-2 mb-2">MyFlix Server (API)</h5>
@@ -1449,9 +1478,10 @@
           <div class="col-md-12 text-center">
             <div class="custom-image-container-bottom">
               <img
-                src="https://images.unsplash.com/photo-1629905679177-4c4e2623654f?q=80&w=2718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="./src/pics/workin-unsplash.jpg"
                 alt="image of people working at thier desk in a open office space"
                 class="custom-img"
+                loading="lazy"
               />
             </div>
           </div>
@@ -1552,7 +1582,6 @@
       id="myModal"
       tabindex="-1"
       aria-labelledby="modalLabel"
-      aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
@@ -1713,6 +1742,7 @@
               type="button"
               class="btn btn-secondary"
               data-bs-dismiss="modal"
+              tabindex="-1"
             >
               Close
             </button>
