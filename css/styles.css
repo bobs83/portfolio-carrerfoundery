@@ -399,7 +399,7 @@ a.nav-link:hover {
 .hero-section-case-study {
 	position: relative;
 	overflow: hidden;	
-	background: linear-gradient(rgba(100, 99, 99, 0.7), rgba(255, 255, 255, 0.9)), url('https://github.com/bobs83/portfolio-carrerfoundery/blob/main/src/case/backround_main.jpg?raw=true');
+	background: linear-gradient(rgba(100, 99, 99, 0.7), rgba(255, 255, 255, 0.9)), url('/src/pics/backround/backround_main.jpg');
 	background-size: cover;
 	background-position: center;
 }
