@@ -200,7 +200,8 @@ a.nav-link:hover {
 .list-group {
   line-height: 1em;
   font-size: smaller;
-  line-height: 0.8em;
+  line-height: 1.2em;
+	text-overflow: ellipsis
 }
 
 .scroll-image {
