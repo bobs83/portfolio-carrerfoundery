@@ -16,14 +16,41 @@
       content="Bobby Singh, bobby in berlin, full-stack developer, web development, front-end development, back-end development, React, Node, Angular, VueJS, JavaScript, HTML, CSS, Bootstrap, Axios, PWA, TDD, APIs, Berlin web developer"
     />
 
+    <!-- Preconnect to necessary resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+
     <!-- Google Fonts -->
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Font Awesome -->
+    <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="src/pics/favicon/favicon.svg" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -32,33 +59,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
-      rel="stylesheet"
-    />
-    <!-- My JS -->
-    <!-- <script defer src="./js/app.js"></script> -->
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- Scroll Timeline -->
-    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-
-    <!-- Simple Line Icons  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
-    />
 
     <title>Bobby in Berlin your Fullstack Web Developer</title>
   </head>
@@ -109,7 +115,10 @@
                 rel="noopener"
                 aria-label="Instagram Profile"
               >
-                <i class="bi bi-instagram" title="Instagram"></i>
+                <i
+                  class="bi bi-instagram feature-icon-nav"
+                  title="Instagram"
+                ></i>
               </a>
             </li>
             <li class="list-inline-item">
@@ -292,6 +301,9 @@
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     data-bs-content="I used MongoDB to store the data for the application."
+                    loading="lazy"
+                    height="150"
+                    width="150"
                   />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
@@ -303,6 +315,8 @@
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     data-bs-content="I used express to create the server-side API for the application."
+                    height="150"
+                    width="150"
                   />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
@@ -314,6 +328,9 @@
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     data-bs-content="I used React to create the client-side of the application."
+                    loading="lazy"
+                    height="150"
+                    width="150"
                   />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
@@ -325,6 +342,9 @@
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     data-bs-content="I used Node.js to create the server-side API for the application."
+                    loading="lazy"
+                    height="150"
+                    width="150"
                   />
                 </div>
               </div>
@@ -382,11 +402,13 @@
           <div class="row justify-content-center">
             <div class="col-md-8">
               <img
-                src="/src/pics/CFpic.jpg"
+                src="/src/pics/carrerfounderypic.jpg"
                 alt="Image of guy working on
               computer"
                 class="img-fluid rounded shadow-lg"
                 loading="lazy"
+                height="auto"
+                width="auto"
               />
             </div>
           </div>
@@ -473,6 +495,9 @@
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     data-bs-content="I used Heroku to host the back-end of the application."
+                    loading="lazy"
+                    height="150"
+                    width="150"
                   />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
@@ -484,6 +509,9 @@
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     data-bs-content="I used Bootstrap to design the front-end of the application."
+                    loading="lazy"
+                    height="150"
+                    width="150"
                   />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
@@ -495,6 +523,9 @@
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     data-bs-content="I used Postman to test the API endpoints."
+                    loading="lazy"
+                    height="150"
+                    width="150"
                   />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mt-4">
@@ -506,6 +537,9 @@
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     data-bs-content="I used Netlify to host the front-end of the application."
+                    loading="lazy"
+                    height="150"
+                    width="150"
                   />
                 </div>
               </div>
@@ -565,6 +599,7 @@
                       src="./src/case/icons/server_1622295.svg"
                       alt="Icon of a server"
                       class="svg-icon feature-icon-img mb-2"
+                      loading="lazy"
                     />
                   </div>
                   <h3 class="h5 mb-3">1. Choosing the Database</h3>
@@ -587,6 +622,7 @@
                       src="./src/case/icons/development_1923594.svg"
                       alt="Icon of head with gear inside it"
                       class="svg-icon feature-icon-img mb-2"
+                      loading="lazy"
                     />
                   </div>
                   <h3 class="h5 mb-3">2. Developing Business Logic</h3>
@@ -610,6 +646,7 @@
                       src="./src/case/icons/computer_9078577.svg"
                       alt="Icon of a computer with a rocket on Screen"
                       class="svg-icon flap-animation feature-icon-img mb-2"
+                      loading="lazy"
                     />
                   </div>
                   <h3 class="h5 mb-3">3. Deploying the Application</h3>
@@ -632,6 +669,7 @@
                       src="./src/case/icons/shield_10234305.svg"
                       alt="Icon of a shild with a lock"
                       class="svg-icon feature-icon-img mb-2"
+                      loading="lazy"
                     />
                   </div>
                   <h3 class="h5 mb-3">4. Implementing Security</h3>
@@ -658,6 +696,9 @@
                     alt="Available on GitHub picture"
                     class="img-fluid mb-2 available-on-github"
                     title="Available on GitHub"
+                    loading="lazy"
+                    height="100"
+                    width="150"
                   />
                 </a>
               </div>
@@ -683,6 +724,7 @@
                   src="/src/case/slides-back/mangoDB.jpg"
                   class="d-block w-100"
                   alt="mongoDB View"
+                  loading="lazy"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">MongoDB</h5>
@@ -698,6 +740,7 @@
                   src="/src/case/slides-back/postmasn.jpg"
                   class="d-block w-100"
                   alt="The Postman View"
+                  loading="lazy"
                 />
 
                 <div class="carousel-caption d-md-block">
@@ -714,6 +757,7 @@
                   src="/src/case/slides-back/netlify.jpg"
                   class="d-block w-100"
                   alt="Netlify View"
+                  loading="lazy"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Netlify</h5>
@@ -729,6 +773,7 @@
                   src="/src/case/slides-back/Herku.jpg"
                   class="d-block w-100"
                   alt="Heroku View"
+                  loading="lazy"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Heroku</h5>
@@ -804,6 +849,7 @@
                     src="./src/case/icons/settings_1545290.svg"
                     alt="Settings Icon "
                     class="svg-icon clapperboard-animation feature-icon-img"
+                    loading="lazy"
                   />
                 </div>
                 <h3 class="h5 mb-3 text-right">1. The Build</h3>
@@ -823,6 +869,7 @@
                     src="./src/case/icons/ui_1294442.svg"
                     alt="UI Icon with diffrrent components"
                     class="svg-icon feature-icon-img"
+                    loading="lazy"
                   />
                 </div>
                 <h3 class="h5 mb-3 text-right">2. Create Components</h3>
@@ -842,6 +889,7 @@
                     src="./src/case/icons/graphic-design_1285954.svg"
                     alt="Design Icon with a paintbruch on a screen"
                     class="svg-icon feature-icon-img"
+                    loading="lazy"
                   />
                 </div>
                 <h3 class="h5 mb-3 text-right">3. Design</h3>
@@ -860,6 +908,7 @@
                     src="./src/case/icons/flag_1622306.svg"
                     alt="Flag Icon you reched the end"
                     class="svg-icon feature-icon-img"
+                    loading="lazy"
                   />
                 </div>
                 <h3 class="h5 mb-3 text-right">4. Final Product</h3>
@@ -884,6 +933,9 @@
                   alt="Available on GitHub"
                   class="img-fluid mb-2 available-on-github"
                   title="Available on GitHub"
+                  loading="lazy"
+                  height="100"
+                  width="150"
                 />
               </a>
             </div>
@@ -908,6 +960,7 @@
                   src="/src/case/slides-front/login-view.jpg"
                   class="d-block w-100"
                   alt="The Login View"
+                  loading="lazy"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Login View</h5>
@@ -924,6 +977,7 @@
                   src="/src/case/slides-front/all-Movies-view-slide.jpg"
                   class="d-block w-100"
                   alt="All Movies View"
+                  loading="lazy"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Movies View Landing Page</h5>
@@ -940,6 +994,7 @@
                   src="/src/case/slides-front/movie-card.jpg"
                   class="d-block w-100"
                   alt="The Movie card view"
+                  loading="lazy"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Movie Card</h5>
@@ -955,6 +1010,7 @@
                   src="/src/case/slides-front/movie-view.jpg"
                   class="d-block w-100"
                   alt="  the Movie View"
+                  loading="lazy"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Movie View</h5>
@@ -971,6 +1027,7 @@
                   src="/src/case/slides-front/profile-view.jpg"
                   class="d-block w-100"
                   alt="  the Profile View"
+                  loading="lazy"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Profile View</h5>
@@ -986,6 +1043,7 @@
                   src="/src/case/slides-front/similar-movies-view.jpg"
                   class="d-block w-100"
                   alt="The Similar Movie View"
+                  loading="lazy"
                 />
                 <div class="carousel-caption">
                   <h5 class="carousel-title">Similar Movie View</h5>
@@ -1296,27 +1354,28 @@
         </div>
 
         <!-- Social media links section -->
+        <!-- Social media links section -->
         <div
           class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0"
-          aria-label="Social-media-links-section"
         >
           <a
             href="https://github.com/bobs83"
             target="_blank"
             rel="noopener"
             class="mx-2"
+            aria-label="Bobby's GitHub Profile"
           >
-            <img
-              class="socialmedia"
-              src="./src/pics/social-pics/github.svg"
-              alt="link to Bobby's GitHub"
-            />
+            <i class="bi bi-github feature-icon-nav-bottom me-4"></i>
           </a>
-          <a href="#navbarNav" class="mx-2">
+          <a href="#navbarNav" class="mx-2" aria-label="Back to top">
             <img
               class="Logo-bottom"
               src="./src/pics/transparent-logo.png"
               alt="Bobby in Berlin's Logo"
+              title="Back to top"
+              lazy="loading"
+              width="48"
+              height="40"
             />
           </a>
           <a
@@ -1325,12 +1384,9 @@
             target="_blank"
             rel="noopener"
             class="mx-2"
+            aria-label="Bobby's LinkedIn Profile"
           >
-            <img
-              class="socialmedia"
-              src="./src/pics/social-pics/inkedin.svg"
-              alt="link to Bobby's LinkedIn"
-            />
+            <i class="bi bi-linkedin feature-icon-nav-bottom ms-3"></i>
           </a>
         </div>
 
@@ -1379,8 +1435,7 @@
       class="modal fade"
       id="myModal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
+      aria-labelledby="Credits & Sources"
     >
       <div class="modal-dialog">
         <div class="modal-content">
@@ -1510,11 +1565,10 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn-close"
               data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+              aria-label="Close"
+            ></button>
           </div>
         </div>
       </div>
