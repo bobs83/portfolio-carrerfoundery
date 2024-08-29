@@ -270,6 +270,7 @@ a.nav-link:hover {
 
 .scroll-image {
 	height: 40px;
+	width: 40px;
   position: relative;
 	margin-bottom: 3em;
   animation: fadeInMoveLeftFadeOut 10s ease-in-out infinite;
@@ -281,65 +282,11 @@ a.nav-link:hover {
 	animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
 }
 
-/* Mail animation  */
 
-.mail-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	
-}
-
-.circle {
-	border-radius: 50%;
-	background-color: rgb(105, 24, 148);
-	width: 200px;
-	height: 200px;
-	position: absolute;
-	opacity: 0;
-	animation: scaleIn 10s infinite cubic-bezier(.36, .11, .89, .32);
-
-}
-
-.mailitem {
-	z-index: 100;
-	padding: 5px;
-}
-
-/* .mailitem img {
-	width: 200px;
-}
-.mailitem img:hover {
-  transform: scale(1.1);
-	transition: transform 0.3s ease-in-out;
-} */
-
-.mailitem img {
-	width: 200px;
-  transition: transform 1s ease-in-out, box-shadow 1s ease-in-out, filter 1s ease-in-out;
-  display: block; /* Ensures the image is block level for box-shadow to work properly */
-	
-}
-
-.mailitem img:hover {
-  transform: scale(1.1);
-  filter: brightness(1.1) drop-shadow(0 5px 15px rgba(0,0,0,0.3)); /* Adds a round shadow */
-	transform: rotate(180deg);
-}
 
 
 /* style section */
 
-.case-image {
-  width: 80%;
-  height: 80%;
-  object-fit: scale-down;
-	position: relative; 
-	animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
-	transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
-  z-index: 1;
-}
 
 
 
@@ -357,19 +304,6 @@ a.nav-link:hover {
 
 
 
-
-@keyframes scaleIn {
-  from {
-    transform: scale(.5, .5);
-    opacity: .5;
-  }
-  to {
-    transform: scale(2.5, 2.5);
-    opacity: 0;
-  }
-}
-
-
 @keyframes bouncebounce {
 	0% {
 			bottom: -5px;
@@ -380,28 +314,7 @@ a.nav-link:hover {
 	}
 }
 
-@keyframes fadeInMoveRightFadeOut {
-  0% {
-    left: 0;
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  40%,
-  60% {
-    left: 50%;
-    opacity: 1;
-  }
-  80% {
-    left: 80%;
-    opacity: 0;
-  }
-  100% {
-    left: 100%;
-    opacity: 0;
-  }
-}
+
 
 @keyframes fadeInMoveLeftFadeOut {
   0% {
@@ -981,4 +894,9 @@ a.nav-link:hover {
   100% {
     transform: translateY(0);
   }
+}
+
+.responsive-icon {
+  max-width: 100%;
+  height: auto;
 }
