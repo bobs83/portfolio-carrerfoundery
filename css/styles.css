@@ -68,16 +68,6 @@ list-inline {
   list-style: none;
 }
 
-.icon-social-github, .icon-social-instagram, .icon-social-linkedin {
-  font-size: 1.2em;
-  padding: 0.2em;
-  color: black;
-	transition: color 0.3s ease-in-out;
-}
-.icon-social-github:hover, .icon-social-instagram:hover, .icon-social-linkedin:hover {
-  color: #8802a6;
-}
-
 .custom-navbar {
   opacity: 0.8; /* Adjust the opacity value as needed */
 }
@@ -102,17 +92,12 @@ a.nav-link:hover {
   color: #8802a6;
   transition: color 0.3s ease-in-out;
 
-
 }
 
 .navbar-nav .nav-link.active {
 	font-weight: bold;
 	color: #000000 !important;
 	font-size: 17px;
-}
-
-.navbar-item {
-
 }
 
 .btn {
@@ -122,7 +107,7 @@ a.nav-link:hover {
 }
 
 .navbar-brand {
-  background-image: url("https://github.com/bobs83/portfolio-carrerfoundery/blob/gh-pages/src/pics/transparent-logo.png?raw=true");
+  background-image: url("/src/pics/transparent-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -130,24 +115,6 @@ a.nav-link:hover {
   height: 48px;
 }
 
-.home-section {
-  margin: auto;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  max-width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-
-  animation: fade-out linear;
-  animation-timeline: view();
-	animation-range: exit; -200px;
-}
-
-@keyframes fade-out {
-	to {opacity: 0;}
-}
 
 .custom-home-section {
   background-color: #000000; 
@@ -188,27 +155,8 @@ a.nav-link:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* About section */
 
-.about-image {
-  width: 100%;
-  height: 100%;
-  object-fit: scale-down;
-	position: relative; 
-	animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
-	transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
-  z-index: 1;
-
-}
-.about-image:hover {
-	filter: drop-shadow(0 15px 15px rgba(173, 8, 210, 0.3)); /* Adds a round shadow */
-}
-
-
-/* Projects section
-.project-start {
-	margin-top: 4em;
-} */
+/* Projects section */
 
 .scrollable-row {
   overflow-x: auto;
@@ -228,12 +176,6 @@ a.nav-link:hover {
   overflow: hidden;
 }
 
-.card-video-top {
-  width: 100%;
-  height: 35vh;
-  object-fit: cover;
-  margin: auto;
-}
 
 .card-icon {
   width: 20px;
@@ -247,15 +189,7 @@ a.nav-link:hover {
 	margin: 20px;
 }
 
-.card-icongif {
-  width: 30px;
-  height: 30px;
-  margin: auto;
-}
 
-.card-title {
-  font-size: 1.5em;
-}
 .card-text {
   font-size: 0.9em;
 }
@@ -282,26 +216,7 @@ a.nav-link:hover {
 	animation: bouncebounce 0.9s 1.5s infinite ease-in-out alternate;
 }
 
-
-
-
 /* style section */
-
-
-
-
-.two-column-list {
-  columns: 2; /* Number of columns */
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  list-style-type: disc; /* Optional: to ensure dots are used */
-  padding-left: 20px; /* Optional: adjust padding as needed */
-}
-
-.two-column-list li {
-  break-inside: avoid; /* Prevents items from breaking between columns */
-}
-
 
 
 @keyframes bouncebounce {
@@ -313,8 +228,6 @@ a.nav-link:hover {
 			bottom: 5px;
 	}
 }
-
-
 
 @keyframes fadeInMoveLeftFadeOut {
   0% {
@@ -539,6 +452,25 @@ a.nav-link:hover {
 	100% { transform: scale(1); }
 }
 
+.feature-icon-nav {
+	font-size: 1.3rem;
+	color: transparent; /* Make the text color transparent */
+	background: linear-gradient(135deg, #350156, #ae26ae); /* Adjust colors as needed */
+	background-clip: text; /* Clip the background to the text */
+	-webkit-background-clip: text; /* Ensure compatibility with Webkit browsers */
+	-moz-background-clip: text; /* Ensure compatibility with older Mozilla browsers */
+	display: inline-block; /* Ensure the element respects its size */
+}
+
+.feature-icon-nav-bottom {
+	font-size: 1.5rem;
+	color: transparent; /* Make the text color transparent */
+	background: linear-gradient(135deg, #000000, #000000); /* Adjust colors as needed */
+	background-clip: text; /* Clip the background to the text */
+	-webkit-background-clip: text; /* Ensure compatibility with Webkit browsers */
+	-moz-background-clip: text; /* Ensure compatibility with older Mozilla browsers */
+	display: inline-block; /* Ensure the element respects its size */
+}
 
 .zoom-animation {
 	animation: zoom 4s infinite;
