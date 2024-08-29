@@ -92,7 +92,12 @@
         class="page-header navbar navbar-expand-lg navbar-light bg-light sticky-top custom-navbar"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="" aria-label="Homepage"></a>
+          <a
+            class="navbar-brand"
+            href=""
+            aria-label="Homepage"
+            loading="lazy"
+          ></a>
           <ul class="list-inline mt-1 mb-0">
             <li class="list-inline-item mr-4">
               <a
@@ -217,7 +222,10 @@
 
       <!-- Hero Section Case Study  -->
       <section aria-label="Hero-Section-For-Case-Study">
-        <div class="hero-section-case-study vh-100 d-flex align-items-center">
+        <div
+          class="hero-section-case-study vh-100 d-flex align-items-center"
+          loading="lazy"
+        >
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-md-8 col-lg-6 my-5">
@@ -401,15 +409,21 @@
         <div class="container" data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-center">
             <div class="col-md-8">
-              <img
-                src="/src/pics/carrerfounderypic.jpg"
-                alt="Image of guy working on
-              computer"
-                class="img-fluid rounded shadow-lg"
-                loading="lazy"
-                height="auto"
-                width="auto"
-              />
+              <picture>
+                <source
+                  srcset="/src/pics/carrerfounderypic.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/src/pics/carrerfounderypic.jpg"
+                  alt="Image of guy working on computer"
+                  class="img-fluid rounded shadow-lg"
+                  loading="lazy"
+                  height="500"
+                  width="800"
+                  title="Image of a guy working on a computer"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -600,6 +614,8 @@
                       alt="Icon of a server"
                       class="svg-icon feature-icon-img mb-2"
                       loading="lazy"
+                      height="24px"
+                      width="24px"
                     />
                   </div>
                   <h3 class="h5 mb-3">1. Choosing the Database</h3>
@@ -623,6 +639,8 @@
                       alt="Icon of head with gear inside it"
                       class="svg-icon feature-icon-img mb-2"
                       loading="lazy"
+                      height="24px"
+                      width="24px"
                     />
                   </div>
                   <h3 class="h5 mb-3">2. Developing Business Logic</h3>
@@ -647,6 +665,8 @@
                       alt="Icon of a computer with a rocket on Screen"
                       class="svg-icon flap-animation feature-icon-img mb-2"
                       loading="lazy"
+                      height="24px"
+                      width="24px"
                     />
                   </div>
                   <h3 class="h5 mb-3">3. Deploying the Application</h3>
@@ -670,6 +690,8 @@
                       alt="Icon of a shild with a lock"
                       class="svg-icon feature-icon-img mb-2"
                       loading="lazy"
+                      height="24px"
+                      width="24px"
                     />
                   </div>
                   <h3 class="h5 mb-3">4. Implementing Security</h3>
@@ -1306,6 +1328,7 @@
               playsinline
               class="d-block w-100"
             >
+              <source src="src/case/video/Hero-video2.webm" type="video/webm" />
               <source
                 src="src/case/video/casestudy-video1.mp4"
                 type="video/mp4"
@@ -1374,7 +1397,7 @@
               alt="Bobby in Berlin's Logo"
               title="Back to top"
               lazy="loading"
-              width="48"
+              width="75"
               height="40"
             />
           </a>
