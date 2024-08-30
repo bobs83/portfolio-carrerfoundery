@@ -96,22 +96,37 @@
         <div class="container d-flex align-items-center justify-content-center">
           <div class="row justify-content-center">
             <div class="col-md-12 d-flex justify-content-center">
-              <video
-                playsinline
-                class="hero-video"
-                autoplay
-                muted
-                title="Press PLAY in Safari , Text: Hello I am Bobby Webdeveloper based in Berlin"
-              >
-                <source src="./src/videos/Hero-video2.webm" type="video/webm" />
-                <source src="./src/videos/Hero-video.mp4" type="video/mp4" />
+              <div id="media-container">
+                <!-- Fallback for Safari as it dosent allow autoplay -->
                 <img
-                  src="./src/pics/fall-back-image.png"
+                  id="safari-gif"
+                  src="./src/videos/Hero-video.gif"
                   alt="Text: Hello I am Bobby Webdeveloper based in Berlin"
-                  loading="lazy"
+                  class="hidden"
                 />
-                Your browser does not support the video tag.
-              </video>
+
+                <!-- Video for other browsers  :) -->
+                <video
+                  id="non-safari-video"
+                  playsinline
+                  class="hero-video"
+                  autoplay
+                  muted
+                  title="Text: Hello I am Bobby Webdeveloper based in Berlin"
+                >
+                  <source
+                    src="./src/videos/Hero-video2.webm"
+                    type="video/webm"
+                  />
+                  <source src="./src/videos/Hero-video.mp4" type="video/mp4" />
+                  <img
+                    src="./src/pics/fall-back-image.png"
+                    alt="Text: Hello I am Bobby Webdeveloper based in Berlin"
+                    loading="lazy"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </div>
@@ -1915,6 +1930,27 @@
             html: true,
           });
         });
+      });
+    </script>
+
+    <!-- Safari GIF script as autoplay is not possible on safari :(-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var isSafari = /^((?!chrome|android).)*safari/i.test(
+          navigator.userAgent
+        );
+        var gifElement = document.getElementById("safari-gif");
+        var videoElement = document.getElementById("non-safari-video");
+
+        if (isSafari) {
+          // show me the gif for Safari browsers
+          gifElement.style.display = "block";
+          videoElement.style.display = "none";
+        } else {
+          // show me the video for non-Safari browsers
+          gifElement.style.display = "none";
+          videoElement.style.display = "block";
+        }
       });
     </script>
   </body>

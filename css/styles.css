@@ -846,3 +846,7 @@ a.nav-link:hover {
 .two-column-list li {
   break-inside: avoid; /* Prevents items from breaking between columns */
 }
+
+.hidden {
+  display: none;
+}
