@@ -457,7 +457,7 @@ a.nav-link:hover {
 .feature-icon-nav {
 	font-size: 1.3rem;
 	color: transparent; /* Make the text color transparent */
-	background: linear-gradient(135deg, #350156, #ae26ae); /* Adjust colors as needed */
+	background: linear-gradient(135deg, #0a0a0a, #4c4a4a); /* Adjust colors as needed */
 	background-clip: text; /* Clip the background to the text */
 	-webkit-background-clip: text; /* Ensure compatibility with Webkit browsers */
 	-moz-background-clip: text; /* Ensure compatibility with older Mozilla browsers */
