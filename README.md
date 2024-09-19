@@ -1,6 +1,6 @@
 # Bobby Singh's Portfolio
 
-Welcome to my portfolio! This repository contains the source code for my personal website, where I showcase my work as a web developer. Take a look around to see what I’ve been working on and learn more about my skills and experiences.
+Welcome to my portfolio! This repository contains the source code for my personal website, where I showcase my work as a web developer. Take a look around to see what I’ve been working on and learn more about my skills and experiences
 
 ## Description
 
